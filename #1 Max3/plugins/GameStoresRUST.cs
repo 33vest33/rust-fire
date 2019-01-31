@@ -1,29 +1,19 @@
 ﻿using System.Collections.Generic;
 using System;
-using System.Reflection;
-using Facepunch;
 using Newtonsoft.Json;
 using Oxide.Core.Configuration;
 using System.Linq;
-using System.Text;
 using Oxide.Game.Rust.Cui;
 using UnityEngine;
-using Network;
-using Oxide.Core;
-using System.Collections;
-using Oxide.Plugins;
 using Oxide.Core.Plugins;
-using Oxide.Core.Libraries;
 
 
 namespace Oxide.Plugins
 {
-    [Info("GameStores", "Sstine", "1.7.7")]
-    class GameStoresRUST : RustPlugin
+    [Info("GameStores", "Stine/Orange", "1.7.7")]
+    public class GameStoresRUST : RustPlugin
     {
         private string Request => $"https://gamestores.ru/api/?shop_id={Config["SHOP.ID"]}&secret={Config["SECRET.KEY"]}&server={Config["SERVER.ID"]}";
-
-
 
         #region [Override] Load default configurations
         protected override void LoadDefaultConfig()
@@ -2065,29 +2055,36 @@ namespace Oxide.Plugins
         [HookMethod("OnPlayerDisconnected")]
         private void OnPlayerDisconnected(BasePlayer player)
         {
-            if (System.Convert.ToBoolean(Config["TOP.USERS"]))
+            try
             {
-                if (Config["SERVER.ID"].ToString() == "0")
+                if (Convert.ToBoolean(Config["TOP.USERS"]))
                 {
-                    Debug.LogWarning("Need set SERVER.ID in configurations to send info for top players");
-                }
-                else
-                {
-                    Dictionary<string, object> args = new Dictionary<string, object>();
-
-                    if (player as BasePlayer != null)
+                    if (Config["SERVER.ID"].ToString() == "0")
                     {
-                        args["player_id"] = player.UserIDString;
-                        args["played"] = player.net.connection.GetSecondsConnected().ToString();
-                        args["username"] = player.displayName;
-                        args["time"] = System.Convert.ToInt32((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
+                        Debug.LogWarning("Need set SERVER.ID in configurations to send info for top players");
+                    }
+                    else
+                    {
+                        var args = new Dictionary<string, object>();
 
-                        Leaves.Add(args);
+                        if (player != null)
+                        {
+                            args["player_id"] = player.UserIDString;
+                            args["played"] = player.Connection.GetSecondsConnected().ToString();
+                            args["username"] = player.displayName;
+                            args["time"] = System.Convert.ToInt32((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
 
-                        if (Leaves.Count >= 10)
-                            SendLeavesInfo();
+                            Leaves.Add(args);
+
+                            if (Leaves.Count >= 10)
+                                SendLeavesInfo();
+                        }
                     }
                 }
+            }
+            catch
+            {
+                // ignore
             }
         }
         #endregion

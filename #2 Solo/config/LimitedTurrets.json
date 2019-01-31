@@ -1,0 +1,20 @@
+{
+  "Версия конфига (не менять)": 1,
+  "Разрешить привилегию limitedturrets.bypass для игнорирования лимитов": true,
+  "Разрешить админам игнорировать лимиты": true,
+  "Команда для открытия UI": "turret",
+  "Разрешить UI": true,
+  "Разрешить информирование в чате о изменении лимита": true,
+  "Привилегии": {
+    "limitedturrets.default": {
+      "autoturret_deployed": 5,
+      "guntrap.deployed": 5,
+      "flameturret.deployed": 5
+    },
+    "limitedturrets.vip": {
+      "autoturret_deployed": 15,
+      "guntrap.deployed": 15,
+      "flameturret.deployed": 15
+    }
+  }
+}

@@ -5,10 +5,10 @@
     "TPREnabled": true,
     "TownEnabled": true,
     "InterruptTPOnHurt": true,
-    "InterruptTPOnSafe": false,
+    "InterruptTPOnSafe": true,
     "InterruptTPOnMonument": false,
     "BlockedItems": {},
-    "BypassCMD": null,
+    "BypassCMD": "pay",
     "UseEconomics": false,
     "UseServerRewards": false,
     "WipeOnUpgrade": false
@@ -45,18 +45,18 @@
     "VIPCountdowns": {
       "nteleportation.vip": 12,
       "nteleportation.elite": 8,
-      "nteleportation.premium": 12,
+      "nteleportation.premium": 10,
       "nteleportation.fire": 5
     },
     "LocationRadius": 25,
     "ForceOnTopOfFoundation": true,
     "CheckFoundationForOwner": true,
     "UseFriends": true,
-    "UsableOutOfBuildingBlocked": true,
+    "UsableOutOfBuildingBlocked": false,
     "UsableIntoBuildingBlocked": false,
     "CupOwnerAllowOnBuildingBlocked": true,
-    "AllowIceberg": false,
-    "AllowCave": false,
+    "AllowIceberg": true,
+    "AllowCave": true,
     "AllowCraft": true,
     "AllowAboveFoundation": true,
     "CheckValidOnList": false,
@@ -97,9 +97,9 @@
   "Town": {
     "Cooldown": 600,
     "Countdown": 15,
-    "DailyLimit": 1,
+    "DailyLimit": 5,
     "VIPDailyLimits": {
-      "nteleportation.vip": 1
+      "nteleportation.vip": 5
     },
     "VIPCooldowns": {
       "nteleportation.vip": 5

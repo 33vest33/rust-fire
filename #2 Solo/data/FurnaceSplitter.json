@@ -1,0 +1,5750 @@
+{
+  "AllPlayerOptions": {
+    "76561198358760153": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198856014587": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561197990667613": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198795751649": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198106957726": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198327361395": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198350525461": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198277958913": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198384814671": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198880663554": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198890102503": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198421728519": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198867572789": {
+      "Enabled": false,
+      "TotalStacks": {
+        "furnace": 1,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198088719704": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198079518514": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198373540059": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198160724599": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198148897290": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198304720299": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198441064941": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 5,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198140930479": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198037650961": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198093071491": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 5,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198332653797": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198388922531": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198192561377": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198263132402": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198044234692": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198431448128": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198880299079": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198290738827": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198249770298": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198311016615": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198809978392": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198445102446": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561197993358511": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198382228006": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198886047271": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198388552667": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198370699066": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198366605771": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198152767413": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198417890446": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198434401044": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198323711922": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198141931424": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198862044069": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198858202564": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198376992788": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198360278478": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198342966187": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198865750090": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198821789190": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198887292443": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198364622753": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198222519836": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198817126754": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198157610653": {
+      "Enabled": false,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 1,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198431430858": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198808499487": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198867634869": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198801048332": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198037149679": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198380636893": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198836010382": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198244645174": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198214199489": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198149833966": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198188261454": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198256775156": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198383418101": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198888035901": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198807293875": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198413975975": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198835270169": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198159642979": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198137331521": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198199828553": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198845905501": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198821739200": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198852216782": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 3,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198399993857": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198371038046": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198853397726": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198009406892": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198333020514": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198109693215": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198854977608": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198865638581": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198883589378": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198393689881": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198846569890": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198392964650": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198839954096": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198317249073": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 8,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198345075839": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198874038648": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198283841699": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198020409916": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198040091442": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198800590631": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198347688437": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878186127": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198254115883": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198358357195": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198253209593": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198875241559": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198884664110": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198343853591": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198357935554": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198870897884": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868047861": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198319880965": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198041361420": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198133564387": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198891225510": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198884536311": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878516790": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198886330356": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198875468085": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 4,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198374346550": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198324513144": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198361768492": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198816011404": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198347843428": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198892169286": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198376117323": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198852672122": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198874527067": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198212991327": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198186658042": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198328275818": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198247035890": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198076114466": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198171671335": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198200396713": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198174484171": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198191009383": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198843106322": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198159118215": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198876666255": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198189950391": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 0,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198265258332": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198316128938": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198051674052": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198083194465": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198860394321": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198134463866": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198316475303": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198869420326": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198326340032": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198286960806": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198202777002": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198277801884": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198162249600": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198056558940": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198212756687": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198271114535": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198414536478": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198837625750": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198320320886": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198061079491": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198368332790": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198449707638": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198276341797": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878523866": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198883445899": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198257771015": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198044314904": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198822756089": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198122365322": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198284780962": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198315492039": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198324899871": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198309414785": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198342988867": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198293133762": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198405758366": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198826653803": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198844211993": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198869627740": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198138302991": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198862264270": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198169404985": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198065726524": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 4,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198873245853": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198361257590": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198891032873": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868221964": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198857179600": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868428983": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198151117120": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 1,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198364598882": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198309981623": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198872117861": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198418784304": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198253965998": {
+      "Enabled": false,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198373549667": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198022031722": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198796548112": {
+      "Enabled": false,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198891685182": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198047843900": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198147374504": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198867704387": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198892745162": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198396200422": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198120951206": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198861063448": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198858132867": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198189740987": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198877223721": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198874913270": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198839231020": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198298459959": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198867761397": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868511620": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198033566210": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198890379758": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868520110": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198876712249": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198892510589": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198066464657": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198357496638": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198268636899": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198415465670": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198056267124": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198112690675": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198846210837": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198242043914": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198801892644": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198130053971": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 1,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198353114600": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198024924120": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198424532823": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198194602322": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198817084280": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198155752469": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198384508806": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198139851244": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198296027646": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198353142527": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198825432952": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198337471450": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198856965300": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198021713450": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198295415778": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198360411774": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198809510942": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198359984508": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198436283831": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198806037772": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198850135105": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198054541317": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198877913059": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198869205895": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198880330212": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198264547360": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198861651627": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198314415708": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198385370999": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198109180283": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198044521926": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198203916659": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198873470723": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198162912182": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198367396949": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198411805092": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198370364984": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198316618424": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198416933334": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198350581672": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198839893562": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198329860398": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198883760494": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198113490033": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198179730918": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198086948395": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198452286358": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198158521992": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198802092262": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198848126989": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198287603286": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198158717047": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198082285572": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198088695323": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 5,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198302103124": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198202330951": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198384133330": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198838150911": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198065459929": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198818658221": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198439661192": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198857970539": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198095504969": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198425918700": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198075450096": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198879372349": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198886045518": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198805830292": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198332006224": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198161209703": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198443820612": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198882355947": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 4,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198262657471": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198852011244": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198322851414": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198845317770": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198085303331": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198436208633": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198160602238": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198026027711": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198839078406": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198279766208": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198873076688": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198028345776": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198889784775": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198857583351": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198844216661": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 4,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198130002767": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198341575493": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198859216405": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198383100767": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198313225016": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198887234318": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198408187013": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198083873727": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878570455": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198211872085": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198825707064": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198842062282": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198879919491": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198324177185": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198853523968": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 1,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198860187416": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198360151744": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198033180036": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561197964764786": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198869231729": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198209594041": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 0,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198885859908": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198354455736": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878000877": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198051383682": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198387273463": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198893409238": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198815585862": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198872085476": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198808283948": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198258344565": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198817576645": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198876075231": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198880396503": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198860980478": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198816037119": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198358278987": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198033555395": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198101045001": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 4,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198823574883": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198843865663": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198840935122": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198881102178": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198836534782": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198335821805": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198271283443": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198892926784": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198331827258": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198894074332": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198858220619": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198887152614": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198287180618": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198857567172": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198445419809": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198436242035": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198330445744": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198855088228": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198057612093": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198860527834": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198140891138": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198195033243": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198813257304": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868265753": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198854717002": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868021567": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198145289168": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198892860852": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198350267188": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198153700496": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198846336948": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198881297029": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198372086445": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198176016145": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 1,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198885785329": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198887376632": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198273673409": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198893111536": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198893308474": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198877810386": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198893236422": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198272592766": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198362908543": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198857557274": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198337592390": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198855435676": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198837207340": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198256968515": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198334316640": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198877655786": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198363098704": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198869718463": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198438445556": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198303982206": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198795789352": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198157169575": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198170738733": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198353938877": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198868177791": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198322601861": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198313755594": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198885221740": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198863402361": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198871625746": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198872284509": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198022821082": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198253550424": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 4,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198129726088": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198374831646": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198330288078": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198806057121": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198100704719": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198156878656": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198167582958": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198885498437": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198835629651": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198841213113": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198438978395": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198134025447": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198330562440": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198811555942": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198890837544": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198878158500": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198894799956": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    },
+    "76561198022799678": {
+      "Enabled": true,
+      "TotalStacks": {
+        "furnace": 3,
+        "bbq.deployed": 9,
+        "campfire": 2,
+        "fireplace.deployed": 2,
+        "furnace.large": 15,
+        "hobobarrel_static": 2,
+        "refinery_small_deployed": 3,
+        "skull_fire_pit": 2
+      }
+    }
+  }
+}

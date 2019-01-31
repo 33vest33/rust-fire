@@ -1,6 +1,0 @@
-{
-  "GeneratedWalls": "Generated {0} arena walls {1} high at {2} in {3}ms",
-  "FailedRaycast": "Look towards the ground, and try again.",
-  "InvalidNumber": "Invalid number: {0}",
-  "WallSyntax": "Use <color=orange>/{0} [radius] <wood|stone></color>, or stand inside of an existing arena and use <color=orange>/{0}</color> to remove it."
-}

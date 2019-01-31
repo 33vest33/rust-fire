@@ -1,8 +1,0 @@
-{
-  "InvFull": "У Вас переполнен инвентарь :(",
-  "GiveGift": "Вы получили <color=#ffa500>{0}</color> в размере: <color=#ffa500>{1}</color> шт.",
-  "GiveGiftAmount": "Вы получили <color=#ffa500>{0}</color>",
-  "TheTimeEnd": "Вы пробыли на сервере: <color=#ffa500>{0}</color>, у нас для Вас подарок!\nОткройте чат, и нажмите кнопку <color=#ffa500>Забрать подарок</color>, либо используйте <color=#ffa500>/gift</color> что бы получить его",
-  "PlayerNHaveGift": "Для Вас пока нету подарков",
-  "GiveGifts": "ЗАБРАТЬ ПОДАРОК"
-}

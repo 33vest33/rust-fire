@@ -1,4 +1,0 @@
-{
-  "noEntity": "You are either not looking at at a entity or you are not looking at the correct type of entity",
-  "foundBox": "{3}The box you are looking at is of the type:</color>{4} {0}</color>{3} with the ID:</color>{4} {1}.</color>{3} You can find the log for this box in </color>{4}'oxide/data/LootLogs/{0}/{2}_{1}_xxdatexx.txt'</color>"
-}

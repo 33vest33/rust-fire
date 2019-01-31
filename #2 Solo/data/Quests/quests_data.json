@@ -1,0 +1,398 @@
+{
+  "Quest": {
+    "Craft": {
+      "Оборона превыше всего": {
+        "QuestName": "Оборона превыше всего",
+        "Description": "Надоело, что по вашей территории кто-то бегает? Возьмите всё в свои руки",
+        "Objective": "gates.external.high.wood",
+        "ObjectiveName": "High External Wooden Gate",
+        "AmountRequired": 15,
+        "Cooldown": 10080,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Stones",
+            "ShortName": "stones",
+            "ID": -2099697608,
+            "Amount": 30000.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Delivery": {},
+    "Gather": {
+      "Лучший дровосек": {
+        "QuestName": "Лучший дровосек",
+        "Description": "Мужики поспорили, у кого рука твёрже да топор острее.Кто нарубит больше леса тому и быть первым.",
+        "Objective": "wood",
+        "ObjectiveName": "Wood",
+        "AmountRequired": 15000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Salvaged Axe",
+            "ShortName": "axe.salvaged",
+            "ID": -262590403,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Каменщик в беде": {
+        "QuestName": "Каменщик в беде",
+        "Description": "Мастеру Косику нужен камень для ремонта замка, одолели рейдеры набегами, не бросай парня в беде.",
+        "Objective": "stones",
+        "ObjectiveName": "Stones",
+        "AmountRequired": 15000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Salvaged Icepick",
+            "ShortName": "icepick.salvaged",
+            "ID": -1780802565,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Куй железо пока горячо": {
+        "QuestName": "Куй железо пока горячо",
+        "Description": "Кузнецу с южных гор нужен металл для ковки, добудь для него железной руды сколько потребуется.",
+        "Objective": "metal.ore",
+        "ObjectiveName": "Metal Ore",
+        "AmountRequired": 30000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Metal Facemask",
+            "ShortName": "metal.facemask",
+            "ID": -194953424,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          },
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Road Sign Jacket",
+            "ShortName": "roadsign.jacket",
+            "ID": -2002277461,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          },
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Road Sign Kilt",
+            "ShortName": "roadsign.kilt",
+            "ID": 1850456855,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Щедрый Алхимик": {
+        "QuestName": "Щедрый Алхимик",
+        "Description": "Алхимику из Заброшеной шахты, нужна серная руда для опытов, он может щедро отблагодарить за помощь.",
+        "Objective": "sulfur.ore",
+        "ObjectiveName": "Sulfur Ore",
+        "AmountRequired": 30000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Satchel Charge",
+            "ShortName": "explosive.satchel",
+            "ID": -1878475007,
+            "Amount": 5.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "МВК много не бывает": {
+        "QuestName": "МВК много не бывает",
+        "Description": "Лучшее оружие и броня состоят из металла высокого качества, добывай эту руду и пополняй свой арсенал",
+        "Objective": "hq.metal.ore",
+        "ObjectiveName": "High Quality Metal Ore",
+        "AmountRequired": 1000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "LR-300 Assault Rifle",
+            "ShortName": "rifle.lr300",
+            "ID": -1812555177,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Kill": {
+      "Железные птицы": {
+        "QuestName": "Железные птицы",
+        "Description": "Сбей пять этих опасных вертолетов и все признают тебя героем! А вместо медали получишь именной M249.",
+        "Objective": "patrolhelicopter",
+        "ObjectiveName": "Helicopter",
+        "AmountRequired": 3,
+        "Cooldown": 2880,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "M249",
+            "ShortName": "lmg.m249",
+            "ID": -2069578888,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Медвежадник": {
+        "QuestName": "Медвежадник",
+        "Description": "На острове развелось слишком много медведей, необходимо защитить дровосеков от их нападок.",
+        "Objective": "bear",
+        "ObjectiveName": "Bear",
+        "AmountRequired": 5,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Chainsaw",
+            "ShortName": "chainsaw",
+            "ID": 1104520648,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          },
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Jackhammer",
+            "ShortName": "jackhammer",
+            "ID": 1488979457,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Тупая железка": {
+        "QuestName": "Тупая железка",
+        "Description": "Турели не так страшны как кажутся. При должной сноровке их можно обвести вокруг пальца, попробуй.",
+        "Objective": "autoturret_deployed",
+        "ObjectiveName": "Auto-Turret",
+        "AmountRequired": 10,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Auto Turret",
+            "ShortName": "autoturret",
+            "ID": -2139580305,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          },
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Auto Turret",
+            "ShortName": "autoturret",
+            "ID": -2139580305,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Наездник": {
+        "QuestName": "Наездник",
+        "Description": "Хороший наездник должен держать своего мустанга под контролем",
+        "Objective": "horse",
+        "ObjectiveName": "Horse",
+        "AmountRequired": 15,
+        "Cooldown": 25200,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Compound Bow",
+            "ShortName": "bow.compound",
+            "ID": 884424049,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          },
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "High Velocity Arrow",
+            "ShortName": "arrow.hv",
+            "ID": -1023065463,
+            "Amount": 25.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Охотник на дичь": {
+        "QuestName": "Охотник на дичь",
+        "Description": "Волчьи стаи не дают прохода... Нужно это исправить",
+        "Objective": "wolf",
+        "ObjectiveName": "Wolf",
+        "AmountRequired": 15,
+        "Cooldown": 25200,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Semi-Automatic Pistol",
+            "ShortName": "pistol.semiauto",
+            "ID": 818877484,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    "Loot": {
+      "Корзинка грибов": {
+        "QuestName": "Корзинка грибов",
+        "Description": "Поварихе из харчевни что на севере, нужны грибы для засолки, помоги ей с заготовками на зиму.",
+        "Objective": "mushroom",
+        "ObjectiveName": "Mushroom",
+        "AmountRequired": 300,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Black Raspberries",
+            "ShortName": "black.raspberries",
+            "ID": 1931713481,
+            "Amount": 100.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Непростые агрономы": {
+        "QuestName": "Непростые агрономы",
+        "Description": "Лёлик и Болик выводят новые сорта конопли, принеси им семена растения и награда твоя.",
+        "Objective": "seed.hemp",
+        "ObjectiveName": "Hemp Seed",
+        "AmountRequired": 300,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Medical Syringe",
+            "ShortName": "syringe.medical",
+            "ID": 1079279582,
+            "Amount": 10.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Спецзаказ": {
+        "QuestName": "Спецзаказ",
+        "Description": "Портнихе нужна ткань для пошива одежды по спецзаказу ученых, помоги ей с тканью и она заплатит.",
+        "Objective": "cloth",
+        "ObjectiveName": "Cloth",
+        "AmountRequired": 2000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Hazmat Suit",
+            "ShortName": "hazmatsuit",
+            "ID": 1266491000,
+            "Amount": 1.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      },
+      "Народные рецепты": {
+        "QuestName": "Народные рецепты",
+        "Description": "Знахарке из Дремучего леса, для приготовления лекарств, требуется животный жир. Добудь его.",
+        "Objective": "fat.animal",
+        "ObjectiveName": "Animal Fat",
+        "AmountRequired": 1000,
+        "Cooldown": 1440,
+        "ItemDeduction": false,
+        "Rewards": [
+          {
+            "isRP": false,
+            "isCoins": false,
+            "isHuntXP": false,
+            "DisplayName": "Large Medkit",
+            "ShortName": "largemedkit",
+            "ID": 254522515,
+            "Amount": 5.0,
+            "BP": false,
+            "Skin": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "DAY.LENGTH": 55.0,
+  "NIGHT.LENGTH": 5.0,
+  "AIRDROP.EVENT": {
+    "ENABLED": true,
+    "INTERVAL": 1800
+  },
+  "HELI.EVENT": {
+    "ENABLED": true,
+    "INTERVAL": 7200
+  }
+}

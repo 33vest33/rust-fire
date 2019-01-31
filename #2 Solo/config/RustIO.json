@@ -1,0 +1,16 @@
+{
+  "apiKey": "QboTGIzAVuFYYzqRGFPdP7N51lYNd0FC",
+  "broadcastChat": true,
+  "broadcastDeaths": true,
+  "broadcastSpawns": true,
+  "defaultLanguage": "en",
+  "displayBuildings": false,
+  "displayMonuments": true,
+  "displayMortality": true,
+  "enableLocationSharing": true,
+  "helpMessage": "",
+  "hideSpecificMonuments": [
+    "mountain"
+  ],
+  "welcomeMessage": ""
+}

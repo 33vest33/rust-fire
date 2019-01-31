@@ -332,8 +332,7 @@ namespace Oxide.Plugins
 
         private string getMessage(string playerID, string key, params object[] args)
         {
-            PrintWarning($"{key}");
-			return string.Format(lang.GetMessage(key, this, playerID), args);
+            return string.Format(lang.GetMessage(key, this, playerID), args);
         }
 
         private void message(BasePlayer player, string key, params object[] args)
@@ -414,7 +413,7 @@ namespace Oxide.Plugins
         
         private string GetTimeString(int time, string userID)
         {
-            var timeString = "error";
+            var timeString = string.Empty;
             var days = Convert.ToInt32(time / 86400);
             time = time % 86400;
             if (days > 0)
@@ -639,6 +638,7 @@ namespace Oxide.Plugins
             data.cooldowns[id][kit.name] = Now();
             data.uses[id][kit.name]++;
             GiveKit(player, kit);
+            CreateKits(player);
         }
 
         private void GiveKit(BasePlayer player, Kit kit)
@@ -923,8 +923,8 @@ namespace Oxide.Plugins
                 var kit = kits[i];
                 var id = kit.name;
                 var cooldown = kit.cooldown - GetPassed(userID, kit.name);
-				PrintWarning($"Kit {kit.name}, {cooldown}");
-                var cooldownText = string.Format(getMessage(userIDs, cooldown > 0 ? "Kit unavailable" : "Kit available"), GetTimeString(cooldown, userIDs));
+                var key = cooldown > 0 ? "Kit unavailable" : "Kit available";
+                var cooldownText = getMessage(userIDs, key, GetTimeString(cooldown, userIDs));
 
                 if (string.IsNullOrEmpty(kit.url))
                 {

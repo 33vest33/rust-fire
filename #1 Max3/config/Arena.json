@@ -1,0 +1,61 @@
+{
+  "Game Timers": {
+    "Match pre-start timer (seconds)": 30,
+    "Player respawn timer (seconds)": 5,
+    "Display game timers": true
+  },
+  "Server Settings": {
+    "This is an event only server?": true,
+    "Disable Airdrops (Server wide)": true,
+    "Disable Helicopters (Server wide)": true,
+    "Disable Animals (Server wide)": true,
+    "Use inbuilt chat manager": true,
+    "Chat command to open the menu": "menu",
+    "Open event menu when a player connects (Requires event only server)": false
+  },
+  "Event Settings": {
+    "Auto-start a new game when event ends": true,
+    "Kick players from the event when they die (Survival events only)": false,
+    "Drop weapon on death": false,
+    "Drop ammunition on death": true,
+    "Drop backpack on death": false,
+    "Disable events when zone is in use by another event": true,
+    "Add rotator to dropped items (Requires RotatingPickups)": true,
+    "Require player to be naked to enter events": false,
+    "Number of kills to activate killstreaks": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "Display kill feed in chat": true,
+    "Print event winners in chat": false,
+    "Blacklisted commands for event players": [
+      "s",
+      "tp"
+    ],
+    "Send players to the arena and wait for the event to start when they join": true
+  },
+  "Lobby Settings": {
+    "Force event access from a physical lobby": true,
+    "Event lobby spawnfile": "lobbyspawns",
+    "Event lobby zone ID": "",
+    "Lobby NPC ID's": []
+  },
+  "Reward Settings": {
+    "Issue rewards for kills": false,
+    "Amount rewarded for kills": 1,
+    "Issue rewards for wins": false,
+    "Amount rewarded for wins": 5,
+    "Issue rewards for headshots": false,
+    "Amount rewarded for headshots": 2,
+    "Reward type (ServerRewards, Economics)": "ServerRewards"
+  },
+  "Version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 104
+  }
+}

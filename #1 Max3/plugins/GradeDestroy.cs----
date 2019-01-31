@@ -1,0 +1,456 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json;
+using Oxide.Core;
+using Oxide.Core.Plugins;
+using Oxide.Game.Rust.Cui;
+using UnityEngine;
+using Color = UnityEngine.Color;
+using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Apex;
+using ConVar;
+using System.Globalization;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+
+
+
+
+
+namespace Oxide.Plugins
+{
+    [Info("GradeDestroy", "Hougan", "0.0.1")]
+    public class GradeDestroy : RustPlugin
+    {
+        /////#region Classes
+		
+		private static DateTime Epoch = new DateTime(1970, 1, 1);
+        public static long GetTimeStamp()
+		{
+			return (long)DateTime.Now.Subtract(Epoch).TotalSeconds;
+		}
+		public static string FormatTime(TimeSpan time)
+        {
+            string result = string.Empty;
+            if (time.Days != 0)
+                result += $"{Format(time.Days, "дней", "дня", "день")} ";
+
+            if (time.Hours != 0)
+                result += $"{Format(time.Hours, "часов", "часа", "час")} ";
+
+            if (time.Minutes != 0)
+                result += $"{Format(time.Minutes, "минут", "минуты", "минута")} ";
+
+            if (time.Seconds != 0)
+                result += $"{Format(time.Seconds, "секунд", "секунды", "секунда")} ";
+			
+            return result;
+        }
+		        private static string Format(int units, string form1, string form2, string form3)
+        {
+            var tmp = units % 10;
+
+            if (units >= 5 && units <= 20 || tmp >= 5 && tmp <= 9)
+                return $"{units} {form1}";
+
+            if (tmp >= 2 && tmp <= 4)
+                return $"{units} {form2}";
+
+            return $"{units} {form3}";
+        }
+		
+		
+		public int Tests = 10;
+        private class CurrentGrade
+        {
+            [JsonProperty("Текущий индекс улучшения")]
+            public int Grade = 0;
+            [JsonProperty("Время до де-активации")]
+            public int DeActivateTime = 40;
+
+            [JsonProperty("Таймер обновления")]
+            public Timer DeTimer = null;
+
+            public void UpdateTime(BasePlayer player, int time)
+            {
+                DeActivateTime = time;
+                DeTimer?.Destroy();
+                instance.UpdateTimer(player);
+            }
+            
+            public void UpGrade(BasePlayer player, int time)
+            {
+                if (Grade >= 0 && Grade < 4)
+                {
+                    UpdateTime(player, time);
+                    Activate(player, Grade + 1, instance.DefaultActivate);
+                }
+                else if (Grade >= 4)
+                {
+                    DeActivate(player);
+                }
+                else
+                {
+                    instance.SendReply(player, $"Неизвестная ошибка. Сообщите адмнистрации: <color=#81B67A>{Grade}</color>");
+                    return;
+                }
+            }
+
+            public void Activate(BasePlayer player, int grade, int time)
+            {
+                if (grade != Grade)
+                {
+                    instance.SendReply(player, $"Вы успешно активировали режим: <color=#81B67A>{instance.gradeNames[grade]}</color>");
+                }
+                
+                this.Grade = grade;
+                this.DeActivateTime = time;
+                instance.UpdateTimer(player);
+            }
+
+            public void DeActivate(BasePlayer player)
+            {
+                Grade = 0;
+                Activate(player, 0, 0);
+            } 
+            
+        }
+
+        /////#endregion
+
+        /////#region Variables
+
+        [PluginReference] private Plugin NoEscape;
+        
+        private static GradeDestroy instance;
+
+        string Layer = "UI.Remove";
+        private int RemoveLimit = 36000;
+        private int DefaultActivate = 40;
+        
+        Dictionary<uint, double> removeTimers = new Dictionary<uint, double>();
+        private Dictionary<ulong, CurrentGrade> playerGrades = new Dictionary<ulong,CurrentGrade>();
+
+        private List<string> gradeNames = new List<string>
+        {
+            "отключено",
+            "улучшение в дерево",
+            "улучшение в камень",
+            "улучшение в метал",
+            "улучшение в МВК",
+            "удаление построек"
+        };
+
+        /////#endregion
+
+        /////#region Initialization
+
+
+        /////#endregion
+
+        /////#region Functions
+
+        private string TryRemove(BasePlayer player, BaseEntity entity)
+        {
+            if (!player.CanBuild())
+            {
+                return "Вы не можете удалять на <color=#81B67A>чужой территории</color>!";
+            }
+
+            if (removeTimers.ContainsKey(entity.net.ID))
+            {
+                if (removeTimers[entity.net.ID] <= GetTimeStamp())
+                {
+                    removeTimers.Remove(entity.net.ID);
+                    return "Вышло время удаления данного объекта!";
+                }
+            }
+            else
+            {
+                return "Вышло время удаления данного объекта!";
+            }
+            
+            if (NoEscape)
+            {
+                var blockTime = (double) (NoEscape?.Call("HOOK__API_GetTime", player) ?? 0);
+                if (blockTime > 0)
+                {
+                    return "Вы не можете авто-улучшать постройки <color=#81B67A>во время рейда</color>!";
+                }
+            }
+
+            bool isOwner = entity.OwnerID == player.userID;
+
+
+            NextTick(() =>
+            {
+                if (entity.GetComponent<StorageContainer>() != null)
+                {
+                    entity.GetComponent<StorageContainer>().DropItems();
+                }
+                entity.Kill();
+            });
+            return "";
+        }
+
+        private string TryUpgrade(BasePlayer player, BuildingBlock block, CurrentGrade currentGrade)
+        {
+            if (currentGrade.Grade <= (int) block.lastGrade)
+                return "";
+
+            if (NoEscape)
+            {
+                var blockTime = (double) (NoEscape?.Call("HOOK__API_GetTime", player) ?? 0);
+                if (blockTime > 0)
+                {
+                    currentGrade.DeActivate(player);
+                    return "Вы не можете авто-улучшать постройки <color=#81B67A>во время рейда</color>!";
+                }
+            }
+            
+            if (!player.CanBuild())
+            {
+                currentGrade.DeActivate(player);
+                return "Вы находитесь на чужой территории, автоматическое улучшение <color=#81B67A>отключено</color>!";
+            }
+            
+            if (block.SecondsSinceAttacked < 30)
+            {
+                return $"Это объект можно будет улучшить через <color=#81B67A>{TimeSpan.FromSeconds(30 - (int) block.SecondsSinceAttacked)}</color>";
+            }
+            
+            foreach (var check in block.blockDefinition.grades[currentGrade.Grade].costToBuild)
+            {
+                if (player.inventory.GetAmount(check.itemid) < check.amount)
+                {
+                    CuiHelper.DestroyUi(player, Layer);
+                    currentGrade.DeActivate(player);
+                    return "У вас не хватает ресурсов для автоматического улучшения!";
+                }
+            }
+            foreach (var check in block.blockDefinition.grades[currentGrade.Grade].costToBuild)
+            {
+                player.inventory.Take(null, check.itemid, (int) check.amount);
+                player.Command("note.inv", check.itemid, check.amount * -1f);
+            }
+            block.SetGrade((BuildingGrade.Enum) currentGrade.Grade);
+            block.UpdateSkin();
+            block.SetHealthToMax();
+            block.SendNetworkUpdate(BasePlayer.NetworkQueue.Update);
+            currentGrade.UpdateTime(player, DefaultActivate);
+            
+            return "";
+        }
+
+        private void UpdateTimer(BasePlayer player)
+        {
+            if (!playerGrades.ContainsKey(player.userID))
+                playerGrades.Add(player.userID, new CurrentGrade());
+
+            CurrentGrade currentGrade = playerGrades[player.userID];
+            if (currentGrade.Grade == 0)
+            {
+                CuiHelper.DestroyUi(player, Layer);
+                return;
+            }
+            
+            CuiHelper.DestroyUi(player, Layer);
+            
+            CuiElementContainer container = new CuiElementContainer();
+            container.Add(new CuiPanel
+            {
+                CursorEnabled = false,
+                RectTransform = { AnchorMin = "0 0", AnchorMax = "0 0", OffsetMax = "200 20" },
+                Image = { Color = "#81B67B3C", Sprite = "assets/content/ui/ui.background.tile.psd"},
+            }, "Hud", Layer);
+            container.Add(new CuiLabel
+            {
+                Text = { Text = $"{gradeNames[currentGrade.Grade].ToUpper()}: {currentGrade.DeActivateTime} СЕК.", FontSize = 14, Font = "robotocondensed-bold.ttf", Align = TextAnchor.MiddleCenter },
+                RectTransform = { AnchorMin = "0 0", AnchorMax = "1 1" }
+            }, Layer);
+
+            CuiHelper.AddUi(player, container);
+            
+            currentGrade.DeActivateTime--;
+            if (currentGrade.DeActivateTime < 0)
+            {
+                currentGrade.DeActivate(player);
+                CuiHelper.DestroyUi(player, Layer);
+                return;
+            }
+            
+            currentGrade.DeTimer?.Destroy();
+            currentGrade.DeTimer = timer.Once(1, () => UpdateTimer(player));
+        }
+
+        /////#endregion
+
+        /////#region Commands
+
+        [ChatCommand("up")]
+        private void cmdChatUpgrade(BasePlayer player, string command, string[] args)
+        {
+            OnPlayerInit(player);
+            CurrentGrade currentGrade = playerGrades[player.userID];
+
+            switch (args.Length)
+            {
+                case 0:
+                {
+                    currentGrade.UpGrade(player, DefaultActivate);
+                    break;
+                }
+                case 1:
+                {
+                    int newGrade;
+                    if (!int.TryParse(args[0], out newGrade))
+                    {
+                        SendReply(player, $"Мы <color=#81B67A>не смогли</color> распознать введеный уровень улучшения!\n" +
+                                                $"Возможные варианты:\n" +
+                                                $"\n" +
+                                                $"[<color=#81B67A>0</color>] -> Отключить\n" +
+                                                $"[<color=#81B67A>1</color>] -> В дерево\n" +
+                                                $"[<color=#81B67A>2</color>] -> В камень\n" +
+                                                $"[<color=#81B67A>3</color>] -> В метал\n" +
+                                                $"[<color=#81B67A>4</color>] -> В МВК" +
+                                                $"[<color=#81B67A>5</color>] -> Удаление построек");
+                        return;
+                    }
+                    currentGrade.Activate(player, newGrade, DefaultActivate);
+                    break;
+                }
+                default:
+                {
+                    cmdChatUpgrade(player, command, new string[] { });
+                    return;
+                }
+            }
+        }
+
+        /////#endregion
+
+        /////#region Hooks
+	
+        private void OnEntityBuilt(Planner plan, GameObject go)
+        {
+            BasePlayer player = plan?.GetOwnerPlayer();
+            if (player == null)
+                return;
+            
+            if (!playerGrades.ContainsKey(player.userID))
+                playerGrades.Add(player.userID, new CurrentGrade());
+            
+            CurrentGrade currentGrade = playerGrades[player.userID];
+            
+            
+            BuildingBlock block = go.ToBaseEntity().GetComponent<BuildingBlock>();
+            if (block == null)
+                return;
+            
+            removeTimers.Add(block.net.ID, GetTimeStamp() + 15);
+            
+            if (currentGrade.Grade == 0)
+                return;
+
+/*
+            if (!player.CanBuild())
+            {
+                SendReply(player, "Вы находитесь на чужой территории, автоматическое улучшение <color=#81B67A>отключено</color>!");
+                currentGrade.Activate(0);
+                return;
+            }
+
+            if ((double) (NoEscape.Call("HOOK__API_GetTime", player) ?? 0) > 0)
+            {
+                SendReply(player, "Вы не можете авто-улучшать постройки <color=#81B67A>во время рейда</color>!");
+                currentGrade.Activate(0);
+                return;
+            }
+            
+            foreach (var check in block.blockDefinition.grades[currentGrade.Grade].costToBuild)
+            {
+                if (player.inventory.GetAmount(check.itemid) < check.amount)
+                {
+                    CuiHelper.DestroyUi(player, Layer);
+                    SendReply(player, "У вас <color=#81B67A>не хватает</color> ресурсов для автоматического улучшения!");
+                    currentGrade.Activate(0);
+                    return;
+                }
+            }
+            foreach (var check in block.blockDefinition.grades[currentGrade.Grade].costToBuild)
+            {
+                player.inventory.Take(null, check.itemid, (int) check.amount);
+                player.Command("note.inv", check.itemid, check.amount * -1f);
+            }
+            block.SetGrade((BuildingGrade.Enum) currentGrade.Grade);
+            block.UpdateSkin();
+            block.SetHealthToMax();
+            block.SendNetworkUpdate(BasePlayer.NetworkQueue.Update);
+            currentGrade.Update();*/
+        }
+        
+        void OnHammerHit(BasePlayer player, HitInfo info)
+        {
+            if (info == null)
+                return;
+            
+            if (!playerGrades.ContainsKey(player.userID))
+                playerGrades.Add(player.userID, new CurrentGrade());
+            
+            CurrentGrade currentGrade = playerGrades[player.userID];
+
+            if (currentGrade.Grade == 5)
+            {
+                if (info.HitEntity is DecayEntity || info.HitEntity is BaseOven || info.HitEntity is BuildingBlock || info.HitEntity is SimpleBuildingBlock)
+                {
+                    var tryRemoveResult = TryRemove(player, info.HitEntity);
+                    if (tryRemoveResult != "")
+                        SendReply(player, tryRemoveResult);
+                }
+            }
+            else if (currentGrade.Grade != 0)
+            {
+                if (info.HitEntity is BuildingBlock)
+                {
+                    BuildingBlock block = info.HitEntity as BuildingBlock;
+                    
+                    var tryUpgradeRsult = TryUpgrade(player, block, currentGrade);
+                    if (tryUpgradeRsult != "")
+                        SendReply(player, tryUpgradeRsult);
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+        
+        object OnStructureUpgrade(BaseCombatEntity entity, BasePlayer player, BuildingGrade.Enum grade)
+        {
+            if (!playerGrades.ContainsKey(player.userID))
+                playerGrades.Add(player.userID, new CurrentGrade());
+
+            CurrentGrade currentGrade = playerGrades[player.userID];
+
+            currentGrade.Activate(player, (int) grade, 5);
+            return null;
+        }
+
+        private void OnPlayerInit(BasePlayer player)
+        {
+            if (!playerGrades.ContainsKey(player.userID))
+                playerGrades.Add(player.userID, new CurrentGrade());
+        }
+
+        /////#endregion
+
+        /////#region Utils
+
+        
+
+        /////#endregion
+    }
+}

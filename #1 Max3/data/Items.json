@@ -1,0 +1,46 @@
+{
+  "7200": [
+    "pistol.revolver",
+    "shotgun.double"
+  ],
+  "21600": [
+        "pistol.semiauto",
+        "shotgun.pump",
+        "shotgun.spas12",
+        "roadsign.jacket",
+        "roadsign.kilt",
+        "coffeecan.helmet"
+  ],
+  "54000": [
+        "grenade.beancan",
+        "smg.2",
+        "smg.thompson",
+        "smg.mp5",
+        "rifle.semiauto",
+        "pistol.m92",
+        "surveycharge"
+  ],
+  "57600": [
+        "metal.facemask",
+        "metal.plate.torso"
+  ],
+  "86400": [
+        "explosive.satchel",
+        "heavy.plate.jacket",
+        "heavy.plate.pants",
+        "heavy.plate.helmet"
+  ],
+  "100800": [
+        "rocket.launcher",
+        "explosive.timed",
+        "rifle.ak",
+        "lmg.m249",
+        "rifle.lr300",
+        "rifle.bolt",
+        "ammo.rifle.explosive",
+        "ammo.rifle.incendiary",
+        "ammo.shotgun.fire",
+        "ammo.pistol.fire",
+        "flamethrower"
+  ]
+}

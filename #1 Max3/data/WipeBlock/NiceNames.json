@@ -1,0 +1,14 @@
+{
+  "Weapon": "Оружия",
+  "Ammunition": "Боеприпасов",
+  "Medical": "Medical",
+  "Food": "Food",
+  "Traps": "Traps",
+  "Tool": "Инструмента и Взрывчатки",
+  "Construction": "Construction",
+  "Resources": "Resources",
+  "Items": "Items",
+  "Component": "Component",
+  "Misc": "Misc",
+  "Attire": "Брони"
+}

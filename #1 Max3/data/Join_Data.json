@@ -1,0 +1,22 @@
+{
+  "Players": [
+    {
+      "displayName": "Survivor",
+      "userID": 76561198272327409,
+      "newPlayer": false,
+      "ipAddress": "84.52.50.64:60073",
+      "Aliases": [
+        "Survivor"
+      ]
+    },
+    {
+      "displayName": "KAIN",
+      "userID": 76561198437221855,
+      "newPlayer": false,
+      "ipAddress": "128.68.203.137:52444",
+      "Aliases": [
+        "KAIN"
+      ]
+    }
+  ]
+}

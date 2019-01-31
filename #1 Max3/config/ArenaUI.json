@@ -1,0 +1,61 @@
+{
+  "UI Options": {
+    "UI Coloring": {
+      "Button_Selected": {
+        "Hex": "#d85540",
+        "Alpha": 1.0
+      },
+      "Button_Deselected": {
+        "Hex": "#393939",
+        "Alpha": 1.0
+      },
+      "BG_Main_PartialTransparent": {
+        "Hex": "#2b2b2b",
+        "Alpha": 0.98
+      },
+      "BG_Main_Transparent": {
+        "Hex": "#2b2b2b",
+        "Alpha": 0.8
+      },
+      "BG_Main_Solid": {
+        "Hex": "#2b2b2b",
+        "Alpha": 1.0
+      },
+      "Panel_Main_Solid": {
+        "Hex": "#404141",
+        "Alpha": 1.0
+      },
+      "Panel_Alt_Solid": {
+        "Hex": "#545554",
+        "Alpha": 1.0
+      },
+      "Panel_Event_Full": {
+        "Hex": "#404141",
+        "Alpha": 1.0
+      },
+      "Panel_Event_Open": {
+        "Hex": "#545554",
+        "Alpha": 1.0
+      },
+      "Panel_Main_Transparent": {
+        "Hex": "#404141",
+        "Alpha": 0.8
+      },
+      "Panel_Alt_Transparent": {
+        "Hex": "#545554",
+        "Alpha": 0.8
+      }
+    },
+    "Images": {
+      "Server banner (URL or image filename)": "https://www.chaoscode.io/oxide/Images/logo.png",
+      "Place holder (URL or image filename)": "https://www.chaoscode.io/oxide/Images/placeholder.png",
+      "Death screen icon (URL or image filename)": "https://www.chaoscode.io/oxide/Images/skullicon.png",
+      "Small logo (URL or image filename)": "http://www.chaoscode.io/oxide/Images/logosmall.png"
+    }
+  },
+  "Version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 67
+  }
+}

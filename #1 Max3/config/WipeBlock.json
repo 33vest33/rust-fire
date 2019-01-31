@@ -1,0 +1,132 @@
+{
+  "AlertUIFontSize": 22,
+  "AlertUITextColor": "1 1 1 1.0",
+  "BlockCraft": false,
+  "BlockedItemsGroups": {
+    "1": {
+      "items": [
+        "grenade.beancan",
+        "flamethrower",
+        "shotgun.double",
+        "shotgun.waterpipe",
+        "pistol.revolver",
+        "surveycharge"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-20T11:23:21.1718923Z"
+    },
+    "4": {
+      "items": [
+        "riot.helmet",
+        "grenade.f1",
+        "pistol.semiauto",
+        "pistol.python"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-20T14:23:21.1718923Z"
+    },
+    "8": {
+      "items": [
+        "roadsign.jacket",
+        "coffeecan.helmet",
+        "rifle.semiauto",
+        "smg.thompson",
+        "shotgun.pump",
+        "smg.mp5",
+        "smg.2",
+        "pistol.m92"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-20T18:23:21.1718923Z"
+    },
+    "12": {
+      "items": [
+        "rifle.ak",
+        "rifle.lr300",
+        "metal.facemask",
+        "metal.plate.torso",
+        "roadsign.kilt",
+        "heavy.plate.jacket",
+        "heavy.plate.pants",
+        "heavy.plate.helmet"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-20T22:23:21.1718923Z"
+    },
+    "16": {
+      "items": [
+        "explosive.satchel"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-21T02:23:21.1718923Z"
+    },
+    "24": {
+      "items": [
+        "rifle.bolt",
+        "rocket.launcher",
+        "lmg.m249",
+        "autoturret",
+        "explosive.timed"
+      ],
+      "groupImage": "",
+      "groupName": "",
+      "blockEnd": "2018-09-21T10:23:21.1718923Z"
+    }
+  },
+  "BlockEnd": {
+    "grenade.beancan": "2018-09-20T11:23:21.1718923Z",
+    "flamethrower": "2018-09-20T11:23:21.1718923Z",
+    "shotgun.double": "2018-09-20T11:23:21.1718923Z",
+    "shotgun.waterpipe": "2018-09-20T11:23:21.1718923Z",
+    "pistol.revolver": "2018-09-20T11:23:21.1718923Z",
+    "surveycharge": "2018-09-20T11:23:21.1718923Z",
+    "riot.helmet": "2018-09-20T14:23:21.1718923Z",
+    "grenade.f1": "2018-09-20T14:23:21.1718923Z",
+    "pistol.semiauto": "2018-09-20T14:23:21.1718923Z",
+    "pistol.python": "2018-09-20T14:23:21.1718923Z",
+    "roadsign.jacket": "2018-09-20T18:23:21.1718923Z",
+    "coffeecan.helmet": "2018-09-20T18:23:21.1718923Z",
+    "rifle.semiauto": "2018-09-20T18:23:21.1718923Z",
+    "smg.thompson": "2018-09-20T18:23:21.1718923Z",
+    "shotgun.pump": "2018-09-20T18:23:21.1718923Z",
+    "smg.mp5": "2018-09-20T18:23:21.1718923Z",
+    "smg.2": "2018-09-20T18:23:21.1718923Z",
+    "pistol.m92": "2018-09-20T18:23:21.1718923Z",
+    "rifle.ak": "2018-09-20T22:23:21.1718923Z",
+    "rifle.lr300": "2018-09-20T22:23:21.1718923Z",
+    "metal.facemask": "2018-09-20T22:23:21.1718923Z",
+    "metal.plate.torso": "2018-09-20T22:23:21.1718923Z",
+    "roadsign.kilt": "2018-09-20T22:23:21.1718923Z",
+    "heavy.plate.jacket": "2018-09-20T22:23:21.1718923Z",
+    "heavy.plate.pants": "2018-09-20T22:23:21.1718923Z",
+    "heavy.plate.helmet": "2018-09-20T22:23:21.1718923Z",
+    "explosive.satchel": "2018-09-21T02:23:21.1718923Z",
+    "rifle.bolt": "2018-09-21T10:23:21.1718923Z",
+    "rocket.launcher": "2018-09-21T10:23:21.1718923Z",
+    "lmg.m249": "2018-09-21T10:23:21.1718923Z",
+    "autoturret": "2018-09-21T10:23:21.1718923Z",
+    "explosive.timed": "2018-09-21T10:23:21.1718923Z"
+  },
+  "blockImageName": "http://i.imgur.com/fsF5Ffr.png",
+  "BlockStart": "2018-09-20T10:23:21.1718923Z",
+  "BypassPermission": "wipeblock.bypass",
+  "denyImageName": "https://i.imgur.com/KKXYDI8.png",
+  "IndividualBlock": false,
+  "infoCommand": "wipeblock",
+  "LogoAnchorMax": "0.065 0.095",
+  "LogoAnchorMin": "0.025 0.025",
+  "ShowLogo": true,
+  "UIAnchorMax": "0.9 0.9",
+  "UIAnchorMin": "0.1 0.1",
+  "UIColor": "0 0 0 0.9",
+  "UITitleBackgroundColor": "0 0 0 0.6",
+  "UITitleColor": "1 1 1 1.0",
+  "UITitleFontSize": 18,
+  "UseChat": false,
+  "Wipe": false
+}

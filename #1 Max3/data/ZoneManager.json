@@ -1,0 +1,55 @@
+{
+  "ZoneDefinitions": [
+    {
+      "Name": "Stone",
+      "Radius": 40.0,
+      "Radiation": 0.0,
+      "Comfort": 0.0,
+      "Temperature": 0.0,
+      "Location": "-349.1514 227.6123 1306.819",
+      "Size": "0 0 0",
+      "Rotation": "0 0 0",
+      "Id": "29488272",
+      "EnterMessage": "Добро пожаловать на Арену.",
+      "LeaveMessage": null,
+      "Permission": null,
+      "EjectSpawns": null,
+      "Enabled": true,
+      "Flags": "NoDecay, NoCorpse, EjectSleepers, NoTrade, NoLootSpawns, NoVending"
+    },
+    {
+      "Name": "«Labirint»",
+      "Radius": 100.0,
+      "Radiation": 0.0,
+      "Comfort": 0.0,
+      "Temperature": 0.0,
+      "Location": "-1383.204 807.0212 -791.5251",
+      "Size": "0 0 0",
+      "Rotation": "0 0 0",
+      "Id": "90740916",
+      "EnterMessage": null,
+      "LeaveMessage": null,
+      "Permission": null,
+      "EjectSpawns": null,
+      "Enabled": true,
+      "Flags": "NoDecay, NoCorpse, EjectSleepers, NoTrade, NoLootSpawns, NoVending, NoStash"
+    },
+    {
+      "Name": null,
+      "Radius": 60.0,
+      "Radiation": 0.0,
+      "Comfort": 0.0,
+      "Temperature": 0.0,
+      "Location": "73.6931 40.51876 -6.619908",
+      "Size": "0 0 0",
+      "Rotation": "0 0 0",
+      "Id": "5611899",
+      "EnterMessage": "Добро пожаловать в казино",
+      "LeaveMessage": "Возращайтесь ещё",
+      "Permission": null,
+      "EjectSpawns": null,
+      "Enabled": true,
+      "Flags": "UnDestr, NoBuild, NoDecay, NoDeploy, NoRemove, NoStability, NoEntityPickup"
+    }
+  ]
+}

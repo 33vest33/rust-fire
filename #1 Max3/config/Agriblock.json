@@ -1,0 +1,13 @@
+{
+  "Options": {
+    "Refund": true
+  },
+  "Types": {
+    "CornEnabled": true,
+    "CornCloneEnabled": true,
+    "PumpkinEnabled": true,
+    "PumpkinCloneEnabled": true,
+    "HempEnabled": true,
+    "HempCloneEnabled": true
+  }
+}

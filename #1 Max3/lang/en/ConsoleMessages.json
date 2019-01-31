@@ -1,0 +1,14 @@
+{
+  "Prefix": "<color=orange>ConsoleMessages</color>:",
+  "NoPermission": "You do not have permission to use this command.",
+  "SaySyntax": "Syntax: cm.say PlayerName This is a message",
+  "SayNPSyntax": "Syntax: cm.saynp PlayerName This is a message (No Prefix)",
+  "SayAllSyntax": "Syntax: cm.sayall This is a message",
+  "SayAllNPSyntax": "Syntax: cm.sayallnp This is a message (No Prefix)",
+  "ReplySyntax": "Syntax: /cm_reply Message",
+  "SayMessageSent": "Sent message to {0}: \"{1}\"",
+  "SayAllMessageSent": "Sent message to all online players: \"{0}\"",
+  "MessageSent": "Your message \"{0}\" was sent to the console.",
+  "ManyPlayersFound": "Multiple players found with that name, please be more specific.",
+  "NoPlayersFound": "No players found with that name, please try another."
+}

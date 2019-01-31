@@ -1,0 +1,8180 @@
+{
+  "PlayerProgress": {
+    "76561198202330951": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11321,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2518,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7981,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548584022.3303227
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198336354677": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 7,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 870,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 26500,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 16952,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548500806.0709052
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 93,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548507309.443994
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 918,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198361106205": {
+      "Quests": {
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 124,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548514636.7103872
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": false,
+          "ResetTime": 1548604246.9390459
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 6,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4838,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8719,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7288,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548588704.9449611
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198006952021": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 8,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548600952.9059227
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11520,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8050,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548502109.2092726
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 855,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198821343569": {
+      "Quests": {
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8200,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3161,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548576629.0414104
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 13687,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198846407743": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548576363.6177876
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548586591.8473332
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11292,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5775,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548590333.0973728
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 69,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548513998.228997
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 112,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 8,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198883609920": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198852190582": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 10733,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1421,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198242024664": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 955,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198132495726": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 681,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 19494,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 12595,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548616934.0484755
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 11,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548581125.7207434
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 582,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198157611021": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 7,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": false,
+          "ResetTime": 1548601711.1256356
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548522046.4149404
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548519116.9279568
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 25138,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 21161,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 36,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": true,
+          "ResetTime": 1548570611.3916068
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548567055.6527452
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198332849138": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": false,
+          "ResetTime": 1548588942.6047747
+        }
+      },
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198445418674": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548591643.1872203
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 14907,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 16648,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548509445.529736
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 6,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 69,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548506990.9933999
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": true,
+          "ResetTime": 1548514393.4837744
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 40,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198874527067": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": false,
+          "ResetTime": 1548605374.0103424
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548513089.8801703
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548602861.4948697
+        },
+        "Куй железо пока горячо": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 30000,
+          "RewardClaimed": false,
+          "ResetTime": 1548612638.4848039
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 13814,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 60,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548519723.7602086
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 126,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198063415510": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548552462.4951255
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11100,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 30000,
+          "RewardClaimed": false,
+          "ResetTime": 1548586108.6357243
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548530845.1832924
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 7,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548530230.7227609
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 34,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": false,
+          "ResetTime": 1548588884.8331902
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548544904.6387119
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 10,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198275709002": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 983,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1150,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 947,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1789,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 36,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 350,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 100,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198323600000": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198865110125": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 6384,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5167,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1952,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3075,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 72,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198872251497": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198824986057": {
+      "Quests": {
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 251,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1376,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 33,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 8,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2868,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 484,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 630,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2226,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198801061264": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198096925761": {
+      "Quests": {
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 957,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198420779324": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 12679,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 16,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8229,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 251,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 450,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4020,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198876450159": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198809525578": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198870390979": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8292,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2392,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1900,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 22,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 6,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548528758.4116511
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7378,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198396030314": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198380520320": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2370,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1350,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548544946.0989332
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 7,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548546987.4498243
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198889040685": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198881529186": {
+      "Quests": {
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11872,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548524536.8236427
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5374,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5909,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 18,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 286,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 20,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198881102178": {
+      "Quests": {
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198359367478": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4400,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2100,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 8949,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198151534698": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 6,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548601009.3198986
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 366,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2998,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1796,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1150,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 146,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198448239206": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 64,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 604,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1206,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1000,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 50,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548600153.7864804
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 252,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198892061718": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198344946393": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3069,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198085303331": {
+      "Quests": {},
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198434362246": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1958,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 890,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 450,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3631,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 53,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 40,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 769,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198246735046": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548593510.9756992
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 7,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548602617.2024236
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548527612.7760012
+        },
+        "Куй железо пока горячо": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 30000,
+          "RewardClaimed": false,
+          "ResetTime": 1548597130.4820855
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 22074,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 97,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 6,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548540666.5608659
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": true,
+          "ResetTime": 1548531096.8683922
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198873437964": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548531039.434706
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548527419.5172272
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7991,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 9190,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 9397,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 270,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548535748.2349586
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 681,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198281635211": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 6750,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198800910087": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548573934.1089852
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 17389,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5918,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1870,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1913,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 370,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198009406892": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 30000,
+          "RewardClaimed": false,
+          "ResetTime": 1548536142.7186861
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 22171,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548530827.4611783
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 21,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1714,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 200,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198795751649": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 9,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548586037.1867795
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 10720,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 6806,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 10779,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 29,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 659,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 1000,
+          "RewardClaimed": true,
+          "ResetTime": 1548544736.3262568
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198394749218": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548532527.2450206
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7600,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4350,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548614411.3980587
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 21,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 170,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 1,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": true,
+          "ResetTime": 1548608869.6203523
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198865935503": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198868032142": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198073879773": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198861357484": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 315,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1550,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2250,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 993,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 40,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198337471450": {
+      "Quests": {
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 10,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 14,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 120,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1273,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3722,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1900,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2088,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 5,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198812179558": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548614532.2724006
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548601115.1111424
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3600,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2045,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 22,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": true,
+          "ResetTime": 1548611860.3150547
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198298422997": {
+      "Quests": {
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548582420.6553013
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4938,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7750,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198812873395": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 11098,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2450,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3550,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 7250,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198806057121": {
+      "Quests": {
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 850,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3522,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 500,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 750,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198182218930": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548594258.9662168
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548535881.967484
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 15730,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4411,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 9,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 570,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198331222092": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 50,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548593084.2081456
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 452,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198332408181": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 295,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198053486764": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548547044.5536339
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3250,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 150,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3800,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 38,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1550,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 302,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198360669058": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548546910.2265275
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548539684.20028
+        },
+        "Куй железо пока горячо": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 30000,
+          "RewardClaimed": true,
+          "ResetTime": 1548574461.9462306
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 29410,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 460,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 1,
+          "Type": 3,
+          "AmountCollected": 2000,
+          "RewardClaimed": false,
+          "ResetTime": 1548581934.0306191
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198362721525": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3369,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198872795272": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198253679199": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198324177185": {
+      "Quests": {
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1500,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1200,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1743,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3215,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198867355922": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198341646121": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 222,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 500,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 750,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 386,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198285104756": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 10583,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 9936,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 5361,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": false,
+          "ResetTime": 1548572511.6855011
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 3,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 71,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 10,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 668,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 16,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198438436483": {
+      "Quests": {
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198888103165": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548602354.7717566
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2350,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 873,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4642,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 397,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 200,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198136066467": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198296111585": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 1968,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 150,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 18,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 786,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198271524963": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198075534851": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 1,
+          "Type": 2,
+          "AmountCollected": 15000,
+          "RewardClaimed": true,
+          "ResetTime": 1548579178.6113915
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 20,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198892135415": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198047422297": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 209,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3775,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 702,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 742,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 13,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 100,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198826831358": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198072937688": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2735,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 550,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 758,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 4225,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 13,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 4,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1060,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198860155963": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198397134961": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198128399130": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198209605615": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198217523284": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198174351214": {
+      "Quests": {
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 2,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198346565567": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198367054219": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198163693100": {
+      "Quests": {
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198255484663": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198886442360": {
+      "Quests": {
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198389135366": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198867882364": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198297927193": {
+      "Quests": {
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 486,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198183738971": {
+      "Quests": {
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198801965555": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198246374494": {
+      "Quests": {
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2250,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198804218654": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198890724627": {
+      "Quests": {},
+      "RequiredItems": [
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198848172464": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198376992788": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198426388452": {
+      "Quests": {
+        "Железные птицы": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Охотник на дичь": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Наездник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Тупая железка": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2482,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "МВК много не бывает": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Щедрый Алхимик": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3100,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Куй железо пока горячо": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2200,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Спецзаказ": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 1390,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Народные рецепты": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 370,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Оборона превыше всего": {
+          "Status": 0,
+          "Type": 1,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Непростые агрономы": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 3800,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Медвежадник": {
+          "Status": 0,
+          "Type": 0,
+          "AmountCollected": 1,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "patrolhelicopter",
+          "Type": 0
+        },
+        {
+          "ShortName": "wolf",
+          "Type": 0
+        },
+        {
+          "ShortName": "horse",
+          "Type": 0
+        },
+        {
+          "ShortName": "autoturret_deployed",
+          "Type": 0
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        },
+        {
+          "ShortName": "hq.metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "sulfur.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "metal.ore",
+          "Type": 2
+        },
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        },
+        {
+          "ShortName": "cloth",
+          "Type": 3
+        },
+        {
+          "ShortName": "fat.animal",
+          "Type": 3
+        },
+        {
+          "ShortName": "gates.external.high.wood",
+          "Type": 1
+        },
+        {
+          "ShortName": "seed.hemp",
+          "Type": 3
+        },
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "bear",
+          "Type": 0
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198279094965": {
+      "Quests": {
+        "Каменщик в беде": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 350,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        },
+        "Лучший дровосек": {
+          "Status": 0,
+          "Type": 2,
+          "AmountCollected": 2068,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "stones",
+          "Type": 2
+        },
+        {
+          "ShortName": "wood",
+          "Type": 2
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198386612725": {
+      "Quests": {},
+      "RequiredItems": [],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    },
+    "76561198190078450": {
+      "Quests": {
+        "Корзинка грибов": {
+          "Status": 0,
+          "Type": 3,
+          "AmountCollected": 0,
+          "RewardClaimed": false,
+          "ResetTime": 0.0
+        }
+      },
+      "RequiredItems": [
+        {
+          "ShortName": "mushroom",
+          "Type": 3
+        }
+      ],
+      "CurrentDelivery": {
+        "VendorID": null,
+        "TargetID": null,
+        "Distance": 0.0
+      }
+    }
+  }
+}

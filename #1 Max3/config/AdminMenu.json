@@ -1,0 +1,72 @@
+{
+  "Chat Command List": [
+    {
+      "Command": "/tp 0 0 0",
+      "Description": "Teleport self to 0 0 0",
+      "Name": "TP to 0 0 0"
+    },
+    {
+      "Command": "/tp {target1_name}",
+      "Description": "Teleport self to player",
+      "Name": "TP to player"
+    },
+    {
+      "Command": "/tp {target1_name} {target2_name}",
+      "Description": "Teleport player to player",
+      "Name": "TP P2P"
+    },
+    {
+      "Command": "/god",
+      "Description": "Toggle god mode",
+      "Name": "God"
+    }
+  ],
+  "Colors": {
+    "Button - Primary": {
+      "Alpha": 0.9,
+      "Color": "#2a2a2a"
+    },
+    "Button - Secondary": {
+      "Alpha": 0.9,
+      "Color": "#a8a8a8"
+    },
+    "Button - Selected": {
+      "Alpha": 0.9,
+      "Color": "#00cd00"
+    },
+    "Panel - Dark": {
+      "Alpha": 0.98,
+      "Color": "#2a2a2a"
+    },
+    "Panel - Light": {
+      "Alpha": 0.3,
+      "Color": "#696969"
+    },
+    "Panel - Medium": {
+      "Alpha": 0.98,
+      "Color": "#373737"
+    }
+  },
+  "Console Command List": [
+    {
+      "Command": "env.time 9",
+      "Description": "Set the time to 9am",
+      "Name": "Set time to 9"
+    },
+    {
+      "Command": "env.time 22",
+      "Description": "Set the time to 10pm",
+      "Name": "Set to to 22"
+    },
+    {
+      "Command": "teleport.topos {target1_name} {target2_name}",
+      "Description": "Teleport player to player",
+      "Name": "TP P2P"
+    },
+    {
+      "Command": "airstrike strike random",
+      "Description": "Call a random Airstrike",
+      "Name": "Call random strike"
+    }
+  ]
+}

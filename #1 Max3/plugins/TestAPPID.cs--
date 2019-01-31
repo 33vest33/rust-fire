@@ -1,0 +1,23 @@
+// Reference: GameWer.SDK
+
+using System.Collections.Generic;
+using System.Configuration.Assemblies;
+using Facepunch.Math;
+using Network;
+using Oxide.Core;
+
+namespace Oxide.Plugins
+{
+    [Info("TestAPPID", "TheRyuzaki", "1.0.0")]
+    public class TestAPPID : RustPlugin
+    {
+		void OnUserApprove(Network.Connection connection) {
+			this.Puts("OnUserApprove appID: " + GameWer.SDK.Interface.GetAppID(connection.token));
+		}
+
+		void OnPlayerInit(BasePlayer player)
+		{
+			this.Puts("OnPlayerInit appID: " + GameWer.SDK.Interface.GetAppID(player.Connection.token));
+		}
+	}
+}

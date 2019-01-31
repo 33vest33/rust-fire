@@ -1,0 +1,14 @@
+{
+  "BoxInfo": "List of looters for this Box [<color=#F5D400>{0}</color>]:",
+  "PlayerData": "List of looters for this Player [<color=#F5D400>{0}</color>]:",
+  "DetectedLooters": "<color=#F5D400>[{0}]</color><color=#4F9BFF>{1}</color> ({2})\nF:<color=#F80>{3}</color> L:<color=#F80>{4}</color>\n",
+  "DetectDestr": "Destoyed by: <color=#4F9BFF>{0}</color> ID:{1}",
+  "NoLooters": "<color=#4F9BFF>The box [{0}] is clear!</color>",
+  "NoLootersPlayer": "<color=#4F9BFF>The player [{0}] is clear!</color>",
+  "Nothing": "<color=#4F9BFF>Unable to find a valid entity</color>",
+  "NoID": "<color=#4F9BFF>You must enter a valid entity ID</color>",
+  "NoPlayer": "No players with that name/ID found!",
+  "SynError": "<color=#F5D400>Syntax Error: Type '/box' to view available options</color>",
+  "SavedData": "You have successfully saved loot data",
+  "ClearData": "You have successfully cleared all loot data"
+}

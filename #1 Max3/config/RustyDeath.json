@@ -1,0 +1,342 @@
+{
+  "Время обновления интерфейса": 7,
+  "Размер шрифта в отображаемом интерфейсе": 14,
+  "Положение левых углов:": "0.5 0.8",
+  "Положение правых углов:": "0.99 0.995",
+  "Ровнять текст по правому краю? (false = будет ровнять по левому краю.)": true,
+  "Показывать смерти и убийства связанные с животными ?": true,
+  "Показывать смерти и убийства связанные с НПС ?": true,
+  "Показывать смерти и убийства связанные со слиперами ?": true,
+  "Код подсветки убийцы по умолчанию": "#ff9c00",
+  "Код подсветки жертвы по умолчанию": "#ff9c00",
+  "Код подсветки животных по умолчанию": "#ff9c00",
+  "Код подсветки НПС по умолчанию": "#ff9c00",
+  "Код подсветки дистанции по умолчанию": "#ff9c00",
+  "Вести историю убийств и смертей игроков ?": true,
+  "Максимальное количество объектов для истории смертей": 10,
+  "Включить особую подсветку сообщений связанных со мной ?": true,
+  "Цвет особой подсветки": "#000000",
+  "Динамические привилегии: EXAMPLE \"rustydeath.vip\" = \"#ff9c00\"": {
+    "rustydeath.vip": "#848484"
+  },
+  "Динамическая подсветка дистанций: EXAMPLE 10 = \"#FF00FF\"": {
+    "10": "#ff9c00",
+    "50": "#ffffff",
+    "120": "#01A9DB",
+    "200": "#F7FE2E",
+    "300": "#ff9c00"
+  },
+  "Динамические имена. Указывайте свои имена для разных типов сущностей": {
+    "Npc": {
+      "Npc": "Ученый НПС"
+    },
+    "Animal": {
+      "Bear": "Медведь",
+      "Boar": "Кабан",
+      "Horse": "Лошадь",
+      "Wolf": "Волк",
+      "Chicken": "Курица",
+      "Stag": "Олень"
+    },
+    "Helicopter": {
+      "Helicopter": "Вертолет"
+    },
+    "Tank": {
+      "Tank": "Танк"
+    },
+    "Building": {
+      "WoodenBarricade": "Деревянную баррикаду",
+      "BarbedWooden Barricade": "Колючую деревянную баррикаду",
+      "MetalBarricade": "Металлическую баррикаду",
+      "GatesExternalHighWood": "Высокие деревянные ворота",
+      "GatesExternalHighStone": "Высокие каменные ворота",
+      "WallExternalHighWood": "Высокую деревянную стену",
+      "WallExternalHighStone": "Высокую каменную стену"
+    },
+    "Trap": {
+      "Guntrap": "Guntrap",
+      "Minetrap": "Мину",
+      "Snaptrap": "Капкан",
+      "Spikes": "Деревянные колья"
+    },
+    "Zombie": {
+      "Zombie": "Зомби"
+    },
+    "Sleeper": {
+      "Sleeper": "Спящий"
+    },
+    "Turret": {
+      "Autoturret": "Автоматическая турель",
+      "Flameturret": "Огненная турель",
+      "Scientist": "Турель ученых"
+    }
+  },
+  "Динамические строки вывода информации под тип убийства": {
+    "PlayerToPlayer": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "PlayerToNpc": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "NpcToPlayer": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={6}> | {7}м</color>)"
+    ],
+    "PlayerToAnimal": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "AnimalToPlayer": [
+      "<color={0}>{1}</color> сьел <color={2}>{3}</color>"
+    ],
+    "PlayerToTank": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "TankToPlayer": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={6}> | {7}м</color>)"
+    ],
+    "PlayerToHelicopter": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "HelicopterToPlayer": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={6}> | {7}м</color>)"
+    ],
+    "PlayerToSleeper": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ],
+    "TurretToPlayer": [
+      "<color={0}>{1}</color> убила <color={2}>{3}</color>"
+    ],
+    "GuntrapToPlayer": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color>"
+    ],
+    "BuildingToPlayer": [
+      "Игрок: <color={2}>{3}</color> зацепился за <color={0}>{1}</color>"
+    ],
+    "TrapToPlayer": [
+      "Игрок: <color={2}>{3}</color> попался в ловушку (<color={0}>{1}</color>)"
+    ],
+    "Zombie": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color> (<color={6}> | {7}м</color>)"
+    ],
+    "Fall": [
+      "Игрок: <color={2}>{3}</color> <color=#6d41f4>упал c большой высоты</color>"
+    ],
+    "Suicide": [
+      "Игрок: <color={2}>{3}</color> <color=#eb41f4>самоуничтожился</color>"
+    ],
+    "Cold": [
+      "Игрок: <color={2}>{3}</color> <color=#41e2f4>умер от холода</color>"
+    ],
+    "Bleedeing": [
+      "Игрок: <color={2}>{3}</color> <color=#f44141>истек кровью</color>"
+    ],
+    "Poison": [
+      "Игрок: <color={2}>{3}</color> <color=#c4f441>умер от отравления</color>"
+    ],
+    "Radiation": [
+      "Игрок: <color={2}>{3}</color> <color=#eef441>умер от радиации</color>"
+    ],
+    "Hungry": [
+      "Игрок: <color={2}>{3}</color> <color=#41f488>умер от голода</color>"
+    ],
+    "Explosion": [
+      "Игрок: <color={2}>{3}</color> <color=#f4ca41>взорвался</color>"
+    ],
+    "ExplosionPlayer": [
+      "<color={0}>{1}</color> взорвал <color={2}>{3}</color>(<color={4}>{5}</color> - <color={6}> | {7}м</color>)"
+    ],
+    "Drowned": [
+      "Игрок: <color={2}>{3}</color> <color=#415ef4>утонул</color>"
+    ],
+    "Heat": [
+      "Игрок: <color={2}>{3}</color> <color=#f49a41>сгорел заживо</color>"
+    ],
+    "Stab": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color>(<color={4}>{5}</color> - <color={6}> | {7}м</color>)"
+    ],
+    "Arrow": [
+      "<color={0}>{1}</color> убил <color={2}>{3}</color>(<color={4}>{5}</color> - <color={6}> | {7}м</color>)"
+    ],
+    "Slash": [
+      "<color={0}>{1}</color> разобрал на куски <color={2}>{3}</color>(<color={4}>{5}</color> <color={6}> | {7}м</color>)"
+    ]
+  },
+  "Динамические имена и подсветки для оружия": {
+    "Assault Rifle": {
+      "АК-74": "#F50000"
+    },
+    "Beancan Grenade": {
+      "Бобовая граната": "#F50000"
+    },
+    "Bolt Action Rifle": {
+      "Винтовка": "#F50000"
+    },
+    "Bone Club": {
+      "Дубина": "#00BFFF"
+    },
+    "Bone Knife": {
+      "Нож": "#00BFFF"
+    },
+    "Rock": {
+      "Камень": "#00BFFF"
+    },
+    "Crossbow": {
+      "Арбалет": "#00BFFF"
+    },
+    "Custom SMG": {
+      "SMG": "#F50000"
+    },
+    "Double Barrel Shotgun": {
+      "Двустволка": "#F50000"
+    },
+    "Eoka Pistol": {
+      "ЭОКА": "#F50000"
+    },
+    "F1 Grenade": {
+      "F1 Граната": "#F50000"
+    },
+    "Flame Thrower": {
+      "Огнемёт": "#F50000"
+    },
+    "Hunting Bow": {
+      "Лук": "#00BFFF"
+    },
+    "Compound Bow": {
+      "Блочный Лук": "#00BFFF"
+    },
+    "Longsword": {
+      "Меч": "#00BFFF"
+    },
+    "Candy Cane Club": {
+      "Праздничная палка": "#00BFFF"
+    },
+    "Nailgun": {
+      "Гвоздомет": "#00BFFF"
+    },
+    "LR-300 Assault Rifle": {
+      "LR-300": "#F50000"
+    },
+    "M249": {
+      "Пулемет М249": "#F50000"
+    },
+    "M92 Pistol": {
+      "Пистолет М92": "#F50000"
+    },
+    "Mace": {
+      "Булава": "#00BFFF"
+    },
+    "Machete": {
+      "Мачете": "#00BFFF"
+    },
+    "MP5A4": {
+      "MP5A4": "#F50000"
+    },
+    "Pump Shotgun": {
+      "Помповый дробовик": "#F50000"
+    },
+    "Spas-12 Shotgun": {
+      "Спас-12 Дробовик": "#F50000"
+    },
+    "Flashlight": {
+      "Фонарик": "#00BFFF"
+    },
+    "Python Revolver": {
+      "Питон": "#F50000"
+    },
+    "Revolver": {
+      "Револьвер": "#F50000"
+    },
+    "Salvaged Cleaver": {
+      "Самодельный тесак": "#00BFFF"
+    },
+    "Salvaged Sword": {
+      "Самодельный мечь": "#00BFFF"
+    },
+    "Semi-Automatic Pistol": {
+      "Пистолет P250": "#F50000"
+    },
+    "Semi-Automatic Rifle": {
+      "Semi-Automatic Rifle": "#F50000"
+    },
+    "Stone Spear": {
+      "Каменное Копье": "#00BFFF"
+    },
+    "Thompson": {
+      "Томпсон": "#F50000"
+    },
+    "Waterpipe Shotgun": {
+      "Waterpipe Shotgun": "#F50000"
+    },
+    "Wooden Spear": {
+      "Деревянное Копье": "#00BFFF"
+    },
+    "Hatchet": {
+      "Топор": "#00BFFF"
+    },
+    "Pick Axe": {
+      "Кирка": "#00BFFF"
+    },
+    "Salvaged Axe": {
+      "Топор": "#00BFFF"
+    },
+    "Chainsaw": {
+      "Бензопила": "#00BFFF"
+    },
+    "Jackhammer": {
+      "Jackhammer": "#00BFFF"
+    },
+    "Salvaged Hammer": {
+      "Молот": "#00BFFF"
+    },
+    "Salvaged Icepick": {
+      "Ледоруб": "#00BFFF"
+    },
+    "Satchel Charge": {
+      "Satchel Charge": "#00BFFF"
+    },
+    "Stone Hatchet": {
+      "Каменный топор": "#00BFFF"
+    },
+    "Snowball": {
+      "Snowball": "#00BFFF"
+    },
+    "Stone Pickaxe": {
+      "Каменная кирка": "#00BFFF"
+    },
+    "Survey Charge": {
+      "Геозаряд": "#00BFFF"
+    },
+    "Timed Explosive Charge": {
+      "Timed Explosive Charge": "#F50000"
+    },
+    "Torch": {
+      "Факел": "#00BFFF"
+    },
+    "RocketSpeed": {
+      "Скоростная ракета": "#F50000"
+    },
+    "Incendiary Rocket": {
+      "Зажигательная ракета": "#F50000"
+    },
+    "Rocket": {
+      "Обычная ракета": "#F50000"
+    },
+    "RocketHeli": {
+      "Вертолетный напалм": "#F50000"
+    },
+    "RocketBradley": {
+      "Танковый напалм": "#F50000"
+    },
+    "MainCannonShell": {
+      "Танковые ракеты": "#ff9c00"
+    },
+    "L96 Rifle": {
+      "L96 Rifle": "#ff9c00"
+    }
+  },
+  "Динамическая подсветка символов в подстроке. Указывайте сколько угодно, главное чтобы они были в PlayerDeathMessages": {
+    "→": "#000000",
+    "(": "#000000",
+    "|": "#000000",
+    ")": "#000000"
+  }
+}

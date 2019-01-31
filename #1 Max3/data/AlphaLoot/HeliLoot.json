@@ -1,0 +1,108 @@
+{
+  "CrateSettings": {
+    "CratesToSpawn": 3,
+    "LootFraction": false,
+    "Repopulate": false,
+    "ScrapAmount": 0,
+    "ScrapVariance": 0,
+    "UsedMultiplier": 1
+  },
+  "LoadOut": [
+    {
+      "ammo.rifle": {
+        "Max": 300,
+        "Min": 200
+      },
+      "ammo.rifle.explosive": {
+        "Max": 200,
+        "Min": 100
+      },
+      "ammo.rifle.hv": {
+        "Max": 200,
+        "Min": 100
+      },
+      "ammo.rifle.incendiary": {
+        "Max": 200,
+        "Min": 100
+      }
+    },
+    {
+      "ammo.rocket.fire": {
+        "Max": 10,
+        "Min": 10
+      },
+      "ammo.rocket.hv": {
+        "Max": 10,
+        "Min": 10
+      }
+    },
+    {
+      "ammo.rocket.basic": {
+        "Max": 12,
+        "Min": 10
+      },
+      "explosive.timed": {
+        "Max": 8,
+        "Min": 5
+      }
+    },
+    {
+      "ammo.rifle": {
+        "Max": 250,
+        "Min": 200
+      },
+      "rifle.lr300": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "weapon.mod.flashlight": {
+        "Max": 1,
+        "Min": 1
+      },
+      "weapon.mod.holosight": {
+        "Max": 1,
+        "Min": 1
+      },
+      "weapon.mod.silencer": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "ammo.rifle": {
+        "Max": 300,
+        "Min": 300
+      },
+      "lmg.m249": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "weapon.mod.holosight": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "weapon.mod.lasersight": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "weapon.mod.small.scope": {
+        "Max": 1,
+        "Min": 1
+      }
+    },
+    {
+      "rocket.launcher": {
+        "Max": 1,
+        "Min": 1
+      }
+    }
+  ]
+}

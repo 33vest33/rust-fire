@@ -1,0 +1,16 @@
+﻿using UnityEngine;
+
+namespace Oxide.Plugins
+{
+    [Info("Collision", "Hougan", "0.0.1")]
+    [Description("Отключает коллизию объектов, что повышает FPS и убирает фризы")]
+    public class Collision : RustPlugin
+    {
+        void OnServerInitialized()
+        {
+            PrintWarning("Плагин от HOUGAN.SPACE");
+            PrintWarning("VK.COM/HOUGAN.SPACE");
+            Physics.IgnoreLayerCollision(26, 26, true);
+        }
+    }
+}

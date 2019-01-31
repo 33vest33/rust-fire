@@ -1,0 +1,22 @@
+{
+  "Capture the Flag": {
+    "Flag respawn timer (seconds)": 30,
+    "Use DDraw to show flag positions": true,
+    "DDraw update rate": 3.0
+  },
+  "NPC Survival": {
+    "Reset player health at the start of each round": false,
+    "Zombie kit": "",
+    "Zombie health": 100,
+    "Scientist kit": "",
+    "Scientist health": 150,
+    "Reset player inventory at the start of each round": true,
+    "Zombie attack damage modifier": 3.0,
+    "Scientist attack damage modifier": 1.0
+  },
+  "Version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 50
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "AllowALLContainers": false,
+  "Allowed_Sorts_Within_60_Seconds": 5,
+  "Include_Fridges": true,
+  "Include_Furnaces": false,
+  "IncludeBeltInSorting": false,
+  "InfoInterval": 15,
+  "Logging": false,
+  "maxx": 0.84,
+  "maxy": 0.14,
+  "minx": 0.646,
+  "miny": 0.0,
+  "MsgColor": "<color=#A9A9A9>",
+  "RequireTC": true,
+  "SortingRadius": 10.0,
+  "TitleColor": "<color=orange>"
+}

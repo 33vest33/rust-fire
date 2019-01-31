@@ -1,0 +1,2172 @@
+﻿using System.Collections.Generic;
+using System;
+using System.Reflection;
+using Facepunch;
+using Newtonsoft.Json;
+using Oxide.Core.Configuration;
+using System.Linq;
+using System.Text;
+using Oxide.Game.Rust.Cui;
+using UnityEngine;
+using Network;
+using Oxide.Core;
+using System.Collections;
+using Oxide.Plugins;
+using Oxide.Core.Plugins;
+using Oxide.Core.Libraries;
+
+
+namespace Oxide.Plugins
+{
+    [Info("GameStores", "Sstine", "1.7.5")]
+    class GameStoresRUST : RustPlugin
+    {
+        private string Request => $"https://gamestores.ru/api/?shop_id={Config["SHOP.ID"]}&secret={Config["SECRET.KEY"]}&server={Config["SERVER.ID"]}";
+
+
+
+        #region [Override] Load default configurations
+        protected override void LoadDefaultConfig()
+        {
+            Config["SHOP.ID"] = "0";
+            Config["SERVER.ID"] = "0";
+            Config["SECRET.KEY"] = "KEY";
+            Config["BUCKET.IMG"] = "http://gamestores.ru/img/plugin_new.png";
+            Config["ITEMS.SPLIT"] = false;
+            Config["COMMAND.TOP"] = false;
+            Config["UI.ENABLED"] = false;
+            Config["TOP.USERS"] = false;
+            Config["BUCKET.BUTTON"] = false;
+        }
+        #endregion
+
+        #region [HookMethod] [Unload]
+        private void Unload()
+        {
+            if (System.Convert.ToBoolean(Config["UI.ENABLED"]) && BasePlayer.activePlayerList.Count > 0)
+                foreach (BasePlayer player in BasePlayer.activePlayerList)
+                {
+                    CuiHelper.DestroyUi(player, "ui.store.buttonimage");
+                    CuiHelper.DestroyUi(player, "ui.store.button");
+                    DestroyUI(player);
+                }
+        }
+        #endregion
+
+        #region[Variables]
+        private List<Dictionary<string, object>> Stats = new List<Dictionary<string, object>>();
+        private List<Dictionary<string, object>> Leaves = new List<Dictionary<string, object>>();
+        //private Dictionary<int, string> _OlditemIdShortnameConversions = new Dictionary<int, string>();
+        private Dictionary<string, long> TakeAllBan = new Dictionary<string, long>();
+        private Dictionary<string, long> Requests = new Dictionary<string, long>();
+        private List<string> Log = new List<String>();
+
+        private Dictionary<BasePlayer, int> Items = new Dictionary<BasePlayer, int>();
+        private Dictionary<BasePlayer, int> Index = new Dictionary<BasePlayer, int>();
+        string shopLink = string.Empty;
+        #endregion
+
+        #region [HookMethod] On server intitialized
+        private void OnServerInitialized()
+        {
+            for (int i = 5; i >= 1; i--)
+            {
+                string TempOldName = i == 1 ? "GameStores.Log" : "GameStores.Log." + (i - 1).ToString();
+                if (Core.Interface.Oxide.DataFileSystem.ExistsDatafile(TempOldName))
+                {
+                    Log = Core.Interface.Oxide.DataFileSystem.ReadObject<List<String>>(TempOldName);
+                    Core.Interface.Oxide.DataFileSystem.WriteObject("GameStores.Log." + i.ToString(), Log);
+                    Log = new List<String>();
+                }
+            }
+            Core.Interface.Oxide.DataFileSystem.WriteObject("GameStores.Log", Log);
+            if (Config["SECRET.KEY"].ToString().Contains("KEY"))
+            {
+                Debug.LogError("Plugin isn't configured");
+            }
+            else
+            {
+                if (System.Convert.ToBoolean(Config["UI.ENABLED"]))
+                {
+                    webrequest.EnqueueGet($"{this.Request}&info=true", (code, response) =>
+                    {
+                        switch (code)
+                        {
+                            case 0:
+                                Debug.LogError("Api does not responded to a request" + response);
+                                break;
+                            case 200:
+                                Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                                Dictionary<string, object> data = (Response["data"] as Dictionary<string, object>);
+                                shopLink = $"{data["link"]}";
+                                break;
+                            case 404:
+                                Debug.LogError("Response code: 404, please check your configurations");
+                                break;
+                        }
+
+
+
+                    }, this);
+                }
+            }
+        }
+        #endregion
+
+        #region[HookMethod] OnPlayerSleepEnded
+        void OnPlayerSleepEnded(BasePlayer player)
+        {
+            if (System.Convert.ToBoolean(Config["UI.ENABLED"]))
+            {
+                if (System.Convert.ToBoolean(Config["BUCKET.BUTTON"]))
+                {
+                    string Image = Config["BUCKET.IMG"].ToString();
+
+                    CuiElementContainer UI = new CuiElementContainer();
+                    UI.Add(new CuiElement()
+                    {
+                        Parent = "Hud",
+                        Name = "ui.store.buttonimage",
+                        Components =
+                    {
+                        new CuiRawImageComponent
+                        {
+                            Sprite = "assets/content/textures/generic/fulltransparent.tga",
+                            Url = Image
+                        },
+                        new CuiRectTransformComponent()
+                        {
+                            AnchorMin = "0.01 0.955",
+                            AnchorMax = "0.035 0.99"
+                        }
+                    }
+                    });
+                    UI.Add(new CuiButton()
+                    {
+                        Button =
+                    {
+                        Command = $"ui.store",
+                        Color = "0 0 0 0"
+                    },
+                        RectTransform =
+                    {
+                        AnchorMin = "0.01 0.95",
+                        AnchorMax = "0.04 0.99"
+                    },
+                        Text =
+                    {
+                        Text = ""
+                    }
+                    }, "Hud", "ui.store.button");
+                    CuiHelper.DestroyUi(player, "ui.store.buttonimage");
+                    CuiHelper.DestroyUi(player, "ui.store.button");
+                    CuiHelper.AddUi(player, UI);
+                }
+            }
+        }
+        #endregion 
+
+        #region[Method] Executing - WebRequest callback handler
+        private void Executing(BasePlayer Player, string response, int code)
+        {
+            switch (code)
+            {
+                case 0:
+                    Debug.LogError("Api does not responded to a request");
+                    Player.ChatMessage("Корзина недоступна. Попробуйте позже");
+                    break;
+                case 200:
+                    Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                    if (Response != null && response != null && response != "null")
+                    {
+                        CuiElementContainer UI = new CuiElementContainer();
+                        switch (System.Convert.ToInt32(Response["code"]))
+                        {
+                            case 100:
+                                List<object> data = Response["data"] as List<object>;
+                                DestroyUI(Player);
+
+                                if (System.Convert.ToBoolean(Config["UI.ENABLED"]))
+                                {
+
+                                    #region[BackGround] Close
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.destroy",
+                                        Color = "1 0.1 0.1 0"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.0 0.0",
+                                        AnchorMax = "0.999 0.999"
+                                    },
+                                        Text =
+                                    {
+                                        Color = "0.9 0.9 0.9 1",
+                                        Text = "",
+                                        FontSize = 25,
+                                        Align = TextAnchor.MiddleCenter
+                                    }
+                                    }, "Hud", "ui.close.background");
+                                    #endregion 
+
+                                    #region[Panel] Parent
+                                    UI.Add(new CuiPanel()
+                                    {
+                                        Image =
+                                    {
+                                        Color = "0 0 0 0.95"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.20 0.18",
+                                        AnchorMax = "0.80 0.95"
+                                    },
+                                        CursorEnabled = true
+                                    }, "Hud", "ui.store");
+                                    #endregion
+
+                                    #region[Panel] Items
+                                    int index = 0;
+                                    Items.Add(Player, data.Count);
+                                    Index.Add(Player, data.Count > 14 ? 14 : data.Count);
+                                    for (int r = 0; r < 4; r++)
+                                    {
+                                        for (int i = 0; i < (r > 1 ? 2 : 5); i++)
+                                        {
+                                            #region[Panel] Backgroud
+                                            UI.Add(new CuiPanel()
+                                            {
+                                                Image =
+                                            {
+                                                Color = "0.1 0.1 0.1 1"
+                                            },
+                                                RectTransform =
+                                            {
+                                                AnchorMin = $"{0.04f + (0.19 * i)} {0.75f - (r * 0.23f)}",
+                                                AnchorMax = $"{0.19f + ((0.19f * i) - (i == 4 ? 0f : 0f))} {0.95f - (r * 0.23f)}"
+                                            }
+
+                                            }, "ui.store", $"ui.background{index}");
+                                            #endregion
+
+                                            if (index < data.Count)
+                                            {
+                                                Dictionary<string, object> itemdata = data[index] as Dictionary<string, object>;
+
+                                                int ItemID = System.Convert.ToInt32(itemdata["item_id"]);
+                                                int Amount = System.Convert.ToInt32(itemdata["amount"]);
+                                                string Image = $"{itemdata["img"]}";
+
+
+                                                #region[Element] BpBlock
+                                                if (itemdata["type"].ToString() == "bp")
+                                                {
+                                                    UI.Add(new CuiElement()
+                                                    {
+                                                        Name = $"ui.bp{index}",
+                                                        Parent = $"ui.background{index}",
+                                                        Components =
+                                                    {
+
+                                                        new CuiRawImageComponent
+                                                        {
+                                                            Sprite = "assets/content/textures/generic/fulltransparent.tga",
+                                                            Url = "https://gamestores.ru/img/games/rust/blueprintbase.png"
+                                                        },
+                                                        new CuiRectTransformComponent
+                                                        {
+                                                            AnchorMin = $"0.10 0.10",
+                                                            AnchorMax = $"0.90 0.90"
+                                                        },
+                                                        new CuiOutlineComponent
+                                                        {
+                                                            Distance = "1.0 1.0",
+                                                            Color = "0.0 0.0 0.0 1.0"
+                                                        }
+                                                    }
+                                                    });
+                                                }
+                                                #endregion
+
+                                                #region[Element] ImgBlock                                                                                      
+                                                UI.Add(new CuiElement()
+                                                {
+                                                    Name = $"ui.block{index}",
+                                                    Parent = $"ui.background{index}",
+                                                    Components =
+                                                {
+
+                                                    new CuiRawImageComponent
+                                                    {
+                                                        Sprite = "assets/content/textures/generic/fulltransparent.tga",
+                                                        Url = Image
+                                                    },
+                                                    new CuiRectTransformComponent
+                                                    {
+                                                        AnchorMin = $"0.10 0.10",
+                                                        AnchorMax = $"0.90 0.90"
+                                                    },
+                                                    new CuiOutlineComponent
+                                                    {
+                                                        Distance = "1.0 1.0",
+                                                        Color = "0.0 0.0 0.0 1.0"
+                                                    }
+                                                }
+                                                });
+                                                #endregion
+
+                                                #region[Label] Amount
+                                                UI.Add(new CuiLabel()
+                                                {
+                                                    RectTransform =
+                                                {
+                                                    AnchorMin = $"0.0 0.0",
+                                                    AnchorMax = $"1.0 0.90"
+                                                },
+                                                    Text =
+                                                {
+                                                    Text = $"{Amount} шт. ",
+                                                    FontSize = 14,
+                                                    Align = TextAnchor.LowerRight,
+                                                    Color = "1 1 1 1"
+                                                }
+                                                }, $"ui.background{index}", $"ui.amount{index}");
+                                                #endregion
+
+                                                #region[ItemName] Product
+                                                UI.Add(new CuiLabel()
+                                                {
+                                                    RectTransform =
+                                                {
+                                                    AnchorMin = $"0.05 0.01",
+                                                    AnchorMax = $"0.99 0.99"
+                                                },
+                                                    Text =
+                                                {
+                                                    Text = $"{itemdata["name"]}",
+                                                    FontSize = 14,
+                                                    Align = TextAnchor.UpperLeft,
+                                                    Color = "1 1 1 1"
+                                                }
+                                                }, $"ui.background{index}", $"ui.product{index}");
+                                                #endregion
+
+                                                #region[Button] Take
+                                                UI.Add(new CuiButton
+                                                {
+                                                    Button =
+                                                {
+                                                    Command = $"ui.gives {index} {itemdata["id"]}",
+                                                    Color = "0 0 0 0"
+                                                },
+                                                    RectTransform =
+                                                {
+                                                    AnchorMin = $"0.0 0.0",
+                                                    AnchorMax = $"1.0 1.0"
+                                                },
+                                                    Text =
+                                                {
+                                                    Text = ""
+                                                }
+                                                }, $"ui.background{index}", $"ui.command.take{index}");
+                                                #endregion
+
+                                            }
+                                            index++;
+                                        }
+                                    }
+                                    #endregion
+
+                                    #region[Button] Close
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.destroy",
+                                        Color = "0.1 0.1 0.1 0"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.960 0.94",
+                                        AnchorMax = "0.999 0.998"
+                                    },
+                                        Text =
+                                    {
+                                        Color = "0.9 0.9 0.9 1",
+                                        Text = "X",
+                                        FontSize = 25,
+                                        Align = TextAnchor.MiddleCenter
+                                    }
+                                    }, "ui.store", "ui.close");
+                                    #endregion
+
+                                    #region[Button] Back
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.back",
+                                        Color = "0.1 0.1 0.1 1"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = $"0.42 0.39",
+                                        AnchorMax = $"0.65 0.49"
+                                    },
+                                        Text =
+                                    {
+                                        Text = "Назад",
+                                        Color = "1 1 1 1",
+                                        Align = TextAnchor.MiddleCenter,
+                                        FontSize = 20
+                                    }
+                                    }, "ui.store", $"ui.back");
+                                    #endregion
+
+                                    #region[Button] Next
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.next",
+                                        Color = "0.1 0.1 0.1 1"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = $"0.70 0.39",
+                                        AnchorMax = $"0.95 0.49"
+                                    },
+                                        Text =
+                                    {
+                                        Text = "Вперёд",
+                                        Color = "1 1 1 1",
+                                        Align = TextAnchor.MiddleCenter,
+                                        FontSize = 20
+                                    }
+                                    }, "ui.store", $"ui.next");
+                                    #endregion
+
+                                    #region[Button] TakeAll
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.takeall",
+                                        Color = "0.1 0.1 0.1 1"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = $"0.42 0.25",
+                                        AnchorMax = $"0.95 0.35"
+                                    },
+                                        Text =
+                                    {
+                                        Text = "Забрать всё",
+                                        Color = "1 1 1 1",
+                                        Align = TextAnchor.MiddleCenter,
+                                        FontSize = 20
+                                    }
+                                    }, "ui.store", $"ui.command.takeall");
+                                    #endregion
+
+                                    #region[Label] shopLink
+                                    UI.Add(new CuiLabel()
+                                    {
+                                        RectTransform =
+                                    {
+                                        AnchorMin = $"0.42 0.15",
+                                        AnchorMax = $"0.95 0.25"
+                                    },
+                                        Text =
+                                    {
+                                        Text = "Магазин",
+                                        Align = TextAnchor.MiddleCenter,
+                                        Color = "1 1 1 1",
+                                        FontSize = 40
+                                    }
+                                    }, "ui.store", "ui.link");
+                                    #endregion
+
+                                    #region[Label] shopLink
+                                    UI.Add(new CuiLabel()
+                                    {
+                                        RectTransform =
+                                    {
+                                        AnchorMin = $"0.42 0.05",
+                                        AnchorMax = $"0.95 0.15"
+                                    },
+                                        Text =
+                                    {
+                                        Text = shopLink,
+                                        Align = TextAnchor.MiddleCenter,
+                                        Color = "1 1 1 1",
+                                        FontSize = 35
+                                    }
+                                    }, "ui.store", "ui.link");
+                                    #endregion
+
+                                    CuiHelper.AddUi(Player, UI);
+                                    return;
+                                }
+
+                                #region [UI OFF] Give Items If UI Off
+                                foreach (object pair in data)
+                                {
+                                    Dictionary<string, object> iteminfo = pair as Dictionary<string, object>;
+
+                                    if (iteminfo.ContainsKey("command"))
+                                    {
+                                        string command = iteminfo["command"].ToString().ToLower().Replace('\n', '|').Replace("%steamid%", Player.UserIDString).Replace("%username%", Player.displayName);
+                                        String[] CommandArray = command.Split('|');
+                                        foreach (var substring in CommandArray)
+                                        {
+                                            //ConsoleSystem.Run.Server.Normal(substring);
+                                            ConsoleSystem.Run(ConsoleSystem.Option.Server, substring);
+                                        }
+                                        Player.ChatMessage($"Получен товар из магазина: <color=lime>\"{iteminfo["name"]}\"</color>");
+                                        SendResult(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{iteminfo["id"]}" } });
+                                        break;
+                                    }
+
+                                    if (iteminfo["type"].ToString() == "bp")
+                                    {
+                                        Item item = CreateByItemID(-1887162396);
+                                        item.blueprintTarget = GetNewItemID(System.Convert.ToInt32(iteminfo["item_id"]));
+
+                                        if (!Player.inventory.containerMain.IsFull() || !Player.inventory.containerBelt.IsFull())
+                                        {
+                                            SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{iteminfo["id"]}" } }, Player);
+
+
+                                            Player.inventory.GiveItem(item, Player.inventory.containerMain);
+                                            Player.ChatMessage($"Получен рецепт из магазина: <color=lime>\"{iteminfo["name"]}\"</color> в количестве <color=lime>{iteminfo["amount"]}</color> шт.");
+
+                                        }
+                                        else
+                                            Player.ChatMessage($"В инвентаре недостаточно места для получения <color=lime>\"{iteminfo["name"]}\"</color>");
+
+                                        break;
+                                    }
+
+                                    int ItemID = System.Convert.ToInt32(iteminfo["item_id"]);
+                                    int Amount = System.Convert.ToInt32(iteminfo["amount"]);
+                                    Item Item = CreateByItemID(ItemID, Amount);
+
+                                    if (CanTake(Player, Item) >= Amount)
+                                    {
+                                        if (System.Convert.ToBoolean(Config["ITEMS.SPLIT"]))
+                                        {
+                                            List<Item> Items = SplitItem(Item);
+
+                                            foreach (Item item in Items)
+                                            {
+                                                Player.inventory.GiveItem(CreateByItemID(Item.info.itemid, item.amount), Player.inventory.containerMain);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Player.inventory.GiveItem(Item, Player.inventory.containerMain);
+                                        }
+
+                                        Player.ChatMessage($"Получен товар из магазина: <color=lime>\"{iteminfo["name"]}\"</color> в количестве <color=lime>{Amount}</color> шт.");
+                                        SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{iteminfo["id"]}" } }, Player);
+                                    }
+                                    else
+                                        Player.ChatMessage($"В инвентаре недостаточно места для получения <color=lime>\"{iteminfo["name"]}\"</color>");
+
+                                }
+                                #endregion
+                                break;
+                            case 104:
+                                if (System.Convert.ToBoolean(Config["UI.ENABLED"]))
+                                {
+                                    #region[BackGround] Close
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.destroy",
+                                        Color = "1 0.1 0.1 0"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.0 0.0",
+                                        AnchorMax = "0.999 0.999"
+                                    },
+                                        Text =
+                                    {
+                                        Color = "0.9 0.9 0.9 1",
+                                        Text = "",
+                                        FontSize = 25,
+                                        Align = TextAnchor.MiddleCenter
+                                    }
+                                    }, "Hud", "ui.close.background");
+                                    #endregion
+
+                                    #region[Panel] Parent
+
+                                    UI.Add(new CuiPanel()
+                                    {
+                                        Image =
+                                    {
+                                        Color = "0 0 0 0.95"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.20 0.20",
+                                        AnchorMax = "0.80 0.85"
+                                    },
+                                        CursorEnabled = true
+                                    }, "Hud", "ui.store");
+                                    #endregion
+
+                                    UI.Add(new CuiLabel()
+                                    {
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.01 0.01",
+                                        AnchorMax = "0.99 0.50"
+                                    },
+                                        Text =
+                                    {
+                                        Text = "Ваша корзина пуста!",
+                                        Align = TextAnchor.UpperCenter,
+                                        Color = "1 1 1 1",
+                                        FontSize = 25
+                                    }
+                                    }, "ui.store", "ui.noitems");
+
+                                    UI.Add(new CuiLabel()
+                                    {
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.01 0.01",
+                                        AnchorMax = "0.98 0.07"
+                                    },
+                                        Text =
+                                    {
+                                        Text = shopLink,
+                                        Align = TextAnchor.UpperRight,
+                                        Color = "1 1 1 1",
+                                        FontSize = 25
+                                    }
+                                    }, "ui.store", "ui.link");
+
+                                    #region[Button] Close
+                                    UI.Add(new CuiButton
+                                    {
+                                        Button =
+                                    {
+                                        Command = $"ui.destroy",
+                                        Color = "0.1 0.1 0.1 0"
+                                    },
+                                        RectTransform =
+                                    {
+                                        AnchorMin = "0.960 0.94",
+                                        AnchorMax = "0.999 0.998"
+                                    },
+                                        Text =
+                                    {
+                                        Color = "0.9 0.9 0.9 1",
+                                        Text = "X",
+                                        FontSize = 25,
+                                        Align = TextAnchor.MiddleCenter
+                                    }
+                                    }, "ui.store", "ui.close");
+                                    #endregion
+
+                                    CuiHelper.AddUi(Player, UI);
+                                    return;
+                                }
+                                Player.ChatMessage($"Ваша корзина пуста!");
+                                break;
+                        }
+                    }
+                    else
+                        Debug.LogError("Api does not responded to a request");
+                    break;
+                case 404:
+                    Debug.LogError("Response code: 404, please check your configurations");
+                    break;
+            }
+        }
+        #endregion
+
+        #region [Method] SendResult - Send WebRequest result
+        private void SendResult(Dictionary<string, string> Args) => SendRequest(Args);
+        #endregion
+
+        #region[Method] SendRequest - Send request to GameStore API
+        private void SendRequest(Dictionary<string, string> Args, BasePlayer Player = null, bool exec = true)
+        {
+            string Request = $"{this.Request}&{string.Join("&", Args.Select(x => x.Key + "=" + x.Value).ToArray())}";
+            webrequest.EnqueueGet(Request, (code, res) => { if (Player != null && exec) Executing(Player, res, code); }, this);
+        }
+        #endregion        
+
+        #region[Method] SendGived - Send request about givint item to GameStore API
+        private void SendGived(Dictionary<string, string> Args, BasePlayer Player = null)
+        {
+            string Request = $"{this.Request}&{string.Join("&", Args.Select(x => x.Key + "=" + x.Value).ToArray())}";
+            webrequest.EnqueueGet(Request, (code, res) => { if (Player != null) TestRequestSent(Player, res, code, Args); }, this);
+        }
+        #endregion      
+
+        #region[Method] TestRequestSent - Check send request
+        private void TestRequestSent(BasePlayer Player, string response, int code, Dictionary<string, string> Args)
+        {
+            if (code == 200)
+            {
+                Dictionary<string, object> Resp = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                if (Resp["result"].ToString() != "success")
+                {
+                    Debug.LogError("Api do not responded to request. Trying again (Player received items but it was not recorded)");
+                    SendGived(Args, Player);
+                }
+            }
+            else
+            {
+                Debug.LogError("Api do not responded to request. Trying again (Player received items but it was not recorded)");
+                SendGived(Args, Player);
+            }
+        }
+        #endregion
+
+        #region[Method] cmdTakeItem - Using by UI.TakeAll
+        private void cmdTakeItem(List<string> Args)
+        {
+            BasePlayer player = BasePlayer.FindByID(System.Convert.ToUInt64(Args[0]));
+            if (Requests.ContainsKey(player.UserIDString + Args[2].ToString()))
+            {
+                if (Requests[player.UserIDString + Args[2].ToString()] + 10 > GetTimestampNow())
+                {
+                    player.ChatMessage($"Дождитесь завершения предыдущего запроса");
+                    return;
+                }
+                else
+                {
+                    Requests.Remove(player.UserIDString + Args[2].ToString());
+                }
+            }
+
+            Requests.Add(player.UserIDString + Args[2].ToString(), GetTimestampNow());
+            webrequest.EnqueueGet($"{Request}&item=true&steam_id={player.UserIDString}&id={Args[2]}", (code, response) =>
+            {
+                switch (code)
+                {
+                    case 0:
+                        Debug.LogError("Api does not responded to a request");
+                        break;
+                    case 200:
+                        Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                        if (!Response.ContainsKey("data"))
+                        {
+                            if (Requests.ContainsKey(player.UserIDString + Args[2].ToString()))
+                                Requests.Remove(player.UserIDString + Args[2].ToString());
+                            return;
+                        }
+                        Dictionary<string, object> data = Response["data"] as Dictionary<string, object>; ;
+                        if (data["type"].ToString() == "item")
+                        {
+                            Item Item = CreateByItemID(System.Convert.ToInt32(data["item_id"]), System.Convert.ToInt32(data["amount"]));
+
+                            if ((System.Convert.ToBoolean(Config["ITEMS.SPLIT"]) && CanTake(player, Item) >= Item.amount) || (!System.Convert.ToBoolean(Config["ITEMS.SPLIT"]) && (!player.inventory.containerMain.IsFull() || !player.inventory.containerBelt.IsFull())))
+                            {
+                                SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{Args[2]}" } }, player);
+                                CuiHelper.DestroyUi(player, $"ui.block{Args[1]}");
+                                CuiHelper.DestroyUi(player, $"ui.amount{Args[1]}");
+                                CuiHelper.DestroyUi(player, $"ui.product{Args[1]}");
+                                CuiHelper.DestroyUi(player, $"ui.command.take{Args[1]}");
+
+                                if (System.Convert.ToBoolean(Config["ITEMS.SPLIT"]))
+                                {
+                                    List<Item> Items = SplitItem(Item);
+
+                                    foreach (Item item in Items)
+                                    {
+                                        player.inventory.GiveItem(CreateByItemID(Item.info.itemid, item.amount), player.inventory.containerMain);
+                                        player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color> в количестве <color=lime>{Item.amount}</color> шт.");
+
+                                    }
+                                }
+                                else
+                                {
+                                    player.inventory.GiveItem(Item, player.inventory.containerMain);
+                                    player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color> в количестве <color=lime>{data["amount"]}</color> шт.");
+                                }
+                                Log.Add($"|{player.UserIDString}|{DateTime.Now.ToString()}|{data["name"]}({data["amount"]})|{data["item_id"]}|");
+
+                                if (Index[player] < 14)
+                                    Index[player] -= 1;
+                                Items[player] -= 1;
+
+                                if (Items[player] < 1)
+                                {
+                                    Items.Remove(player);
+                                    Index.Remove(player);
+                                }
+                            }
+                            else
+                            {
+                                player.ChatMessage($"В инвентаре недостаточно места для получения <color=lime>\"{Item.info.displayName.english}\"</color>");
+                            }
+                        }
+                        else if (data["type"].ToString() == "command")
+                        {
+                            string command = data["command"].ToString().Replace('\n', '|').ToLower().Trim('\"').Replace("%steamid%", player.UserIDString).Replace("%username%", player.displayName);
+                            String[] CommandArray = command.Split('|');
+                            foreach (var substring in CommandArray)
+                            {
+                                //ConsoleSystem.Run.Server.Normal(substring);
+                                ConsoleSystem.Run(ConsoleSystem.Option.Server, substring);
+                                Log.Add($"|{player.UserIDString}|{DateTime.Now.ToString()}|{data["name"]}({data["amount"]})|{substring}|");
+                            }
+
+                            player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color>");
+                            CuiHelper.DestroyUi(player, $"ui.block{Args[1]}");
+                            CuiHelper.DestroyUi(player, $"ui.amount{Args[1]}");
+                            CuiHelper.DestroyUi(player, $"ui.product{Args[1]}");
+                            CuiHelper.DestroyUi(player, $"ui.command.take{Args[1]}");
+                            SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{Args[2]}" } }, player);
+
+                            if (Index[player] < 14)
+                                Index[player] -= 1;
+                            Items[player] -= 1;
+
+                            if (Items[player] < 1)
+                            {
+                                Items.Remove(player);
+                                Index.Remove(player);
+                            }
+
+                        }
+                        SaveLog();
+                        break;
+                    case 404:
+                        Debug.LogError("Response code: 404, please check your configurations");
+                        break;
+                    default:
+                        Debug.LogError("Api does not responded to a request");
+                        break;
+                }
+                Requests.Remove(player.UserIDString + Args[2].ToString());
+            }, this);
+
+        }
+        #endregion
+
+        #region[Method] DestroyUI
+        private void DestroyUI(BasePlayer Player)
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                CuiHelper.DestroyUi(Player, $"ui.background{i}");
+                CuiHelper.DestroyUi(Player, $"ui.amount{i}");
+                CuiHelper.DestroyUi(Player, $"ui.product{i}");
+                CuiHelper.DestroyUi(Player, $"ui.command.take{i}");
+            }
+
+            Items.Remove(Player);
+            Index.Remove(Player);
+            CuiHelper.DestroyUi(Player, "ui.close");
+            CuiHelper.DestroyUi(Player, "ui.close.background");
+            CuiHelper.DestroyUi(Player, "ui.command.takeall");
+            CuiHelper.DestroyUi(Player, "ui.back");
+            CuiHelper.DestroyUi(Player, "ui.next");
+            CuiHelper.DestroyUi(Player, "ui.store");
+        }
+        #endregion
+
+        #region[ChatCommand] /store
+        [ChatCommand("store")]
+        private void cmdStore(BasePlayer Player, string command, string[] args)
+        {
+            SendRequest(new Dictionary<string, string>() { { "items", "true" }, { "steam_id", $"{Player.UserIDString}" } }, Player);
+        }
+        #endregion
+
+        #region[ConsoleCommand] /store
+        [ConsoleCommand("ui.store")]
+        private void cmdUiStore(ConsoleSystem.Arg Args)
+        {
+            BasePlayer Player = Args.Player();
+            DestroyUI(Player);
+            SendRequest(new Dictionary<string, string>() { { "items", "true" }, { "steam_id", $"{Player.UserIDString}" } }, Player);
+        }
+        #endregion
+
+        #region[ConsoleCommand] ui.takeall
+        [ConsoleCommand("ui.takeall")]
+        private void cmdTakeAll(ConsoleSystem.Arg Args)
+        {
+            BasePlayer Player = Args.Player();
+
+            Player.ChatMessage($"Функция временно отключена.");
+            return;
+
+            if (TakeAllBan.ContainsKey(Player.UserIDString.ToString()))
+            {
+                if (TakeAllBan[Player.UserIDString.ToString()] + 5 > GetTimestampNow())
+                {
+                    Player.ChatMessage($"Эту функцию можно использовать один раз в 5 сек.");
+                    return;
+                }
+                else
+                {
+                    TakeAllBan.Remove(Player.UserIDString);
+                }
+            }
+
+            TakeAllBan.Add(Player.UserIDString, GetTimestampNow());
+
+            if (Player != null)
+            {
+                webrequest.EnqueueGet($"{Request}&items=true&steam_id={Player.UserIDString}", (code, response) =>
+                {
+                    switch (code)
+                    {
+                        case 0:
+                            Debug.LogError("Api does not responded to a request");
+                            break;
+                        case 200:
+                            Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                            if (!Response.ContainsKey("data"))
+                                return;
+                            List<object> data = Response["data"] as List<object>;
+                            if (data == null || Response == null)
+                                return;
+
+                            if (data.Count() > 14)
+                            {
+                                Player.ChatMessage($"Вы не можете забрать больше 14 предметов за раз.");
+                                return;
+                            }
+
+                            if (data.Count() < 1)
+                            {
+                                return;
+                            }
+                            int i = data.Count() - 1;
+                            foreach (object pair in data)
+                            {
+                                Dictionary<string, object> iteminfo = pair as Dictionary<string, object>;
+                                List<string> Arguments = new List<string>() { { $"{Player.UserIDString}" }, { $"{i}" }, { $"{iteminfo["id"]}" } };
+                                cmdTakeItem(Arguments);
+                                i--;
+                            }
+                            if (Items[Player] < 1)
+                            {
+                                Items.Remove(Player);
+                                Index.Remove(Player);
+                            }
+                            break;
+                        case 404:
+                            Debug.LogError("Response code: 404, please check your configurations");
+                            break;
+                    }
+                }, this);
+            }
+        }
+        #endregion
+
+        #region[ConsoleCommand] ui.gives
+        [ConsoleCommand("ui.gives")]
+        private void cmdDestroyItem(ConsoleSystem.Arg Args)
+        {
+            BasePlayer player = Args.Player();
+
+            if (Index.ContainsKey(player) == false)
+                return;
+
+            if (Requests.ContainsKey(player.UserIDString + Args.Args[1].ToString()))
+            {
+                if (Requests[player.UserIDString + Args.Args[1].ToString()] + 10 > GetTimestampNow())
+                {
+                    player.ChatMessage($"Дождитесь завершения предыдущего запроса");
+                    return;
+                }
+                else
+                {
+                    Requests.Remove(player.UserIDString + Args.Args[1].ToString());
+                }
+            }
+
+            Requests.Add(player.UserIDString + Args.Args[1].ToString(), GetTimestampNow());
+            webrequest.EnqueueGet($"{Request}&item=true&steam_id={player.UserIDString}&id={Args.Args[1]}", (code, response) =>
+            {
+                switch (code)
+                {
+                    case 0:
+                        Debug.LogError("Api does not responded to a request");
+                        break;
+                    case 200:
+                        Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                        if (!Response.ContainsKey("data"))
+                        {
+                            player.ChatMessage($"Предмет не найден");
+                            CuiHelper.DestroyUi(player, $"ui.block{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.amount{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.product{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.command.take{Args.Args[0]}");
+                            Requests.Remove(player.UserIDString + Args.Args[1].ToString());
+                            return;
+                        }
+                        Dictionary<string, object> data = Response["data"] as Dictionary<string, object>;
+                        if (data["type"].ToString() == "item")
+                        {
+                            Item Item = CreateByItemID(System.Convert.ToInt32(data["item_id"]), System.Convert.ToInt32(data["amount"]));
+
+                            if ((System.Convert.ToBoolean(Config["ITEMS.SPLIT"]) && CanTake(player, Item) >= Item.amount) || (!System.Convert.ToBoolean(Config["ITEMS.SPLIT"]) && (!player.inventory.containerMain.IsFull() || !player.inventory.containerBelt.IsFull())))
+                            {
+
+                                SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{Args.Args[1]}" } }, player);
+                                CuiHelper.DestroyUi(player, $"ui.block{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.amount{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.product{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.command.take{Args.Args[0]}");
+
+                                if (System.Convert.ToBoolean(Config["ITEMS.SPLIT"]))
+                                {
+                                    List<Item> Items = SplitItem(Item);
+
+                                    foreach (Item item in Items)
+                                    {
+                                        player.inventory.GiveItem(CreateByItemID(Item.info.itemid, item.amount), player.inventory.containerMain);
+                                        player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color> в количестве <color=lime>{Item.amount}</color> шт.");
+                                    }
+                                }
+                                else
+                                {
+                                    player.inventory.GiveItem(Item, player.inventory.containerMain);
+                                    player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color> в количестве <color=lime>{data["amount"]}</color> шт.");
+                                }
+                                Log.Add($"|{player.UserIDString}|{DateTime.Now.ToString()}|{data["name"]}({data["amount"]})|{data["item_id"]}|");
+                                if (Index[player] < 14)
+                                    Index[player] -= 1;
+                                Items[player] -= 1;
+
+                                if (Items[player] < 1)
+                                {
+                                    Items.Remove(player);
+                                    Index.Remove(player);
+                                }
+                            }
+                            else
+                                player.ChatMessage($"В инвентаре недостаточно места для получения <color=lime>\"{Item.info.displayName.english}\"</color>");
+                        }
+                        else if (data["type"].ToString() == "command")
+                        {
+                            string command = data["command"].ToString().Replace('\n', '|').ToLower().Replace("%steamid%", player.UserIDString).Replace("%username%", player.displayName);
+                            String[] CommandArray = command.Split('|');
+                            foreach (var substring in CommandArray)
+                            {
+                                //ConsoleSystem.Run.Server.Normal(substring);
+                                ConsoleSystem.Run(ConsoleSystem.Option.Server, substring);
+                                Log.Add($"|{player.UserIDString}|{DateTime.Now.ToString()}|{data["name"]}({data["amount"]})|{substring}|");
+                            }
+
+                            player.ChatMessage($"Получен предмет из магазина: <color=lime>\"{data["name"]}\"</color>");
+                            CuiHelper.DestroyUi(player, $"ui.block{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.amount{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.product{Args.Args[0]}");
+                            CuiHelper.DestroyUi(player, $"ui.command.take{Args.Args[0]}");
+                            SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{Args.Args[1]}" } }, player);
+
+                            if (Index[player] < 14)
+                                Index[player] -= 1;
+                            Items[player] -= 1;
+
+                            if (Items[player] < 1)
+                            {
+                                Items.Remove(player);
+                                Index.Remove(player);
+                            }
+                        }
+                        else if (data["type"].ToString() == "bp")
+                        {
+                            Item item = CreateByItemID(-996920608);
+                            item.blueprintTarget = GetNewItemID(System.Convert.ToInt32(data["item_id"]));
+
+                            if (!player.inventory.containerMain.IsFull() || !player.inventory.containerBelt.IsFull())
+                            {
+                                SendGived(new Dictionary<string, string>() { { "gived", "true" }, { "id", $"{Args.Args[1]}" } }, player);
+                                CuiHelper.DestroyUi(player, $"ui.block{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.bp{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.amount{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.product{Args.Args[0]}");
+                                CuiHelper.DestroyUi(player, $"ui.command.take{Args.Args[0]}");
+
+
+                                player.inventory.GiveItem(item, player.inventory.containerMain);
+                                player.ChatMessage($"Получен рецепт из магазина: <color=lime>\"{data["name"]}\"</color> в количестве <color=lime>{data["amount"]}</color> шт.");
+
+                            }
+                            else
+                                player.ChatMessage($"В инвентаре недостаточно места для получения <color=lime>\"{data["name"]}\"</color>");
+                        }
+                        SaveLog();
+                        break;
+                    case 404:
+                        Debug.LogError("Response code: 404, please check your configurations");
+                        break;
+                }
+                Requests.Remove(player.UserIDString + Args.Args[1].ToString());
+            }, this);
+        }
+        #endregion
+
+        #region[ConsoleCommand] ui.destroy
+        [ConsoleCommand("ui.destroy")]
+        private void cmdUi(ConsoleSystem.Arg Args)
+        {
+            BasePlayer Player = Args.Player();
+            DestroyUI(Player);
+        }
+        #endregion
+
+        #region[ConsoleCommand] ui.back
+        [ConsoleCommand("ui.back")]
+        private void cmdUiBack(ConsoleSystem.Arg Args)
+        {
+
+            BasePlayer Player = Args.Player();
+
+            webrequest.EnqueueGet($"{Request}&items=true&steam_id={Player.UserIDString}", (code, response) =>
+            {
+                switch (code)
+                {
+                    case 0:
+                        Debug.LogError("Api does not responded to a request");
+                        break;
+                    case 200:
+                        Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                        if (!Response.ContainsKey("data"))
+                            return;
+                        List<object> data = Response["data"] as List<object>;
+                        List<object> items = new List<object>();
+                        if (data == null || Response == null || Index.ContainsKey(Player) == false)
+                            return;
+                        if (Index[Player] <= 14)
+                        {
+                            return;
+                        }
+                        else
+                        {
+
+                            int Page = System.Convert.ToInt32(System.Math.Ceiling((System.Convert.ToSingle(Index[Player]) / 14f)));
+                            Index[Player] = (Page - 1) * 14;
+
+                            for (int i = 0; i != 14; i++)
+                            {
+                                CuiHelper.DestroyUi(Player, $"ui.block{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.amount{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.product{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.command.take{i}");
+                                Index[Player] -= 1;
+                            }
+
+                            for (int i = 0; i != 14 && i < data.Count; i++)
+                            {
+                                items.Add(data[Index[Player] + i]);
+                            }
+
+                            if (Index[Player] < 1)
+                                Index[Player] = 0;
+
+                            CuiElementContainer UI = new CuiElementContainer();
+                            for (int index = 0; index != 14 && index < items.Count; index++)
+                            {
+                                Dictionary<string, object> itemdata = items[index] as Dictionary<string, object>;
+
+                                int ItemID = System.Convert.ToInt32(itemdata["item_id"]);
+                                int Amount = System.Convert.ToInt32(itemdata["amount"]);
+                                string Image = $"{itemdata["img"]}";
+
+                                #region[Element] ImgBlock                                                                                      
+                                UI.Add(new CuiElement()
+                                {
+                                    Name = $"ui.block{index}",
+                                    Parent = $"ui.background{index}",
+                                    Components =
+                                {
+                                    new CuiRawImageComponent
+                                    {
+                                        Sprite = "assets/content/textures/generic/fulltransparent.tga",
+                                        Url = Image
+                                    },
+                                    new CuiRectTransformComponent
+                                    {
+                                        AnchorMin = $"0.10 0.10",
+                                        AnchorMax = $"0.90 0.90"
+                                    },
+                                    new CuiOutlineComponent
+                                    {
+                                        Distance = "1.0 1.0",
+                                        Color = "0.0 0.0 0.0 1.0"
+                                    }
+                                }
+                                });
+                                #endregion
+
+                                #region[Label] Amount
+                                UI.Add(new CuiLabel()
+                                {
+                                    RectTransform =
+                                {
+                                    AnchorMin = $"0.0 0.0",
+                                    AnchorMax = $"1.0 0.90"
+                                },
+                                    Text =
+                                {
+                                    Text = $"{Amount} шт. ",
+                                    FontSize = 14,
+                                    Align = TextAnchor.LowerRight,
+                                    Color = "1 1 1 1"
+                                }
+                                }, $"ui.background{index}", $"ui.amount{index}");
+                                #endregion
+
+                                #region[ItemName] Product
+                                UI.Add(new CuiLabel()
+                                {
+                                    RectTransform =
+                                {
+                                    AnchorMin = $"0.05 0.01",
+                                    AnchorMax = $"0.99 0.99"
+                                },
+                                    Text =
+                                {
+                                    Text = $"{itemdata["name"]}",
+                                    FontSize = 14,
+                                    Align = TextAnchor.UpperLeft,
+                                    Color = "1 1 1 1"
+                                }
+                                }, $"ui.background{index}", $"ui.product{index}");
+                                #endregion
+
+                                #region[Button] Take
+                                UI.Add(new CuiButton
+                                {
+                                    Button =
+                                {
+                                    Command = $"ui.gives {index} {itemdata["id"]}",
+                                    Color = "0 0 0 0"
+                                },
+                                    RectTransform =
+                                {
+                                    AnchorMin = $"0.0 0.0",
+                                    AnchorMax = $"1.0 1.0"
+                                },
+                                    Text =
+                                {
+                                    Text = ""
+                                }
+                                }, $"ui.background{index}", $"ui.command.take{index}");
+                                #endregion
+
+                                Index[Player] += 1;
+                            }
+                            CuiHelper.AddUi(Player, UI);
+                        }
+                        break;
+                    case 404:
+                        Debug.LogError("Response code: 404, please check your configurations");
+                        break;
+                }
+            }, this);
+        }
+        #endregion
+
+        #region[ConsoleCommand] ui.next
+        [ConsoleCommand("ui.next")]
+        private void cmdUiNext(ConsoleSystem.Arg Args)
+        {
+            BasePlayer Player = Args.Player();
+
+            webrequest.EnqueueGet($"{Request}&items=true&steam_id={Player.UserIDString}", (code, response) =>
+            {
+                switch (code)
+                {
+                    case 0:
+                        Debug.LogError("Api does not responded to a request");
+                        break;
+                    case 200:
+
+                        Dictionary<string, object> Response = JsonConvert.DeserializeObject<Dictionary<string, object>>(response, new KeyValuesConverter());
+                        if (!Response.ContainsKey("data"))
+                            return;
+                        List<object> data = Response["data"] as List<object>;
+                        if (data == null || Response == null || Index.ContainsKey(Player) == false)
+                            return;
+
+                        if (data.Count <= Index[Player])
+                        {
+                            return;
+                        }
+                        else
+                        {
+                            for (int i = 0; i != Index[Player]; i++)
+                            {
+                                data.RemoveAt(0);
+                                CuiHelper.DestroyUi(Player, $"ui.block{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.amount{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.product{i}");
+                                CuiHelper.DestroyUi(Player, $"ui.command.take{i}");
+                            }
+                            CuiElementContainer UI = new CuiElementContainer();
+                            for (int index = 0; index != 14 && index < data.Count; index++)
+                            {
+                                Dictionary<string, object> itemdata = data[index] as Dictionary<string, object>;
+
+                                int ItemID = System.Convert.ToInt32(itemdata["item_id"]);
+                                int Amount = System.Convert.ToInt32(itemdata["amount"]);
+                                string Image = $"{itemdata["img"]}";
+
+                                #region[Element] ImgBlock                                                                                      
+                                UI.Add(new CuiElement()
+                                {
+                                    Name = $"ui.block{index}",
+                                    Parent = $"ui.background{index}",
+                                    Components =
+                                    {
+                                        new CuiRawImageComponent
+                                        {
+                                            Sprite = "assets/content/textures/generic/fulltransparent.tga",
+                                            Url = Image
+                                        },
+                                        new CuiRectTransformComponent
+                                        {
+                                            AnchorMin = $"0.10 0.10",
+                                            AnchorMax = $"0.90 0.90"
+                                        },
+                                        new CuiOutlineComponent
+                                        {
+                                            Distance = "1.0 1.0",
+                                            Color = "0.0 0.0 0.0 1.0"
+                                        }
+                                    }
+                                });
+                                #endregion
+
+                                #region[Label] Amount
+                                UI.Add(new CuiLabel()
+                                {
+                                    RectTransform =
+                                    {
+                                        AnchorMin = $"0.0 0.0",
+                                        AnchorMax = $"1.0 0.90"
+                                    },
+                                    Text =
+                                    {
+                                        Text = $"{Amount} шт. ",
+                                        FontSize = 14,
+                                        Align = TextAnchor.LowerRight,
+                                        Color = "1 1 1 1"
+                                    }
+                                }, $"ui.background{index}", $"ui.amount{index}");
+                                #endregion
+
+                                #region[ItemName] Product
+                                UI.Add(new CuiLabel()
+                                {
+                                    RectTransform =
+                                    {
+                                        AnchorMin = $"0.05 0.01",
+                                        AnchorMax = $"0.99 0.99"
+                                    },
+                                    Text =
+                                    {
+                                        Text = $"{itemdata["name"]}",
+                                        FontSize = 14,
+                                        Align = TextAnchor.UpperLeft,
+                                        Color = "1 1 1 1"
+                                    }
+                                }, $"ui.background{index}", $"ui.product{index}");
+                                #endregion
+
+                                #region[Button] Take
+                                UI.Add(new CuiButton
+                                {
+                                    Button =
+                                    {
+                                        Command = $"ui.gives {index} {itemdata["id"]}",
+                                        Color = "0 0 0 0"
+                                    },
+                                    RectTransform =
+                                    {
+                                        AnchorMin = $"0.0 0.0",
+                                        AnchorMax = $"1.0 1.0"
+                                    },
+                                    Text =
+                                    {
+                                        Text = ""
+                                    }
+                                }, $"ui.background{index}", $"ui.command.take{index}");
+                                #endregion
+
+                                Index[Player] += 1;
+                            }
+                            CuiHelper.AddUi(Player, UI);
+                        }
+                        break;
+                    case 404:
+                        Debug.LogError("Response code: 404, please check your configurations");
+                        break;
+                }
+            }, this);
+        }
+        #endregion
+
+        #region[Helper] CanTake/SplitItem
+        private int CanTake(BasePlayer Player, Item Item)
+        {
+            ItemContainer Container = Player.inventory.containerMain;
+            int ItemID = Item.info.itemid;
+
+            if (Item == null || (Item.MaxStackable() == 1 && (Container.IsFull() || (Container.capacity - Container.itemList.Count) < Item.amount)))
+                return 0;
+            else if (Item.MaxStackable() == 1 && !Container.IsFull())
+                return 1 * Item.amount;
+
+            return ((Container.FindItemsByItemID(ItemID).Count + (Container.capacity - Container.itemList.Count)) * Item.MaxStackable() - Container.GetAmount(ItemID, true));
+
+        }
+        private List<Item> SplitItem(Item Item)
+        {
+            List<Item> Items = new List<Item>() { Item };
+            int MaxStackable = Item.MaxStackable();
+            if (Item.amount > MaxStackable)
+                for (int Amount = Items[0].amount; Items[0].amount > MaxStackable; Items[0].amount -= MaxStackable)
+                    Items.Add(CreateByItemID(Item.info.itemid, MaxStackable));
+
+            return Items;
+        }
+        #endregion
+
+        #region[Helper] GetTimestampNow
+        private long GetTimestampNow()
+        {
+            return System.Convert.ToInt32((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds);
+        }
+        #endregion
+
+        #region[Helper] DebugMessages
+        public class Debug
+        {
+            public static void LogWarning(object message) => UnityEngine.Debug.LogWarning(CreateLog(message));
+            public static void LogError(object message) => UnityEngine.Debug.LogError(CreateLog(message));
+            private static string CreateLog(object message) => $"[{DateTime.Now.TimeOfDay.ToString().Split('.')[0]}] [GameStores]: {message}";
+        }
+
+        #endregion
+
+        #region[Helper] SaveLog
+        private void SaveLog()
+        {
+            Core.Interface.Oxide.DataFileSystem.WriteObject("GameStores.Log", Log);
+        }
+
+        #endregion
+
+        #region[Helper] CreateByItemID
+        private Item CreateByItemID(int itemID, int amount = 1, ulong skin = 0)
+        {
+            string shortName = "";
+            if (_OlditemIdShortnameConversions.TryGetValue(itemID, out shortName))
+            {
+                return ItemManager.CreateByName(shortName, amount, skin);
+            }
+            else
+            {
+                return ItemManager.CreateByItemID(itemID, amount, skin);
+            }
+        }
+        #endregion
+
+        #region[Helper] GetNewItemID
+        private int GetNewItemID(int oldItemID)
+        {
+            string shortName = "";
+            if (_OlditemIdShortnameConversions.TryGetValue(oldItemID, out shortName))
+            {
+                var itemDef = ItemManager.FindItemDefinition(shortName);
+                if (itemDef != null)
+                    return itemDef.itemid;
+                else
+                    return oldItemID;
+            }
+            else
+                return oldItemID;
+        }
+        #endregion
+
+        #region[Helper] _OlditemIdShortnameConversions
+        private readonly Dictionary<int, string> _OlditemIdShortnameConversions = new Dictionary<int, string>
+        {
+            [-1461508848] = "rifle.ak",
+            [2115555558] = "ammo.handmade.shell",
+            [-533875561] = "ammo.pistol",
+            [1621541165] = "ammo.pistol.fire",
+            [-422893115] = "ammo.pistol.hv",
+            [815896488] = "ammo.rifle",
+            [805088543] = "ammo.rifle.explosive",
+            [449771810] = "ammo.rifle.incendiary",
+            [1152393492] = "ammo.rifle.hv",
+            [1578894260] = "ammo.rocket.basic",
+            [1436532208] = "ammo.rocket.fire",
+            [542276424] = "ammo.rocket.hv",
+            [1594947829] = "ammo.rocket.smoke",
+            [-1035059994] = "ammo.shotgun",
+            [1818890814] = "ammo.shotgun.fire",
+            [1819281075] = "ammo.shotgun.slug",
+            [1685058759] = "antiradpills",
+            [93029210] = "apple",
+            [-1565095136] = "apple.spoiled",
+            [-1775362679] = "arrow.bone",
+            [-1775249157] = "arrow.fire",
+            [-1280058093] = "arrow.hv",
+            [-420273765] = "arrow.wooden",
+            [563023711] = "autoturret",
+            [790921853] = "axe.salvaged",
+            [-337261910] = "bandage",
+            [498312426] = "barricade.concrete",
+            [504904386] = "barricade.metal",
+            [-1221200300] = "barricade.sandbags",
+            [510887968] = "barricade.stone",
+            [-814689390] = "barricade.wood",
+            [1024486167] = "barricade.woodwire",
+            [2021568998] = "battery.small",
+            [97329] = "bbq",
+            [1046072789] = "trap.bear",
+            [97409] = "bed",
+            [-1480119738] = "tool.binoculars",
+            [1611480185] = "black.raspberries",
+            [-1386464949] = "bleach",
+            [93832698] = "blood",
+            [-1063412582] = "blueberries",
+            [-1887162396] = "blueprintbase",
+            [-55660037] = "rifle.bolt",
+            [919780768] = "bone.club",
+            [-365801095] = "bone.fragments",
+            [68998734] = "botabag",
+            [-853695669] = "bow.hunting",
+            [271534758] = "box.wooden.large",
+            [-770311783] = "box.wooden",
+            [-1192532973] = "bucket.water",
+            [-307490664] = "building.planner",
+            [707427396] = "burlap.shirt",
+            [707432758] = "burlap.shoes",
+            [-2079677721] = "cactusflesh",
+            [-1342405573] = "tool.camera",
+            [-139769801] = "campfire",
+            [-1043746011] = "can.beans",
+            [2080339268] = "can.beans.empty",
+            [-171664558] = "can.tuna",
+            [1050986417] = "can.tuna.empty",
+            [-1693683664] = "candycaneclub",
+            [523409530] = "candycane",
+            [1300054961] = "cctv.camera",
+            [-2095387015] = "ceilinglight",
+            [1428021640] = "chainsaw",
+            [94623429] = "chair",
+            [1436001773] = "charcoal",
+            [1711323399] = "chicken.burned",
+            [1734319168] = "chicken.cooked",
+            [-1658459025] = "chicken.raw",
+            [-726947205] = "chicken.spoiled",
+            [-341443994] = "chocholate",
+            [1540879296] = "xmasdoorwreath",
+            [94756378] = "cloth",
+            [3059095] = "coal",
+            [3059624] = "corn",
+            [2045107609] = "clone.corn",
+            [583366917] = "seed.corn",
+            [2123300234] = "crossbow",
+            [1983936587] = "crude.oil",
+            [1257201758] = "cupboard.tool",
+            [-1144743963] = "diving.fins",
+            [-1144542967] = "diving.mask",
+            [-1144334585] = "diving.tank",
+            [1066729526] = "diving.wetsuit",
+            [-1598790097] = "door.double.hinged.metal",
+            [-933236257] = "door.double.hinged.toptier",
+            [-1575287163] = "door.double.hinged.wood",
+            [-2104481870] = "door.hinged.metal",
+            [-1571725662] = "door.hinged.toptier",
+            [1456441506] = "door.hinged.wood",
+            [1200628767] = "door.key",
+            [-778796102] = "door.closer",
+            [1526866730] = "xmas.door.garland",
+            [1925723260] = "dropbox",
+            [1891056868] = "ducttape",
+            [1295154089] = "explosive.satchel",
+            [498591726] = "explosive.timed",
+            [1755466030] = "explosives",
+            [726730162] = "facialhair.style01",
+            [-1034048911] = "fat.animal",
+            [252529905] = "femalearmpithair.style01",
+            [471582113] = "femaleeyebrow.style01",
+            [-1138648591] = "femalepubichair.style01",
+            [305916740] = "female_hairstyle_01",
+            [305916742] = "female_hairstyle_03",
+            [305916744] = "female_hairstyle_05",
+            [1908328648] = "fireplace.stone",
+            [-2078972355] = "fish.cooked",
+            [-533484654] = "fish.raw",
+            [1571660245] = "fishingrod.handmade",
+            [1045869440] = "flamethrower",
+            [1985408483] = "flameturret",
+            [97513422] = "flare",
+            [1496470781] = "flashlight.held",
+            [1229879204] = "weapon.mod.flashlight",
+            [-1722829188] = "floor.grill",
+            [1849912854] = "floor.ladder.hatch",
+            [-1266285051] = "fridge",
+            [-1749787215] = "boots.frog",
+            [28178745] = "lowgradefuel",
+            [-505639592] = "furnace",
+            [1598149413] = "furnace.large",
+            [-1779401418] = "gates.external.high.stone",
+            [-57285700] = "gates.external.high.wood",
+            [98228420] = "gears",
+            [1422845239] = "geiger.counter",
+            [277631078] = "generator.wind.scrap",
+            [115739308] = "burlap.gloves",
+            [-522149009] = "gloweyes",
+            [3175989] = "glue",
+            [718197703] = "granolabar",
+            [384204160] = "grenade.beancan",
+            [-1308622549] = "grenade.f1",
+            [-217113639] = "fun.guitar",
+            [-1580059655] = "gunpowder",
+            [-1832205789] = "male_hairstyle_01",
+            [305916741] = "female_hairstyle_02",
+            [936777834] = "attire.hide.helterneck",
+            [-1224598842] = "hammer",
+            [-1976561211] = "hammer.salvaged",
+            [-1406876421] = "hat.beenie",
+            [-1397343301] = "hat.boonie",
+            [1260209393] = "bucket.helmet",
+            [-1035315940] = "burlap.headwrap",
+            [-1381682752] = "hat.candle",
+            [696727039] = "hat.cap",
+            [-2128719593] = "coffeecan.helmet",
+            [-1178289187] = "deer.skull.mask",
+            [1351172108] = "heavy.plate.helmet",
+            [-450738836] = "hat.miner",
+            [-966287254] = "attire.reindeer.headband",
+            [340009023] = "riot.helmet",
+            [124310981] = "hat.wolf",
+            [1501403549] = "wood.armor.helmet",
+            [698310895] = "hatchet",
+            [523855532] = "hazmatsuit",
+            [2045246801] = "clone.hemp",
+            [583506109] = "seed.hemp",
+            [-148163128] = "attire.hide.boots",
+            [-132588262] = "attire.hide.skirt",
+            [-1666761111] = "attire.hide.vest",
+            [-465236267] = "weapon.mod.holosight",
+            [-1211618504] = "hoodie",
+            [2133577942] = "hq.metal.ore",
+            [-1014825244] = "humanmeat.burned",
+            [-991829475] = "humanmeat.cooked",
+            [-642008142] = "humanmeat.raw",
+            [661790782] = "humanmeat.spoiled",
+            [-1440143841] = "icepick.salvaged",
+            [569119686] = "bone.armor.suit",
+            [1404466285] = "heavy.plate.jacket",
+            [-1616887133] = "jacket.snow",
+            [-1167640370] = "jacket",
+            [-1284735799] = "jackolantern.angry",
+            [-1278649848] = "jackolantern.happy",
+            [776005741] = "knife.bone",
+            [108061910] = "ladder.wooden.wall",
+            [255101535] = "trap.landmine",
+            [-51678842] = "lantern",
+            [-789202811] = "largemedkit",
+            [516382256] = "weapon.mod.lasersight",
+            [50834473] = "leather",
+            [-975723312] = "lock.code",
+            [1908195100] = "lock.key",
+            [-1097452776] = "locker",
+            [146685185] = "longsword",
+            [-1716193401] = "rifle.lr300",
+            [193190034] = "lmg.m249",
+            [371156815] = "pistol.m92",
+            [3343606] = "mace",
+            [825308669] = "machete",
+            [830965940] = "mailbox",
+            [1662628660] = "male.facialhair.style02",
+            [1662628661] = "male.facialhair.style03",
+            [1662628662] = "male.facialhair.style04",
+            [-1832205788] = "male_hairstyle_02",
+            [-1832205786] = "male_hairstyle_04",
+            [1625090418] = "malearmpithair.style01",
+            [-1269800768] = "maleeyebrow.style01",
+            [429648208] = "malepubichair.style01",
+            [-1832205787] = "male_hairstyle_03",
+            [-1832205785] = "male_hairstyle_05",
+            [107868] = "map",
+            [997973965] = "mask.balaclava",
+            [-46188931] = "mask.bandana",
+            [-46848560] = "metal.facemask",
+            [-2066726403] = "bearmeat.burned",
+            [-2043730634] = "bearmeat.cooked",
+            [1325935999] = "bearmeat",
+            [-225234813] = "deermeat.burned",
+            [-202239044] = "deermeat.cooked",
+            [-322501005] = "deermeat.raw",
+            [-1851058636] = "horsemeat.burned",
+            [-1828062867] = "horsemeat.cooked",
+            [-1966381470] = "horsemeat.raw",
+            [968732481] = "meat.pork.burned",
+            [991728250] = "meat.pork.cooked",
+            [-253819519] = "meat.boar",
+            [-1714986849] = "wolfmeat.burned",
+            [-1691991080] = "wolfmeat.cooked",
+            [179448791] = "wolfmeat.raw",
+            [431617507] = "wolfmeat.spoiled",
+            [688032252] = "metal.fragments",
+            [-1059362949] = "metal.ore",
+            [1265861812] = "metal.plate.torso",
+            [374890416] = "metal.refined",
+            [1567404401] = "metalblade",
+            [-1057402571] = "metalpipe",
+            [-758925787] = "mining.pumpjack",
+            [-1411620422] = "mining.quarry",
+            [88869913] = "fish.minnows",
+            [-2094080303] = "smg.mp5",
+            [843418712] = "mushroom",
+            [-1569356508] = "weapon.mod.muzzleboost",
+            [-1569280852] = "weapon.mod.muzzlebrake",
+            [449769971] = "pistol.nailgun",
+            [590532217] = "ammo.nailgun.nails",
+            [3387378] = "note",
+            [1767561705] = "burlap.trousers",
+            [106433500] = "pants",
+            [-1334615971] = "heavy.plate.pants",
+            [-135651869] = "attire.hide.pants",
+            [-1595790889] = "roadsign.kilt",
+            [-459156023] = "pants.shorts",
+            [106434956] = "paper",
+            [-578028723] = "pickaxe",
+            [-586116979] = "jar.pickle",
+            [-1379225193] = "pistol.eoka",
+            [-930579334] = "pistol.revolver",
+            [548699316] = "pistol.semiauto",
+            [142147109] = "planter.large",
+            [148953073] = "planter.small",
+            [102672084] = "attire.hide.poncho",
+            [640562379] = "pookie.bear",
+            [-1732316031] = "xmas.present.large",
+            [-2130280721] = "xmas.present.medium",
+            [-1725510067] = "xmas.present.small",
+            [1974032895] = "propanetank",
+            [-225085592] = "pumpkin",
+            [509654999] = "clone.pumpkin",
+            [466113771] = "seed.pumpkin",
+            [2033918259] = "pistol.python",
+            [2069925558] = "target.reactive",
+            [-1026117678] = "box.repair.bench",
+            [1987447227] = "research.table",
+            [540154065] = "researchpaper",
+            [1939428458] = "riflebody",
+            [-288010497] = "roadsign.jacket",
+            [-847065290] = "roadsigns",
+            [3506021] = "rock",
+            [649603450] = "rocket.launcher",
+            [3506418] = "rope",
+            [569935070] = "rug.bear",
+            [113284] = "rug",
+            [1916127949] = "water.salt",
+            [-1775234707] = "salvaged.cleaver",
+            [-388967316] = "salvaged.sword",
+            [2007564590] = "santahat",
+            [-1705696613] = "scarecrow",
+            [670655301] = "hazmatsuit_scientist",
+            [1148128486] = "hazmatsuit_scientist_peacekeeper",
+            [-141135377] = "weapon.mod.small.scope",
+            [109266897] = "scrap",
+            [-527558546] = "searchlight",
+            [-1745053053] = "rifle.semiauto",
+            [1223860752] = "semibody",
+            [-419069863] = "sewingkit",
+            [-1617374968] = "sheetmetal",
+            [2057749608] = "shelves",
+            [24576628] = "shirt.collared",
+            [-1659202509] = "shirt.tanktop",
+            [2107229499] = "shoes.boots",
+            [191795897] = "shotgun.double",
+            [-1009492144] = "shotgun.pump",
+            [2077983581] = "shotgun.waterpipe",
+            [378365037] = "guntrap",
+            [-529054135] = "shutter.metal.embrasure.a",
+            [-529054134] = "shutter.metal.embrasure.b",
+            [486166145] = "shutter.wood.a",
+            [1628490888] = "sign.hanging.banner.large",
+            [1498516223] = "sign.hanging",
+            [-632459882] = "sign.hanging.ornate",
+            [-626812403] = "sign.pictureframe.landscape",
+            [385802761] = "sign.pictureframe.portrait",
+            [2117976603] = "sign.pictureframe.tall",
+            [1338515426] = "sign.pictureframe.xl",
+            [-1455694274] = "sign.pictureframe.xxl",
+            [1579245182] = "sign.pole.banner.large",
+            [-587434450] = "sign.post.double",
+            [-163742043] = "sign.post.single",
+            [-1224714193] = "sign.post.town",
+            [644359987] = "sign.post.town.roof",
+            [-1962514734] = "sign.wooden.huge",
+            [-705305612] = "sign.wooden.large",
+            [-357728804] = "sign.wooden.medium",
+            [-698499648] = "sign.wooden.small",
+            [1213686767] = "weapon.mod.silencer",
+            [386382445] = "weapon.mod.simplesight",
+            [1859976884] = "skull_fire_pit",
+            [960793436] = "skull.human",
+            [1001265731] = "skull.wolf",
+            [1253290621] = "sleepingbag",
+            [470729623] = "small.oil.refinery",
+            [1051155022] = "stash.small",
+            [865679437] = "fish.troutsmall",
+            [927253046] = "smallwaterbottle",
+            [109552593] = "smg.2",
+            [-2092529553] = "smgbody",
+            [691633666] = "snowball",
+            [-2055888649] = "snowman",
+            [621575320] = "shotgun.spas12",
+            [-2118132208] = "spear.stone",
+            [-1127699509] = "spear.wooden",
+            [-685265909] = "spikes.floor",
+            [552706886] = "spinner.wheel",
+            [1835797460] = "metalspring",
+            [-892259869] = "sticks",
+            [-1623330855] = "stocking.large",
+            [-1616524891] = "stocking.small",
+            [789892804] = "stone.pickaxe",
+            [-1289478934] = "stonehatchet",
+            [-892070738] = "stones",
+            [-891243783] = "sulfur",
+            [889398893] = "sulfur.ore",
+            [-1625468793] = "supply.signal",
+            [1293049486] = "surveycharge",
+            [1369769822] = "fishtrap.small",
+            [586484018] = "syringe.medical",
+            [110115790] = "table",
+            [1490499512] = "targeting.computer",
+            [3552619] = "tarp",
+            [1471284746] = "techparts",
+            [456448245] = "smg.thompson",
+            [110547964] = "torch",
+            [1588977225] = "xmas.decoration.baubels",
+            [918540912] = "xmas.decoration.candycanes",
+            [-471874147] = "xmas.decoration.gingerbreadmen",
+            [205978836] = "xmas.decoration.lights",
+            [-1044400758] = "xmas.decoration.pinecone",
+            [-2073307447] = "xmas.decoration.star",
+            [435230680] = "xmas.decoration.tinsel",
+            [-864578046] = "tshirt",
+            [1660607208] = "tshirt.long",
+            [260214178] = "tunalight",
+            [-1847536522] = "vending.machine",
+            [-496055048] = "wall.external.high.stone",
+            [-1792066367] = "wall.external.high",
+            [562888306] = "wall.frame.cell.gate",
+            [-427925529] = "wall.frame.cell",
+            [995306285] = "wall.frame.fence.gate",
+            [-378017204] = "wall.frame.fence",
+            [447918618] = "wall.frame.garagedoor",
+            [313836902] = "wall.frame.netting",
+            [1175970190] = "wall.frame.shopfront",
+            [525244071] = "wall.frame.shopfront.metal",
+            [-1021702157] = "wall.window.bars.metal",
+            [-402507101] = "wall.window.bars.toptier",
+            [-1556671423] = "wall.window.bars.wood",
+            [61936445] = "wall.window.glass.reinforced",
+            [112903447] = "water",
+            [1817873886] = "water.catcher.large",
+            [1824679850] = "water.catcher.small",
+            [-1628526499] = "water.barrel",
+            [547302405] = "waterjug",
+            [1840561315] = "water.purifier",
+            [-460592212] = "xmas.window.garland",
+            [3655341] = "wood",
+            [1554697726] = "wood.armor.jacket",
+            [-1883959124] = "wood.armor.pants",
+            [-481416622] = "workbench1",
+            [-481416621] = "workbench2",
+            [-481416620] = "workbench3",
+            [-1151126752] = "xmas.lightstring",
+            [-1926458555] = "xmas.tree"
+        };
+        #endregion
+
+        #region[Statistic] Methods for Top Players
+
+        #region[HookMethod] OnEntityDeath
+        [HookMethod("OnEntityDeath")]
+        private void OnEntityDeath(BaseCombatEntity entity, HitInfo info)
+        {
+            if (entity == null || info == null || info.Initiator == null)
+                return;
+
+            if (System.Convert.ToBoolean(Config["TOP.USERS"]))
+            {
+                BaseEntity initiator = info.Initiator;
+
+                if (entity as BasePlayer == null && initiator as BasePlayer == null)
+                    return;
+
+                Dictionary<string, object> args = new Dictionary<string, object>();
+
+                if (initiator as BasePlayer != null)
+                {
+                    args["player_id"] = initiator.ToPlayer().UserIDString;
+                }
+                else if (initiator.PrefabName.Contains("agents"))
+                {
+                    args["player_id"] = "1";
+                }
+
+                if (entity as BasePlayer != null)
+                {
+                    args["victim_id"] = entity.ToPlayer().UserIDString;
+                    args["type"] = entity.ToPlayer().IsSleeping() ? "sleeper" : "kill";
+                }
+                else if (entity.PrefabName.Contains("agents"))
+                {
+                    args["victim_id"] = "1";
+                    args["type"] = "kill";
+                }
+
+                //Debug.LogWarning(entity.PrefabName);
+                args["time"] = System.Convert.ToInt32((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
+
+                if (args.Count == 4)
+                {
+                    Stats.Add(args);
+                }
+
+            }
+
+            if (Stats.Count >= 10)
+                SendKillsInfo();
+            //Debug.LogWarning(JsonConvert.SerializeObject(Stats));
+        }
+        #endregion
+
+        #region[HookMethod] OnPlayerDisconnected
+        [HookMethod("OnPlayerDisconnected")]
+        private void OnPlayerDisconnected(BasePlayer player)
+        {
+            if (System.Convert.ToBoolean(Config["TOP.USERS"]))
+            {
+                if (Config["SERVER.ID"].ToString() == "0")
+                {
+                    Debug.LogWarning("Need set SERVER.ID in configurations to send info for top players");
+                }
+                else
+                {
+                    Dictionary<string, object> args = new Dictionary<string, object>();
+
+                    if (player as BasePlayer != null)
+                    {
+                        args["player_id"] = player.UserIDString;
+                        args["played"] = player.net.connection.GetSecondsConnected().ToString();
+                        args["username"] = player.displayName;
+                        args["time"] = System.Convert.ToInt32((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds).ToString();
+
+                        Leaves.Add(args);
+
+                        if (Leaves.Count >= 10)
+                            SendLeavesInfo();
+                    }
+                }
+            }
+        }
+        #endregion
+
+        #region[HookMethod] OnServerSave
+        [HookMethod("OnServerSave")]
+        private void OnServerSave()
+        {
+            SendKillsInfo();
+            SendLeavesInfo();
+        }
+        #endregion
+
+        #region[HookMethod] SendKillsInfo
+        private void SendKillsInfo()
+        {
+            if (System.Convert.ToBoolean(Config["TOP.USERS"]))
+            {
+                if (Config["SERVER.ID"].ToString() == "0")
+                {
+                    Debug.LogWarning("Need set SERVER.ID in configurations to send info for top players");
+                }
+                else
+                {
+                    for (int i = 0; i < (int)(Stats.Count / 20) + 1; i++)
+                    {
+                        if (Stats.Count > 0)
+                        {
+                            List<Dictionary<string, object>> Temp = new List<Dictionary<string, object>>();
+                            int range = Stats.Count > 20 ? 20 : Stats.Count;
+                            Temp = Stats.GetRange(0, range);
+                            Stats.RemoveRange(0, range);
+
+                            string request = $"{Request}&json=true&data={JsonConvert.SerializeObject(Temp)}";
+
+                            //Debug.LogWarning(request);
+                            webrequest.EnqueueGet(request, (code, res) =>
+                            {
+                                switch (code)
+                                {
+                                    case 0:
+                                        Debug.LogError("Api does not responded to a request");
+                                        break;
+                                    case 200:
+                                        break;
+                                    case 404:
+                                        Debug.LogError("Response code: 404, please check your configurations");
+                                        break;
+                                }
+                            }, this);
+                        }
+
+                    }
+                    Stats.Clear();
+                }
+            }
+        }
+        #endregion
+
+        #region[HookMethod] SendLeavesInfo
+        private void SendLeavesInfo()
+        {
+            if (System.Convert.ToBoolean(Config["TOP.USERS"]))
+            {
+                if (Config["SERVER.ID"].ToString() == "0")
+                {
+                    Debug.LogWarning("Need set SERVER.ID in configurations to send info for top players");
+                }
+                else
+                {
+                    for (int i = 0; i < (int)(Leaves.Count / 20) + 1; i++)
+                    {
+                        if (Leaves.Count > 0)
+                        {
+                            List<Dictionary<string, object>> Temp = new List<Dictionary<string, object>>();
+                            int range = Leaves.Count > 20 ? 20 : Leaves.Count;
+                            Temp = Leaves.GetRange(0, range);
+                            Leaves.RemoveRange(0, range);
+
+
+                            string request = $"{Request}&action=leaves&type=json&data={JsonConvert.SerializeObject(Temp)}";
+
+                            //Debug.LogWarning(request);
+                            webrequest.EnqueueGet(request, (code, res) =>
+                            {
+                                switch (code)
+                                {
+                                    case 0:
+                                        Debug.LogError("Api does not responded to a request");
+                                        break;
+                                    case 200:
+                                        break;
+                                    case 404:
+                                        Debug.LogError("Response code: 404, please check your configurations");
+                                        break;
+                                }
+                            }, this);
+                        }
+
+                    }
+                    Leaves.Clear();
+                }
+            }
+        }
+        #endregion
+
+        #region[ConsoleCommand] gs.send
+        [ConsoleCommand("gs.send")]
+        private void sendInfo(ConsoleSystem.Arg Args)
+        {
+            if (Args.Player() != null)
+                return;
+
+            switch (Args.Args[0])
+            {
+                case "kills":
+                    SendKillsInfo();
+                    Debug.LogWarning($"Sended info about kills");
+                    break;
+                case "leave":
+                    SendLeavesInfo();
+                    Debug.LogWarning($"Sended info about leaves");
+                    break;
+                default:
+                    Debug.LogWarning("Command not found");
+                    break;
+            }
+        }
+        #endregion
+
+        #region[ChatCommand] /gstop
+        [ChatCommand("gstop")]
+        private void cmdTop(BasePlayer player, string command, string[] args)
+        {
+            if (System.Convert.ToBoolean(Config["COMMAND.TOP"]))
+            {
+                string request = $"{Request}&top=true&steam_id={player.UserIDString}";
+                webrequest.EnqueueGet(request, (code, res) =>
+                {
+                    switch (code)
+                    {
+                        case 0:
+                            Debug.LogError("Api does not responded to a request");
+                            break;
+                        case 200:
+                            List<object> data = JsonConvert.DeserializeObject<Dictionary<string, object>>(res, new KeyValuesConverter())["data"] as List<object>;
+                            // Debug.LogWarning(res);
+                            if (data.Count > 0)
+                            {
+                                player.ChatMessage($"Топ игроков: ");
+                            }
+                            else
+                            {
+                                player.ChatMessage($"Топ игроков пуст");
+                            }
+                            foreach (object user in data)
+                            {
+                                Dictionary<string, object> info = user as Dictionary<string, object>;
+                                if (!System.Convert.ToBoolean(String.Compare(info["steam_id"].ToString(), player.UserIDString)))
+                                {
+                                    if (System.Convert.ToInt32(info["position"].ToString()) > 6)
+                                        player.ChatMessage($"...");
+                                    player.ChatMessage($"#{info["position"]} <color=lime>{info["username"]}</color> : Очков: {info["points"]}, Убийств: {info["kill"]}, Смертей: {info["death"]}");
+                                }
+                                else
+                                {
+                                    player.ChatMessage($"#{info["position"]} {info["username"]} : Очков: {info["points"]}, Убийств: {info["kill"]}, Смертей: {info["death"]}");
+                                }
+
+                            }
+                            break;
+                        case 404:
+                            Debug.LogError("Response code: 404, please check your configurations");
+                            break;
+                    }
+                }, this);
+            }
+            else { }
+        }
+        #endregion
+
+        #endregion
+
+    }
+}

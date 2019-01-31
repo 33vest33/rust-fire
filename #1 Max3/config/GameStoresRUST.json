@@ -1,0 +1,11 @@
+{
+    "SHOP.ID": "12801",
+    "SERVER.ID": "9498",
+    "SECRET.KEY" : "7db4af91bc8cc14d2c4724b2952bf314",
+    "TOP.USERS" : true,
+    "COMMAND.TOP" : false,
+    "ITEMS.SPLIT" : false,
+    "UI.ENABLED" : true,
+    "BUCKET.BUTTON" : false,
+    "BUCKET.IMG" : "https://d.radikal.ru/d42/1808/be/0f233040bb90.png"
+}

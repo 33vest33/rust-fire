@@ -1,33 +1,19 @@
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace Oxide.Plugins
 {
-    [Info("BlockStashPlacement", "Flaymar", "1.0.2", ResourceId = 2060)]
-    [Description("Blocks small stash placement!")]
+    [Info("BlockStashPlacement", "Orange", "1.0.0")]
     public class BlockStashPlacement : RustPlugin
     {
-        void Loaded(){
-            lang.RegisterMessages(messages, this);
-        }
-
-        Dictionary<string, string> messages = new Dictionary<string, string>()
+        private void OnEntitySpawned(StashContainer stash)
         {
-            {"MayNotPlace", "Ошибка! Нельзя ставить Small Stash на землю"},
-        };
-        void OnEntitySpawned(BaseEntity entity, GameObject gameObject)
-        {
-            if (entity is StashContainer) 
+            var player = BasePlayer.FindByID(stash.OwnerID);
+            
+            if (player != null)
             {
-                var stash = entity.GetComponent<StashContainer>(); 
-                var player = BasePlayer.FindByID(stash.OwnerID);
-                if (player != null)
-                {
-                    SendReply(player, lang.GetMessage("MayNotPlace", this, player.UserIDString));
-                    player.inventory.GiveItem(ItemManager.CreateByItemID(1051155022));
-                }
-                stash.DieInstantly();                             
+                player.ChatMessage("<color=#F84949>Ошибка!</color> Нельзя ставить <color=#ff7300>Small Stash</color>");
+                player.inventory.GiveItem(ItemManager.CreateByName("stash.small"));
             }
+            
+            stash.DieInstantly();        
         }
     }
 }

@@ -578,11 +578,13 @@ namespace Oxide.Plugins
                 LogError("DiscordMessages enabled but it isn't setup correctly.");
                 Discord_use = false;
             }
+
+            timer.Every(550, SaveData);
         }
 
-        void Unload() => OnServerSave();
+        void Unload() => SaveData();
 
-        void OnServerSave()
+        void SaveData()
         {
             Save_ID();
             if (BanSystemHasFlag(banSystem, BanSystem.PlayerDatabase))

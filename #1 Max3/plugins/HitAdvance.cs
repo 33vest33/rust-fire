@@ -28,13 +28,14 @@ namespace Oxide.Plugins
         }
 
         #endregion
-        
+
         #region Variables
 
         private static Configuration config;
 
         [JsonProperty("Настройки игроков")]
-        private Dictionary<ulong, PlayerSettings> playerMarkers = new Dictionary<ulong,PlayerSettings>();
+        private Dictionary<ulong, PlayerSettings> playerMarkers = new Dictionary<ulong, PlayerSettings>();
+
         [JsonProperty("Настройка маркеров и их привлегий")]
         private Dictionary<string, string> markerPermissions = new Dictionary<string, string>
         {
@@ -42,14 +43,14 @@ namespace Oxide.Plugins
             ["ПОЛОСА"] = "HitAdvance.Line",
             ["ТЕКСТ"] = "HitAdvance.Text",
             ["ОБА"] = "HitAdvance.Both"
-        };        
-        
+        };
+
         private string Layer = "UI_HitMarker";
 
         #endregion
 
         #region Hooks
-        
+
         protected override void LoadConfig()
         {
             base.LoadConfig();
@@ -62,71 +63,77 @@ namespace Oxide.Plugins
                 PrintWarning($"Error reading config, creating one new config!");
                 LoadDefaultConfig();
             }
-            
+
             NextTick(SaveConfig);
         }
 
         protected override void LoadDefaultConfig()
         {
             config = new Configuration();
-        } 
-        
+        }
+
         protected override void SaveConfig() => Config.WriteObject(config);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-        private void OnServerInitialized()               
-        {     
-		if (Interface.Oxide.DataFileSystem.ExistsDatafile("HitAdvance/Player"))
-                playerMarkers = Interface.Oxide.DataFileSystem.ReadObject<Dictionary<ulong, PlayerSettings>>("HitAdvance/Player");
+
+        private void OnServerInitialized()
+        {
+            if (Interface.Oxide.DataFileSystem.ExistsDatafile("HitAdvance/Player"))
+                playerMarkers =
+                    Interface.Oxide.DataFileSystem.ReadObject<Dictionary<ulong, PlayerSettings>>("HitAdvance/Player");
             if (Interface.Oxide.DataFileSystem.ExistsDatafile("HitAdvance/Permissions"))
-                markerPermissions = Interface.Oxide.DataFileSystem.ReadObject<Dictionary<string, string>>("HitAdvance/Permissions");
+                markerPermissions =
+                    Interface.Oxide.DataFileSystem.ReadObject<Dictionary<string, string>>("HitAdvance/Permissions");
             else
             {
                 Interface.Oxide.DataFileSystem.WriteObject("HitAdvance/Permissions", markerPermissions);
                 OnServerInitialized();
                 return;
             }
-            
+
             foreach (var check in markerPermissions.Where(p => p.Value != ""))
                 permission.RegisterPermission(check.Value, this);
-            
+
             BasePlayer.activePlayerList.ForEach(OnPlayerInit);
         }
 
         private void OnPlayerInit(BasePlayer player)
         {
             if (!playerMarkers.ContainsKey(player.userID))
-                playerMarkers.Add(player.userID, new PlayerSettings() { Current = config.CONF_DefaultEnable, Blocks = false });
+                playerMarkers.Add(player.userID,
+                    new PlayerSettings() {Current = config.CONF_DefaultEnable, Blocks = false});
         }
-        
+
         private void OnEntityTakeDamage(BaseCombatEntity entity, HitInfo info)
         {
-           NextTick(() =>
-           {
-               if (entity == null || entity.GetComponent<BuildingBlock>() == null ||
-                   entity.GetComponent<BuildingBlock>().IsDestroyed ||
-                   entity.GetComponent<BuildingBlock>().IsDead() || info == null || info.Initiator == null || entity.lastAttacker == null)
-                   return;
-                if (entity is BuildingBlock && ((info.Initiator is BasePlayer && info.Initiator.GetComponent<NPCPlayer>() == null) || entity.lastAttacker.GetComponent<BasePlayer>() != null))
+            NextTick(() =>
+            {
+                if (entity == null || entity.GetComponent<BuildingBlock>() == null ||
+                    entity.GetComponent<BuildingBlock>().IsDestroyed ||
+                    entity.GetComponent<BuildingBlock>().IsDead() || info == null || info.Initiator == null ||
+                    entity.lastAttacker == null)
+                    return;
+                if (entity is BuildingBlock &&
+                    ((info.Initiator is BasePlayer && info.Initiator.GetComponent<NPCPlayer>() == null) ||
+                     entity.lastAttacker.GetComponent<BasePlayer>() != null))
                 {
-                    if (entity.GetComponent<BuildingBlock>().IsDestroyed || entity.GetComponent<BuildingBlock>().IsDead())
+                    if (entity.GetComponent<BuildingBlock>().IsDestroyed ||
+                        entity.GetComponent<BuildingBlock>().IsDead())
                         return;
-                    
+
                     BasePlayer attacker = entity.lastAttacker.GetComponent<BasePlayer>();
                     if (attacker == null || attacker.GetComponent<NPCPlayer>() != null ||
                         !playerMarkers.ContainsKey(attacker.userID))
                         return;
-                    
+
                     if (playerMarkers[attacker.userID].Current == 1)
                     {
                         DrawLine(attacker, entity as BaseCombatEntity);
-
                     }
                     else if (playerMarkers[attacker.userID].Current == 2)
                     {
-                      //  NextTick(() =>
-                     //  {
-                            DrawText(attacker, entity as BaseCombatEntity, info);
-                       // });
+                        //  NextTick(() =>
+                        //  {
+                        DrawText(attacker, entity as BaseCombatEntity, info);
+                        // });
                     }
                     else if (playerMarkers[attacker.userID].Current == 3)
                     {
@@ -134,27 +141,23 @@ namespace Oxide.Plugins
                         DrawText(attacker, entity as BaseCombatEntity, info);
                     }
                 }
-           });
-           return;
+            });
+            return;
         }
-        
+
         private void OnPlayerAttack(BasePlayer attacker, HitInfo info)
         {
-            if ((info?.HitEntity is BasePlayer || (info?.HitEntity is BuildingBlock && playerMarkers[attacker.userID].Blocks)) && attacker.GetComponent<NPCPlayer>() == null)
+            if ((info?.HitEntity is BasePlayer ||
+                 (info?.HitEntity is BuildingBlock && playerMarkers[attacker.userID].Blocks)) &&
+                attacker.GetComponent<NPCPlayer>() == null)
             {
                 if (playerMarkers[attacker.userID].Current == 1)
                 {
-                    NextTick(() =>
-                    {
-                        DrawLine(attacker, info.HitEntity as BaseCombatEntity);
-                    });
+                    NextTick(() => { DrawLine(attacker, info.HitEntity as BaseCombatEntity); });
                 }
                 else if (playerMarkers[attacker.userID].Current == 2)
                 {
-                    NextTick(() =>
-                    {
-                        DrawText(attacker, info.HitEntity as BaseCombatEntity, info);
-                    });
+                    NextTick(() => { DrawText(attacker, info.HitEntity as BaseCombatEntity, info); });
                 }
                 else if (playerMarkers[attacker.userID].Current == 3)
                 {
@@ -191,7 +194,8 @@ namespace Oxide.Plugins
                 int newId;
                 if (int.TryParse(args.Args[0], out newId))
                 {
-                    if (markerPermissions.ElementAt(newId).Value == "" || permission.UserHasPermission(player.UserIDString, markerPermissions.ElementAt(newId).Value))
+                    if (markerPermissions.ElementAt(newId).Value == "" ||
+                        permission.UserHasPermission(player.UserIDString, markerPermissions.ElementAt(newId).Value))
                     {
                         SendReply(player, $"");
                         playerMarkers[player.userID].Current = newId;
@@ -199,7 +203,8 @@ namespace Oxide.Plugins
                     }
                     else
                     {
-                        SendReply(player, $"У вас <color=#F99C53FF>недостаточно прав</color> для включения этого хит-маркера!\nКупите <color=#F99C53FF>VIP</color> или <color=#F99C53FF>отдельную услугу</color> на сайте!");
+                        SendReply(player,
+                            $"У вас <color=#F99C53FF>недостаточно прав</color> для включения этого хит-маркера!\nКупите <color=#F99C53FF>VIP</color> или <color=#F99C53FF>отдельную услугу</color> на сайте!");
                     }
                 }
                 else
@@ -208,7 +213,7 @@ namespace Oxide.Plugins
                         playerMarkers[player.userID].Blocks = false;
                     else
                         playerMarkers[player.userID].Blocks = true;
-                    
+
                     SendReply(player, $"");
                     DrawChangeMenu(player);
                 }
@@ -276,7 +281,6 @@ namespace Oxide.Plugins
             }
             catch (NullReferenceException)
             {
-                
             }
         }
 
@@ -286,7 +290,7 @@ namespace Oxide.Plugins
             {
                 if (target == null)
                     return;
-                
+
                 var id = CuiHelper.GetGuid();
                 CuiElementContainer container = new CuiElementContainer();
 
@@ -348,7 +352,6 @@ namespace Oxide.Plugins
                             AnchorMin = $"{position.x} {position.y}", AnchorMax = $"{position.x} {position.y}",
                             OffsetMin = "-100 -100", OffsetMax = "100 100"
                         }
-
                     }
                 });
 
@@ -357,9 +360,7 @@ namespace Oxide.Plugins
             }
             catch (NullReferenceException)
             {
-                
             }
-            
         }
 
         private void DrawChangeMenu(BasePlayer player)
@@ -370,15 +371,16 @@ namespace Oxide.Plugins
             container.Add(new CuiPanel
             {
                 CursorEnabled = true,
-                RectTransform = { AnchorMin = "0.3046875 0.3733796", AnchorMax = "0.3046875 0.3733796", OffsetMax = "425 182" },
-                Image = { Color = "0 0 0 0" }
+                RectTransform =
+                    {AnchorMin = "0.3046875 0.3733796", AnchorMax = "0.3046875 0.3733796", OffsetMax = "425 182"},
+                Image = {Color = "0 0 0 0"}
             }, "Overlay", Layer);
 
             container.Add(new CuiButton
             {
-                RectTransform = { AnchorMin = "-100 -100", AnchorMax = "100 100" },
-                Button = { Close = Layer, Color = "0 0 0 0" },
-                Text = { Text = "" }
+                RectTransform = {AnchorMin = "-100 -100", AnchorMax = "100 100"},
+                Button = {Close = Layer, Color = "0 0 0 0"},
+                Text = {Text = ""}
             }, Layer);
 
             container.Add(new CuiElement
@@ -387,8 +389,8 @@ namespace Oxide.Plugins
                 Name = Layer + ".BG",
                 Components =
                 {
-                    new CuiImageComponent { Color = HexToRustFormat("#0000003C") },
-                    new CuiRectTransformComponent { AnchorMin = "0 0.26", AnchorMax = "1 1" }
+                    new CuiImageComponent {Color = HexToRustFormat("#0000003C")},
+                    new CuiRectTransformComponent {AnchorMin = "0 0.26", AnchorMax = "1 1"}
                 }
             });
 
@@ -398,8 +400,8 @@ namespace Oxide.Plugins
                 Name = Layer + ".Header",
                 Components =
                 {
-                    new CuiImageComponent { Color = HexToRustFormat("#F99C53FF") },
-                    new CuiRectTransformComponent { AnchorMin = "0 0.8144424", AnchorMax = "1 1" }
+                    new CuiImageComponent {Color = HexToRustFormat("#F99C53FF")},
+                    new CuiRectTransformComponent {AnchorMin = "0 0.8144424", AnchorMax = "1 1"}
                 }
             });
 
@@ -408,8 +410,12 @@ namespace Oxide.Plugins
                 Parent = Layer + ".Header",
                 Components =
                 {
-                    new CuiTextComponent { Text = "ВЫБОР ХИТ-МАРКЕРА", Color = HexToRustFormat("#476443FF"), FontSize = 20, Font = "robotocondensed-bold.ttf", Align = TextAnchor.MiddleCenter },
-                    new CuiRectTransformComponent { AnchorMin = "0 0", AnchorMax = "1 1" }
+                    new CuiTextComponent
+                    {
+                        Text = "ВЫБОР ХИТ-МАРКЕРА", Color = HexToRustFormat("#476443FF"), FontSize = 20,
+                        Font = "robotocondensed-bold.ttf", Align = TextAnchor.MiddleCenter
+                    },
+                    new CuiRectTransformComponent {AnchorMin = "0 0", AnchorMax = "1 1"}
                 }
             });
 
@@ -418,8 +424,13 @@ namespace Oxide.Plugins
                 Parent = Layer,
                 Components =
                 {
-                    new CuiTextComponent { Text = "Здесь вы можете выбрать вид хит-маркера, либо полностью отключить его.", Color = HexToRustFormat("#FFFFFFFF"), FontSize = 14, Font = "robotocondensed-regular.ttf", Align = TextAnchor.MiddleCenter },
-                    new CuiRectTransformComponent { AnchorMin = "0.05 0.620658", AnchorMax = "0.95 0.8180986" }
+                    new CuiTextComponent
+                    {
+                        Text = "Здесь вы можете выбрать вид хит-маркера, либо полностью отключить его.",
+                        Color = HexToRustFormat("#FFFFFFFF"), FontSize = 14, Font = "robotocondensed-regular.ttf",
+                        Align = TextAnchor.MiddleCenter
+                    },
+                    new CuiRectTransformComponent {AnchorMin = "0.05 0.620658", AnchorMax = "0.95 0.8180986"}
                 }
             });
 
@@ -427,74 +438,92 @@ namespace Oxide.Plugins
             int i = 0;
             foreach (var check in markerPermissions)
             {
-                color = playerMarkers[player.userID].Current == i ? HexToRustFormat("#518eefFF") :
-                    permission.UserHasPermission(player.UserIDString, check.Value) || check.Value == "" ? HexToRustFormat("#F99C53FF") :
-                    HexToRustFormat("#C44B4BFF");
-                
+                color = playerMarkers[player.userID].Current == i
+                    ? HexToRustFormat("#518eefFF")
+                    :
+                    permission.UserHasPermission(player.UserIDString, check.Value) || check.Value == ""
+                        ?
+                        HexToRustFormat("#F99C53FF")
+                        :
+                        HexToRustFormat("#C44B4BFF");
+
                 container.Add(new CuiElement
                 {
                     Parent = Layer,
                     Name = Layer + $".{i}",
                     Components =
                     {
-                        new CuiImageComponent { Color = color },
-                        new CuiRectTransformComponent { AnchorMin = $"{0.01254448 + i * 0.2468} 0.4561242", AnchorMax = $"{0.2443728 + i * 0.2468} 0.5950636", OffsetMax = "0 0" }
+                        new CuiImageComponent {Color = color},
+                        new CuiRectTransformComponent
+                        {
+                            AnchorMin = $"{0.01254448 + i * 0.2468} 0.4561242",
+                            AnchorMax = $"{0.2443728 + i * 0.2468} 0.5950636", OffsetMax = "0 0"
+                        }
                     }
                 });
-                
+
                 container.Add(new CuiElement
                 {
                     Parent = Layer + $".{i}",
                     Components =
                     {
-                        new CuiTextComponent { Text = check.Key, FontSize = 14, Font = "robotocondensed-bold.ttf", Align = TextAnchor.MiddleCenter },
-                        new CuiRectTransformComponent { AnchorMin = $"0 0", AnchorMax = $"1 1", OffsetMax = "0 0" }
+                        new CuiTextComponent
+                        {
+                            Text = check.Key, FontSize = 14, Font = "robotocondensed-bold.ttf",
+                            Align = TextAnchor.MiddleCenter
+                        },
+                        new CuiRectTransformComponent {AnchorMin = $"0 0", AnchorMax = $"1 1", OffsetMax = "0 0"}
                     }
                 });
 
                 container.Add(new CuiButton
-                {
-                    RectTransform = { AnchorMin = "0 0", AnchorMax = "1 1" },
-                    Button = { Command = $"changemarker {i}", Color = "0 0 0 0" },
-                    Text = { Text = "" }
-                }, Layer + $".{i}");
-                
+                    {
+                        RectTransform = {AnchorMin = "0 0", AnchorMax = "1 1"},
+                        Button = {Command = $"changemarker {i}", Color = "0 0 0 0"},
+                        Text = {Text = ""}
+                    }, Layer + $".{i}");
+
                 i++;
             }
-            
+
             color = playerMarkers[player.userID].Blocks ? HexToRustFormat("#518eefFF") : HexToRustFormat("#F99C53FF");
-                
+
             container.Add(new CuiElement
             {
                 Parent = Layer,
                 Name = Layer + $".{i}",
                 Components =
                 {
-                    new CuiImageComponent { Color = color },
-                    new CuiRectTransformComponent { AnchorMin = $"0.25 0.2861242", AnchorMax = $"0.75 0.4261242", OffsetMax = "0 0" }
+                    new CuiImageComponent {Color = color},
+                    new CuiRectTransformComponent
+                        {AnchorMin = $"0.25 0.2861242", AnchorMax = $"0.75 0.4261242", OffsetMax = "0 0"}
                 }
             });
-                
+
             container.Add(new CuiElement
             {
                 Parent = Layer + $".{i}",
                 Components =
                 {
-                    new CuiTextComponent { Text = "ПО ПОСТРОЙКАМ", FontSize = 14, Font = "robotocondensed-bold.ttf", Align = TextAnchor.MiddleCenter },
-                    new CuiRectTransformComponent { AnchorMin = $"0 0", AnchorMax = $"1 1", OffsetMax = "0 0" }
+                    new CuiTextComponent
+                    {
+                        Text = "ПО ПОСТРОЙКАМ", FontSize = 14, Font = "robotocondensed-bold.ttf",
+                        Align = TextAnchor.MiddleCenter
+                    },
+                    new CuiRectTransformComponent {AnchorMin = $"0 0", AnchorMax = $"1 1", OffsetMax = "0 0"}
                 }
             });
 
             container.Add(new CuiButton
                 {
-                    RectTransform = { AnchorMin = "0 0", AnchorMax = "1 1" },
-                    Button = { Command = $"changemarker block", Color = "0 0 0 0" },
-                    Text = { Text = "" }
+                    RectTransform = {AnchorMin = "0 0", AnchorMax = "1 1"},
+                    Button = {Command = $"changemarker block", Color = "0 0 0 0"},
+                    Text = {Text = ""}
                 }, Layer + $".{i}");
 
             CuiHelper.AddUi(player, container);
         }
-        
+
         private static string HexToRustFormat(string hex)
         {
             if (string.IsNullOrEmpty(hex))
@@ -522,7 +551,7 @@ namespace Oxide.Plugins
 
             return string.Format("{0:F2} {1:F2} {2:F2} {3:F2}", color.r, color.g, color.b, color.a);
         }
-        
+
         #endregion
 
         #region Utils
@@ -533,31 +562,31 @@ namespace Oxide.Plugins
             float xMax = 0.6411458f;
             float diff = xMax - centerX;
             float lenght05 = diff * divisionDmg;
-            
+
             float xLeft = centerX - lenght05;
             float xRight = centerX + lenght05;
-            
+
             return new Vector2(xLeft, xRight);
         }
-        
+
         Vector2 GetRandomTextPosition(float divisionDmg, float divisionHP)
         {
             float x = (float) Oxide.Core.Random.Range(45, 55) / 100;
             float y = (float) Oxide.Core.Random.Range(45, 55) / 100;
-            
+
             return new Vector2(x, y);
         }
-        
+
         public string GetGradientColor(int count, int max)
         {
             if (count > max)
                 count = max;
-            float n = max > 0 ? (float)ColorsGradientDB.Length / max : 0;
+            float n = max > 0 ? (float) ColorsGradientDB.Length / max : 0;
             var index = (int) (count * n);
             if (index > 0) index--;
-            return ColorsGradientDB[ index ];
+            return ColorsGradientDB[index];
         }
-        
+
         private string[] ColorsGradientDB = new string[100]
         {
             "0.2000 0.8000 0.2000 1.0000",

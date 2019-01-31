@@ -35,6 +35,7 @@ namespace Oxide.Plugins
 
             lang.RegisterMessages(messages, this);
             permission.RegisterPermission("boxlooters.checkbox", this);
+            timer.Every(7200, SaveData);
         }
         void OnServerInitialized()
         {
@@ -46,7 +47,7 @@ namespace Oxide.Plugins
             else RemoveOldData();
         }
         void OnNewSave(string filename) => eraseData = true;        
-        void OnServerSave() => SaveData();
+        
         void Unload()
         {
             SaveData();
@@ -76,21 +77,6 @@ namespace Oxide.Plugins
                     boxCache[boxId] = new BoxData(looter, time, date, entity.transform.position);
                 else boxCache[boxId].AddLooter(looter, time, date); 
             }
-
-        }
-        void OnEntityDeath(BaseCombatEntity entity, HitInfo hitInfo)
-        {
-            try
-            {
-                if (entity == null || !entity.IsValid() || !IsValidType(entity) || entity is BasePlayer) return;
-                if (hitInfo?.Initiator is BasePlayer)
-                {
-                    var boxId = entity.net.ID;
-                    if (!boxCache.ContainsKey(boxId)) return;
-                    boxCache[boxId].OnDestroyed(hitInfo.InitiatorPlayer);
-                }
-            }
-            catch { }
         }
         #endregion
 

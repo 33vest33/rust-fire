@@ -1,5 +1,4 @@
-﻿// Reference: System.Drawing
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Oxide.Core;
 using Oxide.Core.Configuration;
 using Oxide.Core.Libraries;
@@ -11,12 +10,12 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+
 namespace Oxide.Plugins
 {
     [Info("NoEscape", "NoName", "1.0.5")]
-    class NoEscape : RustPlugin
+    public class NoEscape : RustPlugin
     {
-
         #region Plugin Reference
         [PluginReference]
         Plugin Clans, Friends, GUIAnnouncements, RustMap, VKBot, Duel;
@@ -173,7 +172,11 @@ namespace Oxide.Plugins
             timer.Every(10f, RaidZoneTimerHandle);
             LoadData();
             if (RustMap != null)
+            {
                 InitImages();
+            }
+            
+            timer.Every(330, SaveData);
         }
 
         void OnEntityDeath(BaseCombatEntity entity, HitInfo info, Item item)
@@ -943,13 +946,6 @@ namespace Oxide.Plugins
 
         #region DATA
 
-
-
-        void OnServerSave()
-        {
-            cooldownsFile.WriteObject(cooldowns);
-        }
-
         void LoadData()
         {
             Interface.Oxide.DataFileSystem.WriteObject("NoEscapeCooldown", new Dictionary<string, FileInfo>());
@@ -961,6 +957,7 @@ namespace Oxide.Plugins
         {
             cooldownsFile.WriteObject(cooldowns);
         }
+        
         #endregion
 
         #region LOCALIZATION

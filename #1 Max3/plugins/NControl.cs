@@ -14,13 +14,16 @@ namespace Oxide.Plugins
 
         [JsonProperty("Кикать игроков с запрещенными частями в нике")]
         private bool CONF_KickBlocked = true;
+
         [JsonProperty("Игнорировать администрацию")]
         private bool CONF_AdminIgnore = false;
+
         [JsonProperty("Сохранять изменения в логах")]
         private bool CONF_LogChanges = true;
+
         [JsonProperty("Причина кика игрока")]
         private string CONF_KickReason = "Ваш ник содержит запрещенные слова: {0}";
-        
+
         [JsonProperty("Запрещенные символы в нике")]
         private List<string> CONF_BlockedParts = new List<string>
         {
@@ -40,7 +43,7 @@ namespace Oxide.Plugins
             ".org.ru",
             "moscow"
         };
-        
+
         #endregion
 
         #region Initialization
@@ -52,7 +55,7 @@ namespace Oxide.Plugins
             GetConfig("3. Причина кика игрока с запрещенным именем", ref CONF_KickReason);
             GetConfig("4. Логировать изменение ников, либо киков игроков", ref CONF_LogChanges);
             GetConfig("5. Запрещенные элементы ника (в любом регистре)", ref CONF_BlockedParts);
-            
+
             Config.Save();
         }
 
@@ -60,20 +63,19 @@ namespace Oxide.Plugins
         {
             LoadDefaultConfig();
             permission.RegisterPermission("NControl.Allow", this);
-            
+
             lang.RegisterMessages(new Dictionary<string, string>
             {
-                ["НЕТ.ДОСТУПА"]           = "Вам недостаточно прав для изменения имени игрока!",
-                
-                ["СИНТАКСИC.СМЕНА"]       = "Используйте команду правильно!\n" +
-                                            " - /changename <имя/ID> <ник> - изменение имени",
-                
-                ["ПОИСК.НЕТ"]             = "Мы не смогли найти игрока с таким именем / ID",
-                ["ПОИСК.МНОГО"]           = "Мы нашли нашли несколько игроков по запросу:",
-                
-                ["УСПЕШНО.ИЗМЕНИЛИ"]      = "Вы успешно изменили имя игрока на {0}"
+                ["НЕТ.ДОСТУПА"] = "Вам недостаточно прав для изменения имени игрока!",
+
+                ["СИНТАКСИC.СМЕНА"] = "Используйте команду правильно!\n" +
+                                      " - /changename <имя/ID> <ник> - изменение имени",
+
+                ["ПОИСК.НЕТ"] = "Мы не смогли найти игрока с таким именем / ID",
+                ["ПОИСК.МНОГО"] = "Мы нашли нашли несколько игроков по запросу:",
+
+                ["УСПЕШНО.ИЗМЕНИЛИ"] = "Вы успешно изменили имя игрока на {0}"
             }, this);
-            
         }
 
         #endregion
@@ -92,7 +94,7 @@ namespace Oxide.Plugins
                 {
                     ConnectionAuth.Reject(connection, CONF_KickReason.Replace("{0}", blockedItem));
                     connection.rejected = true;
-                    
+
                     LogToFile("Kick", $"Игрок был выгнан за ник {connection.username} [{blockedItem}]", this, false);
                     return false;
                 }
@@ -113,11 +115,13 @@ namespace Oxide.Plugins
         private void cmdChange(ConsoleSystem.Arg args)
         {
             BasePlayer player = args.Player();
-            if (player != null && !player.IsAdmin && !permission.UserHasPermission(player.UserIDString, "NControl.Allow"))
+            if (player != null && !player.IsAdmin &&
+                !permission.UserHasPermission(player.UserIDString, "NControl.Allow"))
             {
                 args.ReplyWithObject(GetMessage("НЕТ.ДОСТУПА"));
                 return;
             }
+
             if (!args.HasArgs(2))
             {
                 args.ReplyWithObject(GetMessage("СИНТАКСИС.СМЕНА"));
@@ -138,10 +142,10 @@ namespace Oxide.Plugins
                     string oldName = target.displayName;
 
                     target.displayName = args.Args[1];
-                    
+
                     args.ReplyWithObject(GetMessage("УСПЕШНО.ИЗМЕНИЛИ").Replace("{0}", target.displayName));
                     LogToFile("Changes", $"Игроку был изменен ник с {oldName} на {target.displayName}", this, false);
-                    
+
                     break;
                 }
                 default:
@@ -149,7 +153,7 @@ namespace Oxide.Plugins
                     string resultMessage = GetMessage("ПОИСК.МНОГО");
                     foreach (var check in findPlayers)
                         resultMessage += $" - {check.displayName} [{check.userID}]";
-                    
+
                     args.ReplyWithObject(resultMessage);
                     return;
                 }
@@ -172,11 +176,11 @@ namespace Oxide.Plugins
 
             return input;
         }
-        
+
         private bool ContainsAny(string input, List<string> check, out string result)
         {
             result = "";
-            
+
             foreach (var block in check)
             {
                 if (input.Contains(block))
@@ -198,7 +202,7 @@ namespace Oxide.Plugins
                 if (check.displayName.ToLower().Contains(input.ToLower()))
                     returnList.Add(check);
                 if (check.userID.ToString() == input)
-                    return new List<BasePlayer> { check };
+                    return new List<BasePlayer> {check};
             }
 
             foreach (var check in BasePlayer.sleepingPlayerList)
@@ -206,12 +210,12 @@ namespace Oxide.Plugins
                 if (check.displayName.ToLower().Contains(input.ToLower()))
                     returnList.Add(check);
                 if (check.userID.ToString() == input)
-                    return new List<BasePlayer> { check };
+                    return new List<BasePlayer> {check};
             }
 
             return returnList;
         }
-        
+
         private void GetConfig<T>(string Key, ref T var)
         {
             if (Config[Key] != null)

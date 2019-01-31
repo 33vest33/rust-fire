@@ -579,8 +579,9 @@ namespace Oxide.Plugins
             }
             if (config.GrGifts.VKGGNotify) timer.Repeat(config.GrGifts.VKGGTimer * 60, 0, GiftNotifier);
             if (config.AdmNotify.PluginsCheckMsg) CheckPlugins();
+            timer.Every(345, SaveData);
         }
-        void OnServerSave()
+        void SaveData()
         {
             if (config.TopWPlayersPromo.TopWPlEnabled) VKBData.WriteObject(usersdata);
             if (config.StatusStg.UpdateStatus || config.DGLSet.DLEnable) StatData.WriteObject(statdata);

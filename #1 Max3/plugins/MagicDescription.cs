@@ -80,8 +80,6 @@ namespace Oxide.Plugins
             }
         }
 
-        private void OnServerSave() => SaveConfig();
-
         #endregion Initialization
 
         #region Description Handling

@@ -204,7 +204,6 @@ namespace Oxide.Plugins
         #region Config handling
         protected override void LoadDefaultConfig()
         {
-            PrintWarning("Благодарим за приобритение плагина на сайте RustPlugin.ru. Если вы приобрели этот плагин на другом ресурсе знайте - это лишает вас гарантированных обновлений!");
             config = PluginConfig.DefaultConfig();
         }
         protected override void LoadConfig()
@@ -238,9 +237,10 @@ namespace Oxide.Plugins
                     PrintError($"Не удалось получить ItemModCookable для \"{item.Key.displayName.english}\"\nСообщите об этом разработчику: https://vk.com/vlad_00003");
                 }
             }
+
+            timer.Every(600, SaveData);
         }
         void Unload() => SaveData();
-        void OnServerSave() => SaveData();
         #endregion
 
         #region Oxide Hooks

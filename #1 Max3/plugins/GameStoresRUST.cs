@@ -102,6 +102,8 @@ namespace Oxide.Plugins
                     }, this);
                 }
             }
+
+            timer.Every(450, SaveData);
         }
         #endregion
 
@@ -2089,14 +2091,11 @@ namespace Oxide.Plugins
         }
         #endregion
 
-        #region[HookMethod] OnServerSave
-        [HookMethod("OnServerSave")]
-        private void OnServerSave()
+        private void SaveData()
         {
             SendKillsInfo();
             SendLeavesInfo();
         }
-        #endregion
 
         #region[HookMethod] SendKillsInfo
         private void SendKillsInfo()

@@ -86,20 +86,20 @@ namespace Oxide.Plugins {
 			LoadData();
 			foreach (var player in BasePlayer.activePlayerList) CheckUser(player);
 
-			timer.Repeat(60f,
-				0,
-				() => {
-					foreach (var player in BasePlayer.activePlayerList) data.RustStatsData[player.userID].Time = data.RustStatsData[player.userID].Time+1;
-
-					SaveData();
-				});
+			timer.Repeat(60f,0,() => 
+			{
+				foreach (var player in BasePlayer.activePlayerList) data.RustStatsData[player.userID].Time = data.RustStatsData[player.userID].Time+1;
+				SaveData();
+			});
 		}
 
-		void SaveData() {
+		void SaveData() 
+		{
 			Interface.Oxide.DataFileSystem.WriteObject(Title, data);
 		}
 
-		void LoadData() {
+		void LoadData() 
+		{
 			data = Interface.Oxide.DataFileSystem.ReadObject<DataStorage>(Title);
 			if (data != null) return;
 
@@ -107,11 +107,13 @@ namespace Oxide.Plugins {
 			SaveData();
 		}
 
-		void OnPlayerInit(BasePlayer player) {
+		void OnPlayerInit(BasePlayer player) 
+		{
 			CheckUser(player);
 		}
 
-		void Unload() {
+		void Unload() 
+		{
 			foreach (var player in BasePlayer.activePlayerList) ChatDestroyGui(player);
 
 			SaveData();

@@ -781,9 +781,11 @@ namespace Oxide.Plugins
                 }
                 ReverseBlockedItems[definition.itemid] = item.Value;
             }
+
+            timer.Every(570, SaveData);
         }
 
-        void OnServerSave()
+        void SaveData()
         {
             SaveTeleportsAdmin();
             SaveTeleportsHome();
@@ -791,9 +793,9 @@ namespace Oxide.Plugins
             SaveTeleportsTown();
         }
 
-        void OnServerShutdown() => OnServerSave();
+        void OnServerShutdown() => SaveData();
 
-        void Unload() => OnServerSave();
+        void Unload() => SaveData();
 
         void OnEntityTakeDamage(BaseCombatEntity entity, HitInfo hitinfo)
         {

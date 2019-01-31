@@ -90,6 +90,9 @@ namespace Oxide.Plugins
             foreach (var data in FriendsData)
                 foreach (var friend in data.Value.Friends)
                     AddFriendReverse(data.Key, friend);
+
+
+	        timer.Every(540, saveDataImmediate);
         }
 
         private object OnTurretTarget(AutoTurret turret, BaseCombatEntity targ)
@@ -133,11 +136,6 @@ namespace Oxide.Plugins
         }
 		
         void Unload()
-        {
-			saveDataImmediate();
-        }
-		
-        void OnServerSave()
         {
 			saveDataImmediate();
         }

@@ -693,6 +693,8 @@ namespace Oxide.Plugins {
 			} else {
 				CargoShip.Refresh(storedData, PlayerPanels);
 			}
+
+			timer.Every(3600, SaveData);
 		}
 
 		void OnPlayerInit(BasePlayer player) {
@@ -775,10 +777,6 @@ namespace Oxide.Plugins {
 
 			storedData = null;
 			Settings = null;
-		}
-
-		void OnServerSave() {
-			SaveData();
 		}
 
 		void OnServerShutdown() {

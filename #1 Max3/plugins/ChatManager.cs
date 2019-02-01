@@ -32,7 +32,7 @@ namespace Oxide.Plugins
             LoadConfig();
             LoadConfigValues();
             LoadData();
-            timer.Every(60f, () =>
+            timer.Every(1f, () =>
             {
                 List<ulong> toDelete = new List<ulong>();
                 toDelete.AddRange(floods.Keys.ToList().Where(flood => --floods[flood] < 0));

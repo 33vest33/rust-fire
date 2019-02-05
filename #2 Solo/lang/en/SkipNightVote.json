@@ -1,0 +1,14 @@
+{
+  "voteMSG": "{secCol}Началось голосование За пропуск ночи!</color>\n{secCol}Если </color>{mainCol}{reqVote}%</color> {secCol}проголосует За, ночь будет пропущена</color>\n{secCol}Команда, что бы проголосовать За пропуск ночи</color> {mainCol}/voteday</color>",
+  "timeRem": "{secCol}Голосование заканчивается через</color> {mainCol}{time} {type}</color>{secCol}, введи </color>{mainCol}/voteday</color>{secCol}, чтобы проголосовать!</color>",
+  "Force open a new vote": "Открыть новое голосование",
+  "Cancel the current vote": "Отменить текущий голос",
+  "There is not a vote currently open": "В настоящее время голосование отсутствует",
+  "You have voted to skip night": "Вы проголосовали за пропуск ночи",
+  "have voted to skip night": "игроки проголосовали за пропуск ночь",
+  "Voting was successful, skipping night.": "Голосование прошло успешно.",
+  "Voting was unsuccessful.": "Голосование не удалось.",
+  "Minutes": "Мин",
+  "Minute": "Мин",
+  "Seconds": "Сек"
+}

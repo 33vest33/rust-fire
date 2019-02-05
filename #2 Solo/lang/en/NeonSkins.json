@@ -1,0 +1,9 @@
+{
+  "notasign": "You need to be looking at a sign to use that !! ",
+  "notflying": "You need to be flying to use Wings !! ",
+  "tryagain": "Something went wrong, please try again !! ",
+  "togglesign": "You have toggled the sign !! ",
+  "maxsigns": "You have reached your Maximum Neon Sign build limit !!",
+  "notowner": "You need to be owner of sign to use that !! ",
+  "notallowed": "You are not authorized to use that command !!"
+}

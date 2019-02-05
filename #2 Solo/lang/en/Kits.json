@@ -1,0 +1,20 @@
+{
+  "Permission": "У вас недостаточно прав для использования это команды!",
+  "Cooldown": "Набор будет доступен через {0} секунд!",
+  "Blocked": "Kit is blocked for '{0}' seconds since wipe",
+  "Added": "You successfully added kit '{0}' with '{1}' items",
+  "Removed": "You successfully removed kit '{0}'",
+  "No Kit": "Can't find kit with name '{0}'",
+  "Uses": "Вы достигли лимита [{0}]!",
+  "ImageLibrary": "Image library not installed!",
+  "Day": "{0} д",
+  "Hour": "{0} ч",
+  "Minute": "{0} мин",
+  "Second": "{0} сек",
+  "Header GUI": "Доступные наборы:",
+  "Description GUI": "Описание: {0}",
+  "Cooldown GUI": "Перезарядка - {0}",
+  "Uses GUI": "Uses - {0}",
+  "Kit available": "Доступен",
+  "Kit unavailable": "{0}"
+}

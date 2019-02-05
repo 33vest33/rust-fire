@@ -1,0 +1,8 @@
+{
+  "NoPermission": "You don't have any permission.",
+  "RespawnMessage": "Thank you for supporting the server! For this, we have granted you a custom rock skin",
+  "ValidArgs": "Please specify a valid skin id",
+  "ResettingSkinAtSave": "Considering you already have a skin, to keep the server lag free(and spam free): We are going to reset your rock skin when the server saves",
+  "SuccessMessage": "Success! We have set your rock skin to {0}!",
+  "SaveSuccessMessage": "Success! The server has saved and your rock skin has been updated."
+}

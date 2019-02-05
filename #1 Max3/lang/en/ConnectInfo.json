@@ -1,0 +1,4 @@
+{
+  "JoinMessage": "<color=#ff7300>{0}</color> зашел на сервер.",
+  "LeaveMessage": "<color=#ff7300>{0}</color> вышел с сервера."
+}

@@ -1,0 +1,14 @@
+{
+  "CannotHurt": "<color=#FFE4C4>{0}</color> Эй, эй он же твой <color=#FFE4C4>друг</color> ! Хочешь включить урон по друзьям? Пропиши: <color=#FFE4C4>/ff on</color>",
+  "Usage": "Usage: <color=#FFE4C4>/ff [on|off]</color>",
+  "FFFriends": "Дружественный огонь <color=#FFE4C4>{0}</color> для ваших <color=#FFE4C4>друзей</color> :",
+  "FFNotAvailable": "Дружейский огонь <color=#FFE4C4>недоступен</color> !",
+  "FFEnabled": "<color=#FFE4C4>Включен</color>",
+  "FFDisabled": "<color=#FFE4C4>Отключен</color>",
+  "NoFriends": "У вас нет <color=#FFE4C4>друзей</color> :с",
+  "FFToggle": "Что бы <color=#FFE4C4>включить</color> или <color=#FFE4C4>отключить</color> дружейский огонь, введите : <color=#FFE4C4>/ff on|off</color>",
+  "FFAlready": "Дружеский <color=#FFE4C4>огонь/color> для ваших друзей уже - <color=#FFE4C4>{0}</color> !",
+  "FFChanged": "У вас есть <color=#FFE4C4>{0}</color> дружейский огонь для ваших <color=#FFE4C4>друзей</color> !",
+  "FFHelp1": "<color=#FFE4C4>/ff</color> - Показывает ваш текущий статус <color=#FFE4C4>дружеского</color> огня!",
+  "FFHelp2": "<color=#FFE4C4>/ff off|on</color> - Включает/выключает дружейский огонь: <color=#FFE4C4>on - Выкл. урон по друзьям</color> или <color=#FFE4C4>off - Вкл. урон по друзьям</color> !"
+}

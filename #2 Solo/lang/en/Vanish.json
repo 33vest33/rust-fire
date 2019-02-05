@@ -1,0 +1,21 @@
+{
+  "CantDamageBuilds": "You can't damage buildings while vanished",
+  "CantHurtAnimals": "You can't hurt animals while vanished",
+  "CantHurtPlayers": "You can't hurt players while vanished",
+  "NotAllowed": "Sorry, you can't use '{0}' right now",
+  "NotAllowedPerm": "You are missing permissions! ({0})",
+  "PlayersOnly": "Command '{0}' can only be used by a player",
+  "VanishDisabled": "You are no longer invisible!",
+  "VanishEnabled": "You have vanished from sight...",
+  "VanishCommand": "vanish",
+  "LootBlock": "<size=15><color=RED>Лутание в инвизе не возможно!</color></size>",
+  "AuthBlock": "<size=15><color=RED>Авторизация в инвизе не возможна!</color></size>",
+  "ClAuthBlock": "<size=15><color=RED>Очистка в инвизе не возможна!</color></size>",
+  "UpBlock": "<size=15><color=RED>Апгрейд  в инвизе не возможен!</color></size>",
+  "DevAuthBlock": "<size=15><color=RED>Деавторизация в инвизе не возможна!</color></size>",
+  "RemoveBlock": "<size=15><color=RED>Авторизация в инвизе не возможна!</color></size>",
+  "BuildBlock": "<size=15><color=RED>Строительство в инвизе не возможно!</color></size>",
+  "PickUpBlock": "<size=15><color=RED>Забарть предмет в инвизе не возможно!</color></size>",
+  "GatherBlock": "<size=15><color=RED>Добыча  в инвизе не возможна!</color></size>",
+  "DropBlock": "<size=15><color=RED>Выкинуть предмет в инвизе не возможно!</color></size>"
+}

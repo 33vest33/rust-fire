@@ -1,0 +1,8 @@
+{
+  "fireweapondenied": "You are not worthy of this yet !!",
+  "fireweapondestroyed": "You have destroyed your Fire Weapon !!",
+  "fireweaponcreationerror": "No room in your inventory for Fire Weapon !!",
+  "fireweaponnomats1": "You need Low Grade Fuel (5) to Toggle Fire Weapon !!",
+  "fireweaponnomats2": "You need Low Grade Fuel (5) and Explosives (20) to have Fire Weapon Throw Explosion !!",
+  "fireweaponcreated": "You have created a Fire Weapon !!"
+}

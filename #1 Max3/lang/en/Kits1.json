@@ -1,0 +1,20 @@
+{
+  "Usage": "Usage:\n * /kit list - Get list of all kits\n * /kit NAME - Get kit with name\n * /kit add NAME - Add new kit with name (copy your items on creation)\n * /kit remove NAME - Remove kit with name",
+  "Permission": "You don't have permission to use that!",
+  "Cooldown": "Cooldown for {0} seconds!",
+  "Blocked": "Kit is blocked for {0} since wipe",
+  "Added": "You successfully added kit '{0}' with '{1}' items",
+  "Removed": "You successfully removed kit '{0}'",
+  "Can't find": "Can't find kit with name '{0}'",
+  "Kits": "Available kits:\n{0}",
+  "Kit": " * {0}, {1}, Cooldown {2}\n",
+  "Uses": "You already used maximal amount [{0}] of that kit!",
+  "Available": "You can get following kits:",
+  "GUI ON": "Available",
+  "GUI OFF": "{0}",
+  "Day": "d",
+  "Hour": "h",
+  "Minute": "m",
+  "Second": "s",
+  "ImageLibrary": "Image library not installed!"
+}

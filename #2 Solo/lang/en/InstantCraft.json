@@ -1,0 +1,5 @@
+{
+  "Blocked": "This items is <color=red>blocked</color> from crafting",
+  "Slots": "You don't have enough place to craft! Need {0}, have {1}!",
+  "Normal": "Item will be crafted with normal speed."
+}

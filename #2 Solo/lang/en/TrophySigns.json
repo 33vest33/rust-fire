@@ -1,0 +1,8 @@
+{
+  "placeHelp1": "<color=#939393>Use the <color=#ce422b>fire</color> button to place this skull on any sign</color>",
+  "placeHelp2": "<color=#939393>Skulls can only be placed on signs</color>",
+  "placeHelp3": "<color=#ce422b>Skull placement cancelled!</color>",
+  "placeHelp4": "<color=#ce422b>Skull placed!</color>",
+  "placeHelp5": "<color=#939393>This sign already has a skull on it!</color>",
+  "noAuth": "<color=#939393>You need building auth to remove skulls</color>"
+}

@@ -1,0 +1,20 @@
+{
+  "Permission": "You don't have permission to use that!",
+  "Cooldown": "Cooldown for {0} seconds!",
+  "Blocked": "Kit is blocked for '{0}' seconds since wipe",
+  "Added": "You successfully added kit '{0}' with '{1}' items",
+  "Removed": "You successfully removed kit '{0}'",
+  "No Kit": "Can't find kit with name '{0}'",
+  "Uses": "You already used maximal amount [{0}] of that kit!",
+  "ImageLibrary": "Image library not installed!",
+  "Day": "{0} d",
+  "Hour": "{0} h",
+  "Minute": "{0} m",
+  "Second": "{0} s",
+  "Header GUI": "Following kits available:",
+  "Description GUI": "Description: {0}",
+  "Cooldown GUI": "Cooldown - {0}",
+  "Uses GUI": "Uses - {0}",
+  "Kit available": "Available",
+  "Kit unavailable": "{0}"
+}

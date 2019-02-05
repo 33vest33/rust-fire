@@ -797,10 +797,15 @@ namespace Oxide.Plugins
 
         void Unload() => SaveData();
 
-        void OnEntityTakeDamage(BaseCombatEntity entity, HitInfo hitinfo)
+        void OnEntityTakeDamage(BasePlayer player, HitInfo hitinfo)
         {
-            var player = entity.ToPlayer();
-            if (player == null || hitinfo == null) return;
+            if (hitinfo == null) {return;}
+            var major = hitinfo.damageTypes.GetMajorityDamageType();
+            if (major == DamageType.Cold || major == DamageType.Hunger || major == DamageType.Thirst)
+            {
+                return;
+            }
+            
             if (hitinfo.damageTypes.Has(DamageType.Fall) && teleporting.Contains(player.userID))
             {
                 hitinfo.damageTypes = new DamageTypeList();

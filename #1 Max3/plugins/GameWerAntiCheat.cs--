@@ -85,6 +85,7 @@ namespace Oxide.Plugins
         
         private void OnUserConnected(IPlayer player)
         {
+            this.LogWarning("[DEBUG]: OnUserConnected - " + player.Id);
             ulong steamid;
             if (ulong.TryParse(player.Id, out steamid))
             {
@@ -107,6 +108,7 @@ namespace Oxide.Plugins
         
         private void OnUserDisconnected(IPlayer player)
         {
+            this.LogWarning("[DEBUG]: OnUserDisconnected " + player.Id);
             ulong steamid;
             if (ulong.TryParse(player.Id, out steamid))
             {
@@ -160,6 +162,7 @@ namespace Oxide.Plugins
         }
 		
         void OnNeedKickPlayer(ulong steamid, string reason) {
+            this.LogWarning("[DEBUG]: OnNeedKickPlayer - " + steamid + " - " + reason);
             object result_kick = Interface.Oxide.CallHook("CanGameWerKick", steamid, reason);
             if ((result_kick is bool) == false || (bool) result_kick == true)
             {
@@ -195,6 +198,7 @@ namespace Oxide.Plugins
         {
             byte[] token = ParseAuthToken(player);
             int appid = GameWer.SDK.Interface.GetAppID(token);
+            this.LogWarning("[DEBUG]: RunAuthPlayer - " + player.Id + " -" + appid);
             if (appid != 480 && SettingsNeedGameWerFromLicens == false)
                 return;
             
@@ -202,21 +206,27 @@ namespace Oxide.Plugins
             {
                 if (this.ListAuthedPlayers.Contains(player.Id))
                     this.RunUnAuthPlayer(this.players.FindPlayerById(player.Id));
+                this.LogWarning("[DEBUG]: Player not authed - " + player.Id + " - start auth!");
                 Interface.Oxide.CallHook("OnGameWerAuthPlayer", ulong.Parse(player.Id));
                 this.ListAuthedPlayers.Add(player.Id);
                 GameWer.SDK.Interface.AuthPlayer(ulong.Parse(player.Id), (SettingsCheckVPN ? player.Address.Split(':')[0] : "0.0.0.0"));
-            }
+            } else
+                this.LogWarning("[DEBUG]: RunAuthPlayer:2 - " + player.Id + " - network false");
                 
         }
 
         void RunUnAuthPlayer(IPlayer player)
         {
+            this.LogWarning("[DEBUG]: RunUnAuthPlayer - " + player.Id);
             if (this.ListAuthedPlayers.Contains(player.Id))
             {
+                this.LogWarning("[DEBUG]: RunUnAuthPlayer:2 - " + player.Id + " - player authed, start unauth!");
                 Interface.Oxide.CallHook("OnGameWerUnAuthPlayer", ulong.Parse(player.Id));
                 this.ListAuthedPlayers.Remove(player.Id);
                 if (this.HasNetworkStatus == true)
                     GameWer.SDK.Interface.Logout(ulong.Parse(player.Id));
+                else
+                    this.LogWarning("[DEBUG]: RunUnAuthPlayer:2 - " + player.Id + " - player authed, network false!");
             }
         }
 

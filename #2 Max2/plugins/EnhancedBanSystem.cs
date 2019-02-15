@@ -2458,6 +2458,7 @@ namespace Oxide.Plugins
             }
             if (args == null || (args.Length < 1))
             {
+                player.Reply(GetMsg("UnbanSyntax", player.Id.ToString()));
                 return;
             }
             try

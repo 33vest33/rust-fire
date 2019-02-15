@@ -324,7 +324,7 @@ namespace Oxide.Plugins
             var ores = oven.inventory.itemList.Where(x => x.info.shortname.Contains(".ore")).ToList();
             if (ores.Count == 0) {return;}
             var max = ores.Max(x => x.amount);
-            var need = Convert.ToInt32(max * 2.6);
+            var need = Convert.ToInt32(max * 1.5);
             if (oven.inventory.capacity - oven.inventory.itemList.Count == 0) {return;}
             var items = GetItems("wood", player.inventory.AllItems().ToList());
             TakeItemAmount(items, need, oven.inventory);

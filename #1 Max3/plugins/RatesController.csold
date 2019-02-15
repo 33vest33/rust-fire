@@ -613,7 +613,6 @@ namespace Oxide.Plugins
 
             var lootcont = entity as LootContainer;
             if (!lootcont) return;
-            if (!lootcont) return;
             if (lootcont.OwnerID == player.userID) return;
             var instanceID = lootcont.GetInstanceID();
             DateTime cd;

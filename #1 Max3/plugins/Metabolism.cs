@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-
-namespace Oxide.Plugins
+﻿namespace Oxide.Plugins
 {
-    [Info("Metabolism", "Wulf/lukespragg", "2.6.1")]
+    [Info("Metabolism", "Orange", "1.0.0")]
+    [Description("Made by Orange#0900")]
     public class Metabolism : RustPlugin
     {
         private const string permSpawn = "metabolism.spawn";
@@ -17,36 +16,10 @@ namespace Oxide.Plugins
             if (permission.UserHasPermission(player.UserIDString, permSpawn))
             {
                 player.health = 100f;
-                player?.GetComponent<MetabolismAddon>()?.Kill();
-                player.gameObject.AddComponent<MetabolismAddon>();
-            }
-        }
-        
-        private class MetabolismAddon : MonoBehaviour
-        {
-            private BasePlayer player;
-
-            private void Awake()
-            {
-                player = GetComponent<BasePlayer>();
-                InvokeRepeating("Refill", 3, 300);
-            }
-
-            public void Kill()
-            {
-                Destroy(this);
-            }
-
-            private void Refill()
-            {
-                if (player == null)
-                {
-                    Kill();
-                    return;
-                }
-                
-                player.metabolism.calories.value = 1000f;
-                player.metabolism.hydration.value = 1000f;
+                player.metabolism.hydration.max = 5000;
+                player.metabolism.calories.max = 5000;
+                player.metabolism.hydration.value = 5000;
+                player.metabolism.calories.value = 5000;
             }
         }
     }

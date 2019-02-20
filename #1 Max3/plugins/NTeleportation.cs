@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using Facepunch;
@@ -1263,9 +1262,16 @@ namespace Oxide.Plugins
                 PrintMsgL(player, "HomeNotFound");
         }
 
+        [ConsoleCommand("home")]
+        private void cmdConsoleHome(ConsoleSystem.Arg arg)
+        {
+            cmdChatHome(arg.Player(), string.Empty, arg.Args);
+        } 
+
         [ChatCommand("home")]
         private void cmdChatHome(BasePlayer player, string command, string[] args)
         {
+            if (player == null) {return;}
             if (!configData.Settings.HomesEnabled) return;
             if (args.Length == 0)
             {
@@ -1718,10 +1724,17 @@ namespace Oxide.Plugins
                 changedHome = true;
             }
         }
+        
+        [ConsoleCommand("tpr")]
+        private void cmdConsoleTeleportRequest(ConsoleSystem.Arg arg)
+        {
+            cmdChatTeleportRequest(arg.Player(), string.Empty, arg.Args);
+        } 
 
         [ChatCommand("tpr")]
         private void cmdChatTeleportRequest(BasePlayer player, string command, string[] args)
         {
+            if (player == null) {return;}
             if (!configData.Settings.TPREnabled) return;
             if (args.Length != 1)
             {
@@ -1882,10 +1895,17 @@ namespace Oxide.Plugins
             PrintMsgL(player, "Request", target.displayName);
             PrintMsgL(target, "RequestTarget", player.displayName);
         }
+        
+        [ConsoleCommand("tpa")]
+        private void cmdConsoleTeleportAccept(ConsoleSystem.Arg arg)
+        {
+            cmdChatTeleportAccept(arg.Player(), string.Empty, arg.Args);
+        } 
 
         [ChatCommand("tpa")]
         private void cmdChatTeleportAccept(BasePlayer player, string command, string[] args)
         {
+            if (player == null) {return;}
             if (!configData.Settings.TPREnabled) return;
             if (args.Length != 0)
             {
